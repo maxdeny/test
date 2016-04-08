@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="none">#00000000</color>
+
+    <!-- 通用 -->
+    <color name="bottom_gray">#ECECEC</color>
+    <color name="title_black">#2D2D2D</color>
+    <color name="word_gray">#8B8B8B</color>
+    <color name="image_gray">#E7E7E7</color>
+    <color name="number_orange">#FF8822</color>
+    <color name="menu_text_color">#00E1CA</color>
+    <color name="small_word_color">#646464</color>
+    <color name="small_title_color">#777777</color>
+    <color name="edit_hint_color">#CDCDCD</color>
+    <color name="textview_red">#F31818</color>
+    <color name="linear_back">#dbdbdb</color>
+    <color name="dialog_line_pop_01">#E0E0E0</color>
+    <color name="dialog_line_pop_02">#EFEFEF</color>
+    <color name="top_news_back">#FFF9EA</color>
+    <string name="album">相册</string>
+    <string name="take_photo">拍照</string>
+    
+
+    <!-- 占位卡 -->
+
+    <color name="place_card_text_color_big">#2d2d2d</color>
+    <color name="place_card_text_color_small">#8b8b8b</color>
+    <color name="place_card_backgroud_color">#ececec</color>
+    <color name="place_card_button_submit_color">#00E1CA</color>
+    <color name="place_card_line_color">#EFEFEF</color>
+    <color name="place_card_edit_hint_color">#cdcdcd</color>
+    
+    <!-- 我的 -->
+    <color name="word_blue">#A5F5F3</color>
+    
+    <!-- 我的订单 -->
+    <color name="mine_order_background">#F2FFFE</color>
+    <color name="mine_order_wait_delivery">#F2FFFE</color>
+    <color name="mine_task_publish_color">#11AFDD</color>
+    <color name="register_dialog_back">#F6F6F6</color>
+
+    <!-- 任务大厅 -->
+    <color name="job_hall_title">#61D674</color>
+    <color name="job_hall_item_line_blue">#2CC2F9</color>
+    <color name="job_hall_item_line_grey">#D9D9D9</color>
+    <color name="job_hall_item_line_yellow">#FF8822</color>
+    
+    <!-- 商家 -->
+    <color name="shop_detail_title_order_s">#00e1ca</color>
+    <color name="shop_detail_title_order_n">#646464</color>
+    <color name="shop_detail_order_product_type_back">#f3f3f3</color>
+    <color name="shop_detail_order_product_type_back_line_x">#ECECEC</color>
+    <color name="shop_detail_order_product_type_back_line_y">#ECECEC</color>
+    <color name="shop_detail_order_product_edit_back">#F5F5F5</color>
+    <color name="shop_detail_order_product_notice_back">#e6e6e6</color>
+
+    <color name="province_line_border">#D0D0D0</color>
+</resources>
