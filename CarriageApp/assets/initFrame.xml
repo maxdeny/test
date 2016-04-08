@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameInit 
+    durl="get/"
+    error="" 
+    iconurl="" 
+    loading="com.beatle.lg.carriage.dialog.MyProgressDialog" 
+    log="true" 
+    menu="" 
+    package="" 
+    uri="http://112.74.13.148:8881"
+    url="/api/" 
+    temppath="lg"
+    uurl="">    <!-- 平台更新路径 -->
+    
+    
+    <url name="Register" type="12" >carrier/regist</url>
+    <url name="RegisterGetCode" type="11" >captcha/regist</url>
+    <url name="ValidataCode" type="2"  >captcha/validate</url>
+    <url name="AddressList" type="11"  >region/list</url>
+
+</FrameInit>
