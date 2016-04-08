@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="my_own_shop_activity_shop_name">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!--继承style -->
+    <style name="my_own_shop_activity_shop_name2" parent="my_own_shop_activity_shop_name">
+        <item name="android:background">#00000000</item>
+    </style>
+</resources>

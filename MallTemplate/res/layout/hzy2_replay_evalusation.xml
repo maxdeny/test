@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:focusableInTouchMode="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top">
+        <ImageButton android:id="@+id/back_to_see_the_evaluation_Activity"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:background="@drawable/ret_01"
+                     android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:padding="5dp"
+                  android:text="@string/response_evaluation"
+                  android:textColor="#FFFFFF"
+                  android:textSize="20sp"/>
+        <ImageButton android:id="@+id/hh"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingRight="10dp"
+                     android:paddingTop="10dp"
+                     android:visibility="invisible"
+                     android:saveEnabled="false"
+                     android:background="@drawable/shop_zy"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:background="@drawable/ckpj_bj"
+                  android:padding="10dp"
+                  android:layout_height="150dp"
+                  android:layout_width="match_parent"
+            >
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/storeimage_01"/>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="5dp"
+                      android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:text="超人"
+                          android:textColor="@color/pink"
+                          android:textSize="16sp"
+                          android:layout_weight="1"/>
+                <RatingBar android:id="@+id/satisfaction_list_bar"
+                           android:layout_height="wrap_content"
+                           android:layout_width="wrap_content"
+                           style="@style/roomRatingBar"
+                           android:isIndicator="true"
+                           android:layout_marginLeft="10dp"
+                           android:rating="5"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                    >
+                <TextView android:id="@+id/test"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/black"
+                          android:textSize="13sp"
+                          android:text="@string/test"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="3dp"
+                      android:layout_marginBottom="10dp"
+                      android:textColor="@color/darkgray"
+                      android:textSize="13sp"
+                      android:text="2014年05月03日"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText android:id="@+id/reply_words"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:background="@color/gray"
+              android:textColor="@color/black"
+              android:hint="@string/seller_reply"
+              android:paddingLeft="15dp"
+              android:textSize="15sp"
+              android:gravity="top"/>
+    <TextView android:id="@+id/more_words"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:text="@string/more_than_50"
+              android:visibility="invisible"
+              android:textColor="@color/red"
+            />
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginTop="15dp"
+                  android:gravity="center">
+        <ImageButton android:id="@+id/finish_reply"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/finish_reply"
+                     android:background="@drawable/hfpj_bt_n"/>
+    </LinearLayout>
+</LinearLayout>

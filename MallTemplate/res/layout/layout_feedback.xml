@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top" >
+        
+       <TextView
+            android:id="@+id/feedback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ret_01" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabbar"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="联系方式:"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+           
+           />
+
+        <EditText
+            android:id="@+id/lianxi"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/text_title"
+            android:background="@android:color/white"
+            android:singleLine="true"
+             android:hint="电话、Email、QQ"
+              />
+
+        <TextView
+            android:id="@+id/text_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lianxi"
+            android:layout_marginTop="10dp"
+            android:text="意见反馈:"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+             />
+
+        <EditText
+            android:id="@+id/feed"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:layout_below="@id/text_feed"
+            android:gravity="top|left"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:scrollbars="vertical"
+            android:hint="意见反馈内容"
+            />
+        
+        <Button 
+            android:id="@+id/setButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feed"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:background="@drawable/submit_btn"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

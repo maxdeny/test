@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp" >
+
+            <ImageView
+                android:id="@+id/fragment_shop_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" 
+                android:background="@drawable/seller_head_back" />
+            <TextView
+                 android:id="@+id/fragment_shop_front_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/seller_head_front"  />
+        </FrameLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/fragment_shop_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="交警来了"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺介绍:"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+                <TextView 
+                    android:id="@+id/shop_present"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="发动机啊哪凉快呢问你欧安欧文弄去呢【去弄去呢哦脾气"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/lightgray"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

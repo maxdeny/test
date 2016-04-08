@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:background="@drawable/shang_1_02">
+        <ToggleButton
+                android:id="@+id/goods_list_toggleButton"
+                android:background="@drawable/ischeck_n"
+                android:checked="false"
+                android:textOn=""
+                android:textOff=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/goods_style_list_goods_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:singleLine="true"
+                  android:layout_weight="1"
+                  android:text=""
+                  android:textColor="@color/black"
+                  android:textSize="15sp"/>
+        <TextView android:id="@+id/go_to_check_goods_detail"
+                  android:text="@string/check"
+                  android:textColor="@color/pink"
+                  android:textSize="15sp"
+                  android:maxLines="3"
+                  android:ellipsize="end"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:orientation="horizontal"
+                  android:background="@drawable/xia_1_02">
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:background="@drawable/fillet_image"
+                      android:gravity="center"
+                >
+            <ImageView android:id="@+id/my_own_shop_list_goods_images"
+                       android:layout_height="60dp"
+                       android:layout_width="60dp"
+                       android:background="@drawable/storeimage_01"/>
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="10dp"
+                      android:layout_width="match_parent">
+            <TextView android:id="@+id/all_goods_list_goods_description"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:maxLines="2"
+                      android:paddingRight="20dp"
+                      android:textColor="@color/black"
+                      android:textSize="13sp"
+                      android:text="@string/test"
+                      android:ellipsize="end"
+                      android:lines="2"
+                      android:layout_weight="1"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_height="wrap_content"
+                              android:layout_width="match_parent"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal"
+                              android:layout_weight="1">
+                    <TextView android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/black"
+                              android:textSize="12sp"
+                              android:text="@string/sorts"/>
+                    <TextView android:id="@+id/all_goods_list_goods_style"
+                              android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/black"
+                              android:textSize="12sp"
+                              android:singleLine="true"
+                              android:text=""/>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content"
+                              android:layout_width="match_parent"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal"
+                              android:layout_weight="1">
+                    <TextView android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/black"
+                              android:textSize="12sp"
+                              android:text="@string/style"/>
+                    <TextView android:id="@+id/style_list_text_inventoryCount"
+                              android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/black"
+                              android:textSize="12sp"
+                              android:singleLine="true"
+                              android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

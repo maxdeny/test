@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="205dp"
+            android:layout_height="205dp"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/df_03_bg" />
+
+            <ImageView
+                android:id="@+id/treasure_gridview_item_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:background="@drawable/df_03" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tressure_gridview_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="近年来 群殴那我拍我能哦【去呢【偶请你【哦请问你们【哦全文【=哦全文【请问【哦前几日额【吗【OQO【 哦【 目前我【 肉【求侮辱人美女【哦"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/pink"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/treasure_gridview_item_now_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:text="127.0"
+                android:textColor="@color/pink"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/treasure_gridview_item_pre_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="300.0"
+                android:textColor="@color/lightgray"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

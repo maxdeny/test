@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/gray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top">
+        <ImageButton android:id="@+id/go_to_orderActivity"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:background="@drawable/ret_01"
+                     android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:padding="5dp"
+                  android:text="@string/see_the_evaluation"
+                  android:textColor="#FFFFFF"
+                  android:textSize="20sp"/>
+        <ImageButton android:id="@+id/check_reply_go_to_home"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingRight="10dp"
+                     android:paddingTop="10dp"
+                     android:background="@drawable/shop_zy"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_height="70dp"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:background="@color/white"
+                  android:layout_marginBottom="2dp"
+                  android:layout_marginTop="2dp"
+                  android:padding="10dp">
+        <TextView android:id="@+id/percent"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="70.00%"
+                  android:textColor="@color/pink"
+                  android:textSize="20sp"/>
+        <TextView android:gravity="center_vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="满意度"
+                  android:textColor="@color/pink"
+                  android:textSize="12sp"/>
+        <RatingBar android:id="@+id/satisfaction_bar"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   style="@style/roomRatingBar"
+                   android:rating="5"
+                   android:isIndicator="true"/>
+
+    </LinearLayout>
+    <ListView android:id="@+id/see_the_evaluation_listView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:layout_marginBottom="10dp"
+              android:divider="#00000000"
+              android:fadingEdge="none"
+              android:listSelector="@android:color/transparent"
+              android:cacheColorHint="@android:color/transparent"
+              android:scrollbars="none"/>
+</LinearLayout>

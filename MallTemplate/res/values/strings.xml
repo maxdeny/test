@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微猫</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+	
+    
+    
+    
+     <string name="set_up_shop">创建店铺</string>
+    <string name="create_shop_quick">快点创建自己的店铺吧</string>
+    <string name="finish_set_up_shop_button">完成</string>
+    <string name="shop_info">店铺信息</string>
+    <string name="shop_name">店铺名称</string>
+    <string name="shop_introduce">店铺介绍</string>
+    <string name="shop_name_10word">输入内容10个字以内</string>
+    <string name="shop_name_300word">输入文字300个字以内</string>
+    <string name="shop_name_30word">输入文字30个字以内</string>
+    <string name="choice_goods_staples">选择分类</string>
+    <string name="goods_staples">商品分类</string>
+    <string name="goods_describe">商品描述</string>
+    <string name="goods_style">商品型号</string>
+    <string name="goods_price">商品价格</string>
+    <string name="goods_move_price">活动价格</string>
+    <string name="goods_leavings">商品库存</string>
+    <string name="goods_color">商品颜色</string>
+    <string name="goods_info">商品信息</string>
+    <string name="add_shop_image">点击添加店铺图标（必填）</string>
+    <string name="register_success">创建店铺成功</string>
+    <string name="register_success_1">恭喜你，你的店铺创建成功</string>
+    <string name="add_goods_title">添加商品</string>
+    <string name="my_shop_add_goods_button">添加</string>
+    <string name="my_shop_title">我的店铺</string>
+    <string name="my_shop_order_button">订单</string>
+    <string name="my_order_state">订单状态：</string>
+    <string name="my_order_have_success">已完成订单</string>
+    <string name="my_shop_customer_order_simple_title">客户订单</string>
+    <string name="my_shop_customer_order_detail_title">订单详情</string>
+    <string name="get_letter_person">收件人：</string>
+    <string name="mobile_number">电话：</string>
+    <string name="get_address">收件地址：</string>
+    <string name="all_money_to_pray">合计：</string>
+    <string name="order_number">订单编号：</string>
+    <string name="post_time">成交时间：</string>
+    <string name="pray_time">付款时间：</string>
+    <string name="my_all_image">我的图库</string>
+    <string name="add_my_choice_image">添加图片</string>
+    <string name="check">查看>></string>
+    
+    <string name="goods_edit">提交</string>
+    <string name="add_detail">添加详情</string>
+    <string name="add_goods_name">商品名称</string>
+    <string name="check_edit">查看编辑</string>
+    <string name="goods_size">商品尺码</string>
+    <string name="style_list">型号列表</string>
+    <string name="choice_all">全选</string>
+    <string name="delete_choice">删除</string>
+    <string name="color">颜色:</string>
+    <string name="repertory">库存:</string>
+    <string name="see_the_evaluation">查看评论</string>
+    <string name="response_evaluation">回复评价</string>
+    <string name="seller_reply">请输入回复类容（50字以内...)</string>
+    <string name="more_than_50">输入内容已超50字...</string>
+
+    <string name="sorts">分类：</string>
+    <string name="size">尺码：</string>
+    <string name="style">型号：</string>
+    <string name="check_good_detail">查看商品</string>
+    <string name="test">动手动脚啊哈大厦大火动手动脚啊哈大厦大火动手动脚啊哈大厦大火动手动脚啊哈
+        大厦大火动手动脚啊哈大厦大火动手动脚啊哈大厦大火动手动脚啊哈大厦
+    </string>
+
+    <string name="phone_way">联系方式</string>
+    <string name="phone_number">电话号码</string>
+    <string name="phone_or_mobile">联系方式</string>
+
+    <string name="order_create_time">创建时间：</string>
+    <string name="order_phone">联系电话：</string>
+    <string name="order_address">联系地址：</string>
+    <string name="all_numbers_words">1234567890-</string>
+    <string name="all_cloth_style_words">sxmlSXML1234567890</string>
+    <string name="please_write_number">输入内容限制数字...</string>
+    <string name="please_write_words">输入内容没有限制...</string>
+
+    <string name="goods_style_leavings">商品库存：</string>
+    <string name="goods_style_price">商品价格：￥</string>
+    <string name="goods_style_now_price">活动价格：￥</string>
+    <string name="goods_style_now_color">商品颜色：</string>
+    <string name="goods_style_now_size">商品尺寸：</string>
+
+    <string name="have_pay_for_money">已付款</string>
+    <string name="have_finish_the_order">已完成</string>
+    <string name="waiting_deliver_goods">待发货</string>
+    <string name="have_deliver_goods">已发货</string>
+    <string name="my_own_order">我的订单</string>
+
+    <string name="index_goods_list_title">商品列表</string>
+
+</resources>

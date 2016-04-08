@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <LinearLayout android:layout_marginBottom="20dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <LinearLayout android:background="@drawable/fillet_gray"
+                      android:gravity="center_vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <ToggleButton android:id="@+id/hzy_cart_ischeck"
+                          android:textOn=""
+                          android:textOff=""
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/ischeck_y"/>
+            <TextView android:layout_height="match_parent"
+                      android:layout_width="match_parent"
+                      android:layout_weight="1"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:layout_marginRight="10dp"
+                          android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/hzy_cart_bt_cut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cut"/>
+                <EditText
+                        android:id="@+id/hzy_cart_quantity"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/black"/>
+
+                <TextView
+                        android:id="@+id/hzy_cart_bt_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_add"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:background="@drawable/fillet_bottom"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:padding="5dp"
+                      android:orientation="horizontal">
+            <LinearLayout android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:background="@drawable/fillet_image"
+                          android:gravity="center_vertical">
+                <ImageView android:id="@+id/hzy_cart_shop_img"
+                           android:layout_height="60dp"
+                           android:layout_width="60dp"
+                           android:background="@drawable/storeimage_01"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/hzy_cart_shop_name"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:ellipsize="end"
+                          android:singleLine="true"
+                          android:text=""
+                          android:textColor="@color/black"
+                          android:textSize="18dp"
+                          android:textStyle="bold"/>
+
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                    <LinearLayout android:id="@+id/hzy_layout_cart_shop_title"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center_vertical"
+                                  android:layout_alignParentLeft="true"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_weight="1"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentLeft="true"
+                                      android:orientation="horizontal">
+
+                            <TextView android:id="@+id/hzy_cart_shop_titlecolor"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/color"
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+
+                            <TextView android:id="@+id/hzy_cart_shop_color"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text=""
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_weight="1"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_centerInParent="true"
+                                      android:orientation="horizontal">
+
+                            <TextView android:id="@+id/cart_shop_titlesize"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/size"
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+
+                            <TextView android:id="@+id/hzy_cart_shop_size"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text=""
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/hzy_layout_cart_shop_title"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center_vertical"
+                                  android:layout_alignParentLeft="true"
+                                  android:orientation="horizontal">
+                        <LinearLayout android:layout_weight="1"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_alignParentLeft="true"
+                                      android:orientation="horizontal">
+                            <TextView android:id="@+id/hzy_cart_shop_titleprice"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="单价:￥"
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+
+                            <TextView android:id="@+id/hzy_cart_shop_price"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text=""
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_weight="1"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_centerInParent="true"
+                                      android:orientation="horizontal">
+
+                            <TextView android:id="@+id/cart_shop_titlesize"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="@string/repertory"
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+
+                            <TextView android:id="@+id/hzy_cart_shop_repertory"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text=""
+                                      android:textColor="@color/lightgray"
+                                      android:textSize="15sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

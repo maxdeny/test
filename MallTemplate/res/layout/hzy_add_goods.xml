@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/gray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top">
+        <ImageButton android:id="@+id/go_to_shopActivity"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingTop="10dp"
+                     android:background="@drawable/ret_01"
+                     android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:padding="5dp"
+                  android:text="@string/add_goods_title"
+                  android:textColor="#FFFFFF"
+                  android:textSize="20sp"/>
+        <ImageButton android:id="@+id/go_to_shopActivity"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingTop="10dp"
+                     android:layout_alignParentRight="true"
+                     android:visibility="invisible"
+                     android:saveEnabled="false"
+                     android:background="@drawable/ret_01"
+                     android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/add_goods_scrollView"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:focusableInTouchMode="true"
+                      android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cjdp_bg_02"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+                <ImageButton android:id="@+id/add_goods_image"
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:background="@drawable/tt_tutu_01"/>
+                <LinearLayout android:id="@+id/add_layout2"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:gravity="center_horizontal"
+                              android:layout_height="wrap_content">
+                    <com.example.goldfoxchina.menu.GrapeGridview android:id="@+id/show_choice_images_grid"
+                              android:layout_marginLeft="5dp"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:listSelector="@android:color/transparent"
+                              android:cacheColorHint="@android:color/transparent"
+                              android:verticalSpacing="5dip"
+                              android:scrollbars="none"
+                              android:columnWidth="80dp"
+                              android:numColumns="auto_fit"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="center_vertical"
+                          android:focusableInTouchMode="true"
+                          android:layout_marginTop="8dp"
+                          android:background="@drawable/tjsp_textbox_01"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/white"
+                          android:textSize="15sp"
+                          android:paddingLeft="10dp"
+                          android:text="@string/goods_info"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:background="@drawable/tt_textbox_04"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"
+                          android:paddingLeft="10dp"
+                          android:text="@string/add_goods_name"/>
+                <EditText android:id="@+id/add_goods_name"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/tt_textbox_05"
+                          android:textColor="@color/black"
+                          android:hint="@string/shop_name_10word"
+                          android:paddingLeft="5dp"
+                          android:textSize="15sp"
+                          android:gravity="center_vertical"
+                        />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="120dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:background="@drawable/tt_textbox_02"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"
+                          android:paddingLeft="10dp"
+                          android:text="@string/goods_describe"/>
+                <EditText android:id="@+id/add_goods_Info"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/tt_textbox_03"
+                          android:textColor="@color/black"
+                          android:hint="@string/shop_name_300word"
+                          android:paddingLeft="5dp"
+                          android:textSize="15sp"
+                          android:gravity="center_vertical"
+                        />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:background="@drawable/tt_textbox_04"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"
+                          android:paddingLeft="10dp"
+                          android:text="@string/goods_staples"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:background="@drawable/tt_textbox_05"
+                              android:layout_height="wrap_content">
+                    <TextView android:id="@+id/goodsSort"
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:textColor="@color/darkgray"
+                              android:text="@string/choice_goods_staples"
+                              android:textSize="15sp"
+                              android:paddingLeft="5dp"
+                              android:gravity="center_vertical"/>
+                    <ImageButton android:id="@+id/choice_good_staples"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="match_parent"
+                                 android:layout_marginRight="1dp"
+                                 android:layout_marginBottom="1dp"
+                                 android:background="@drawable/tt_selecticon_01"
+                                 android:onClick="sortOnClick"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:background="@drawable/tt_textbox_07"
+                          android:textColor="@color/black"
+                          android:textSize="15sp"
+                          android:paddingLeft="10dp"
+                          android:text="@string/goods_style"/>
+                <EditText android:id="@+id/add_goods_style"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/tt_textbox_08"
+                          android:textColor="@color/black"
+                          android:hint="@string/shop_name_10word"
+                          android:textSize="15sp"
+                          android:paddingLeft="5dp"
+                          android:gravity="center_vertical"
+                        />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/add_layout"
+                          android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+                          android:layout_marginTop="20dp"
+                          android:background="@drawable/wddp_tjbutton_n1"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="@string/goods_edit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

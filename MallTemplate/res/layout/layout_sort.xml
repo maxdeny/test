@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/sort_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/sort_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品分类"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_layout_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/sort_top"
+        android:background="@color/white"
+        android:scrollbars="vertical">
+
+        <GridView
+            android:id="@+id/sort_style_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:horizontalSpacing="1dp"
+            android:background="@color/gray"
+            android:numColumns="2"
+            android:listSelector="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:verticalSpacing="1dp" />
+        <!-- android:listSelector="@null"取消外围边框 -->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"	
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+
+        
+
+        <TextView
+            android:id="@+id/detail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商品快寻"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_search_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sskx_search"
+            android:gravity="center" />
+    </RelativeLayout>
+    
+	 <FrameLayout
+        android:id="@+id/search_top_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" 
+        android:layout_below="@id/topbar">
+
+        <com.example.goldfoxchina.Bean.DetialGallery
+            android:id="@+id/search_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+        </com.example.goldfoxchina.Bean.DetialGallery>
+
+        <!-- 小圆点 -->
+
+        <LinearLayout
+            android:id="@+id/circle_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+        <GridView
+            android:id="@+id/search_style_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:horizontalSpacing="2dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="2dp" />
+</LinearLayout>

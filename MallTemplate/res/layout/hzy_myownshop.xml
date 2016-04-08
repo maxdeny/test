@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/gray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top">
+        <Button android:id="@+id/add_goods_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/my_shop_add_goods_button"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:background="#00000000"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:padding="5dp"
+                  android:text="@string/my_shop_title"
+                  style="@style/my_own_shop_activity_shop_name"/>
+        <Button android:id="@+id/my_order_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/my_shop_order_button"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:background="#00000000"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:background="@drawable/bg_01"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="18dp"
+                  android:layout_marginRight="18dp"
+            >
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_margin="10dp"
+                      android:background="@drawable/fillet_image"
+                      android:gravity="center">
+            <ImageView android:id="@+id/my_shop_logo_image"
+                       android:layout_height="60dp"
+                       android:layout_width="60dp"
+                       android:background="@drawable/storeimage_01"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="10dp"
+                      android:gravity="center_vertical"
+                      android:orientation="vertical"
+                      android:layout_weight="1">
+            <TextView android:id="@+id/my_own_shop_name"
+                      android:textSize="13sp"
+                      android:textColor="@color/black"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:background="#00000000"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:id="@+id/my_shop_description"
+                          android:ellipsize="end"
+                          android:lines="2"
+                          android:textSize="11sp"
+                          android:textColor="@color/darkgray"
+                          android:paddingTop="8dp"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:background="#00000000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="18dp"
+                  android:layout_marginRight="18dp"
+            >
+        <Button android:id="@+id/b1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/bgc_02"
+                android:gravity="center"
+                android:text="上架时间"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginRight="18dp"
+                android:layout_weight="1"/>
+        <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/b2"
+                android:background="@drawable/bg_02"
+                android:gravity="center"
+                android:text="销量"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginRight="18dp"
+                android:layout_weight="1"/>
+        <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/b3"
+                android:background="@drawable/bg_02"
+                android:gravity="center"
+                android:text="库存"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginRight="18dp"
+                android:layout_weight="1"/>
+        <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/b4"
+                android:gravity="center"
+                android:text="已售完"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:background="@drawable/bg_02"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <com.example.goldfoxchina.pullTorefresh.XListView
+        android:id="@+id/my_shop_all_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#00000000"
+        android:dividerHeight="8dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:background="@color/darkgray"
+                  android:paddingTop="1dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:gravity="center_vertical"
+                      android:paddingTop="10dp"
+                      android:paddingBottom="10dp"
+                      android:paddingLeft="10dp"
+                      android:paddingRight="10dp"
+                      android:background="@color/white">
+            <LinearLayout android:layout_weight="1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"/>
+            <ToggleButton android:id="@+id/my_shop_choice_all_item"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:checked="false"
+                          android:textOn=""
+                          android:textOff=""
+                          android:background="@drawable/qx_n"/>
+            <ImageButton android:id="@+id/my_shop_delete_choice_item"
+                         android:layout_marginLeft="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/delete_choice_selection"
+                         android:background="@drawable/shch_n"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
