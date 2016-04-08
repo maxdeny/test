@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mtest"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/mmenu"
+        android:layout_width="53dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp">
+
+        <test.HCurrView
+            android:id="@+frame/cv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <com.mdx.mobile.widget.FillLine
+            android:id="@+frame/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:checkedButton="@+frame/index"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+frame/index"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip" />
+
+            <RadioButton
+                android:id="@+frame/category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip" />
+
+            <RadioButton
+                android:id="@+frame/news"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip" />
+
+            <RadioButton
+                android:id="@+frame/manage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip" />
+
+            <RadioButton
+                android:id="@+frame/about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip" />
+        </com.mdx.mobile.widget.FillLine>
+    </FrameLayout>
+
+    <com.mdx.mobile.widget.AMLayout
+        android:id="@+frame/content"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffffff" />
+</LinearLayout>

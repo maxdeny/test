@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/mtestprotobuf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试protobuf" />
+
+    <Button
+        android:id="@+id/mtestjson"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试json" />
+
+    <Button
+        android:id="@+id/mtesttop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试top" />
+
+    
+    <com.mdx.mobile.widget.MImageView android:id="@+id/mimage"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp">
+        
+        
+    </com.mdx.mobile.widget.MImageView>
+</LinearLayout>

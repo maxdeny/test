@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorMsg>
+	<msg name="1" >urlm</msg>
+	<msg name="98" type="2" >连接错误,请检查网络!</msg>
+	<msg name="90" >授权错误!</msg>
+	<msg name="96" >Json解析错误</msg>
+	<msg name="97" >代码编写错误</msg>
+	<msg name="5" >urlm</msg>
+	<msg name="3" type="0">登录超时</msg>
+</errorMsg>

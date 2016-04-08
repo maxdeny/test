@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+index/button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+index/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <test.widget.IndexPullView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </test.widget.IndexPullView>
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+index/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:scrollingCache="false" >
+        </com.mdx.mobile.widget.PageListView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center" >
+
+    <test.widget.PullRefreshView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="18dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#ffcc00"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_updated_at"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pull_to_refresh_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:textColor="#bdbdbd"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
