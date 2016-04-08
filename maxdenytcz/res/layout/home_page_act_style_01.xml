@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/act_01_item"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:layout_marginTop="10dp"
+   >
+    <TextView 
+	    android:id="@+id/act_01_more"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/more_arrow"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/white"
+		android:text="精彩活动"
+        />
+    <com.mdx.mobile.widget.MImageView
+			    android:id="@+id/line_01"
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray"
+		    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+       <com.mdx.mobile.widget.MImageView
+		    android:id="@+id/act_one_left_image_view"
+	        android:clickable="true"
+	        android:focusable="true"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="101dp"
+		    android:background="@drawable/default_h_bg"
+	    />
+       
+       </LinearLayout>
+</LinearLayout>

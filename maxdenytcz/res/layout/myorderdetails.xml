@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <View
+        android:id="@+id/colorline"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+tczv3/header"
+        android:background="@drawable/bg_index2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+myorderdetails/norows"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+tczv3/header"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+myorderdetails/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorline"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="20dip"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="148dip"
+    android:layout_height="190dip"
+    android:layout_marginBottom="3dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_hotrec/img"
+        android:layout_width="128dip"
+        android:layout_height="128dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_h_bg" />
+
+    <TextView
+        android:id="@+item_hotrec/title"
+        style="@style/text14"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="00000"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textColor="@color/sysset_text1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+
+        <TextView
+            android:id="@+item_hotrec/new_price"
+            style="@style/text13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:text="1111"
+            android:textColor="@color/sysset_red" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+item_hotrec/new_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+item_hotrec/money_symbols"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/money_symbols"
+                android:textColor="@color/itemhotrec_oldprice" />
+
+            <TextView
+                android:id="@+item_hotrec/old_price"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="2222"
+                android:singleLine="true"
+                android:textColor="@color/itemhotrec_oldprice" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

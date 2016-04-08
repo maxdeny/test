@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/clic_gray"
+    android:padding="8dip"
+    android:gravity="center_vertical"
+    android:id="@+tgproductinfoitem/linear">
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    	<TextView 
+    	    android:id="@+tgproductinfoitem/name"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="16dip"
+        	android:textColor="#333333"/>
+    	<TextView 
+    	    android:id="@+tgproductinfoitem/number"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#333333"
+        	android:layout_marginTop="2dip"/>
+    	<TextView 
+    	    android:id="@+tgproductinfoitem/price"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#333333"
+        	android:layout_marginTop="2dip"/>
+    </LinearLayout>
+    <ImageView 
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/more_arrow"
+        android:layout_marginRight="4dip"/>
+
+</LinearLayout>

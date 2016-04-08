@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="277dip"
+    android:layout_height="190dip"
+    android:background="@drawable/pop_bg" >
+
+    <LinearLayout
+        android:id="@+receommenddialog/pop_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pop_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="12dip"
+            android:text="推荐软件"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+receommenddialog/bt_tuijiangei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+receommenddialog/pop_title"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/tuijian" />
+
+    <EditText
+        android:id="@+receommenddialog/ed_tel"
+        android:layout_width="fill_parent"
+        android:layout_height="31dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+receommenddialog/pop_title"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+receommenddialog/bt_tuijiangei"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/tel_ico"
+        android:hint="手机号码"
+        android:inputType="phone"
+        android:textColorHint="@color/hinttext"
+        android:textSize="22px" />
+
+    <RelativeLayout
+        android:id="@+receommenddialog/list_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+receommenddialog/ed_tel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/pop_list_bg"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+receommenddialog/tv_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件名称 : 淘常州客户端"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+receommenddialog/line"
+            android:layout_width="195dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+receommenddialog/tv_soft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/pop_line"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+receommenddialog/tv_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+receommenddialog/line"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+receommenddialog/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+receommenddialog/line"
+            android:textColor="#000000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+receommenddialog/list_bg"
+        android:gravity="center_horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+receommenddialog/bt_tuijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/pop_tuijian"
+            android:text="推荐"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+receommenddialog/bt_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_quxiao"
+            android:text="取消"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+receommenddialog/Loading_fill"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/fill_loading" />
+    </LinearLayout>
+
+</RelativeLayout>

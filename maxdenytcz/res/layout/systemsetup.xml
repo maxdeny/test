@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+sysset/maplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/headv3_bg"
+        android:padding="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:text="@string/head_softsetup"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+sysset/back"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="@string/back"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index3"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sysset_comset"
+            android:textColor="@color/sysset_red" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share" />
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_cleancache"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_include1"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="8.8dip"
+            android:layout_height="11.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/more_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share" />
+    <!-- 推送信息设置 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sysset_pushnotification"
+            android:textColor="@color/sysset_red" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share"
+        android:visibility="gone" />
+
+    <!-- 启动自动通知服务 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_sysset/text1"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_notice1"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/belowtext1"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_small_notice1"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+item_sysset/checkbox1"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share"
+        android:visibility="gone" />
+
+    <!-- 物流通知 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout5"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_sysset/text2"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_notice2"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/belowtext2"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_small_notice2"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+item_sysset/checkbox2"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share"
+        android:visibility="gone" />
+
+    <!-- 促销通知 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout6"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+item_sysset/text3"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_notice3"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/belowtext3"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_small_notice3"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+item_sysset/checkbox3"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share" />
+
+    <!-- 及时接收 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout7"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_sysset/text4"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_notice4"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/belowtext4"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_small_notice4"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+item_sysset/checkbox4"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share"
+        android:visibility="gone" />
+
+    <!-- 铃声 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout8"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_sysset/text5"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_notice5"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/belowtext5"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_small_notice5"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+item_sysset/checkbox5"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share"
+        android:visibility="gone" />
+
+    <!-- 振动 -->
+
+    <RelativeLayout
+        android:id="@+sysset/clic_layout9"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/clic_gray"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_sysset/text6"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_notice6"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/belowtext6"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_small_notice6"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+item_sysset/checkbox6"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+sysset/line9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_share"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:id="@+sysset/hscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_frame_gray"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+sysset/addlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

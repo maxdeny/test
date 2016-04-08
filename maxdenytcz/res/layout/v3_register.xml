@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <Button
+            android:id="@+v3_register/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/head_reg" />
+
+        <Button
+            android:id="@+v3_register/login"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/headv3_right"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+v3_register/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+v3_register/radio_phone"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+v3_register/radio_phone"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="36.7dip"
+            android:layout_weight="1"
+            android:background="@drawable/bt_favorite_radiobtn"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/line_favorite_cutradiobtn"
+            android:gravity="center"
+            android:text="手机注册"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+v3_register/radio_mail"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="36.7dip"
+            android:layout_weight="1"
+            android:background="@drawable/bt_favorite_radiobtn"
+            android:button="@null"
+            android:drawableRight="@drawable/line_favorite_cutradiobtn"
+            android:gravity="center"
+            android:text="邮箱注册"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+v3_register/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+v3_register/layout_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/bg_frame_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+v3_register/title"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号："
+                android:textColor="@color/textColor_666666" />
+
+            <EditText
+                android:id="@+v3_register/ed_phone"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入您的手机号码"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+v3_register/bt_getvertifycode"
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="34dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bt_com_orange"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+v3_register/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="122.7dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_frame_gray"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" >
+
+                <EditText
+                    android:id="@+v3_register/edit_mail"
+                    style="@style/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:hint="请输入邮箱账号"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dip"
+                    android:textColor="@color/textColor_666666"
+                    android:textColorHint="@color/hinttext" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line3" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingRight="10dip" >
+
+                <EditText
+                    android:id="@+v3_register/edit_password"
+                    style="@style/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dip"
+                    android:textColor="@color/textColor_666666"
+                    android:textColorHint="@color/hinttext" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line3" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip" >
+
+                <CheckBox
+                    android:id="@+v3_register/mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:button="@drawable/checkbox_login"
+                    android:checked="false"
+                    android:paddingLeft="20dip"
+                    android:text="显示密码" />
+
+                <CheckBox
+                    android:id="@+v3_register/xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:button="@drawable/checkbox_login"
+                    android:checked="true"
+                    android:paddingLeft="20dip"
+                    android:text="同意淘常州服务协议" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+v3_register/bt_reg"
+            style="@style/bt_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/button_red"
+            android:text="@string/reg_reg"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:text="@string/kfrx" />
+    </RelativeLayout>
+
+</LinearLayout>

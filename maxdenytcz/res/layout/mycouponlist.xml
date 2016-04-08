@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+merchant/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:text="@string/head_mycoupon"
+            android:id="@+myouponlist/head_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+merchant/layout" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+myouponlist/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+            <ListView
+                android:scrollbarStyle="outsideOverlay"
+                android:id="@+myouponlist/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="6dip"
+                android:padding="6dip" />
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+</RelativeLayout>

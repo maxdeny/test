@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="10dip"
+        android:checkedButton="@+id/radio_shop"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_fl"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="36.7dip"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_white_red"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+
+        <RadioButton
+            android:id="@+id/radio_sx"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="36.7dip"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_white_red"
+            android:button="@null"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line_gray"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false" >
+        </com.mdx.mobile.widget.PageListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/el_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+
+</LinearLayout>

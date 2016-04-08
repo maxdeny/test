@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+attention/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:id="@+attention/head_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+attention/layout" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+attention/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+             <com.mdx.mobile.widget.PageListView
+                android:id="@+attention/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_gray"
+                android:background="@null"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:scrollingCache="false" >
+            </com.mdx.mobile.widget.PageListView>
+
+
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+</RelativeLayout>

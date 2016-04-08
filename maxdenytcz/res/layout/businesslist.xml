@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_redandorg"
+        android:padding="4dip" >
+
+        <Button
+            android:id="@+businesslist/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/bt_com_orange"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="@string/businesslist_map"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+businesslist/edit_search"
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="34.7dip"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@businesslist/btn_map"
+            android:background="@drawable/edit_index_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/businessmap_hint"
+            android:paddingLeft="5dip"
+            android:paddingRight="50dip"
+            android:textColorHint="@color/hinttext" />
+
+        <Button
+            android:id="@+businesslist/btn_search"
+            android:layout_width="49dip"
+            android:layout_height="33.3dip"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="0.1dip"
+            android:layout_toLeftOf="@businesslist/btn_map"
+            android:background="@drawable/btn_index_search"
+            android:gravity="center"
+            android:text="@string/index_search"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dip" >
+
+        <Spinner
+            android:id="@+businesslist/spi_scope"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_map_spinner_nor"
+            android:paddingLeft="5dip"
+            android:prompt="@string/businesslist_spi_scope" />
+
+        <Spinner
+            android:id="@+businesslist/spi_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/bt_map_spinner_nor"
+            android:paddingLeft="5dip"
+            android:prompt="@string/businesslist_spi_type" />
+
+        <Spinner
+            android:id="@+businesslist/spi_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/bt_map_spinner_nor"
+            android:paddingLeft="5dip"
+            android:prompt="@string/businesslist_spi_sort" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_gray"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+businesslist/businesslist_result"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/businesslist_nor"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/businesslist_result"
+        android:textColor="#541d01" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_gray"
+        android:contentDescription="@string/app_name" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+businesslist/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line_gray"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false" >
+    </com.mdx.mobile.widget.PageListView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_gray"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

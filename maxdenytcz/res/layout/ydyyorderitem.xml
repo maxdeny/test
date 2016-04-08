@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_bg14" 
+    android:padding="8dip"
+    android:id="@+ydyyorderitem/linear"
+    android:gravity="center_vertical">
+    
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView 
+        android:id="@+ydyyorderitem/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"/>
+    <TextView 
+        android:id="@+ydyyorderitem/paytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"/>
+    <TextView 
+        android:id="@+ydyyorderitem/eattime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"/>
+    <TextView 
+        android:id="@+ydyyorderitem/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"/>
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/more_arrow"
+        android:layout_marginRight="8dip"/>
+    
+    
+    
+
+</LinearLayout>

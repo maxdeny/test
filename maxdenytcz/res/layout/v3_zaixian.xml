@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+tczv3/header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+v3_zaixian/t_counts"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="3dip"
+                    android:text="合计:"
+                    android:textColor="@color/text666666" />
+
+                <TextView
+                    android:id="@+v3_zaixian/counts"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+v3_zaixian/t_counts"
+                    android:text="￥0"
+                    android:textColor="@color/headcolor" />
+
+                <TextView
+                    android:id="@+v3_zaixian/t_pay"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@+v3_zaixian/counts"
+                    android:text="已付："
+                    android:textColor="@color/text666666" />
+
+                <TextView
+                    android:id="@+v3_zaixian/pay"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+v3_zaixian/t_pay"
+                    android:text="￥0"
+                    android:textColor="@color/headcolor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还需："
+                        android:textColor="@color/text666666" />
+
+                    <TextView
+                        android:id="@+v3_zaixian/needs"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥0"
+                        android:textColor="@color/headcolor" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+v3_zaixian/taoxin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dip"
+                    android:text="虚拟账户支付了:￥0"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+v3_zaixian/ydcoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dip"
+                    android:text="移动商城币支付了:￥0"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+v3_zaixian/layout_xn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+v3_zaixian/xuxi"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的余额："
+                    android:textColor="@color/text666666" />
+
+                <TextView
+                    android:id="@+v3_zaixian/xuni_yue"
+                    style="@style/text18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+v3_zaixian/xuxi"
+                    android:text="￥0"
+                    android:textColor="@color/headcolor" />
+
+                <CheckBox
+                    android:id="@+v3_zaixian/xuni_choose"
+                    style="@style/LoginCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+v3_zaixian/layout_tx"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+v3_zaixian/rt"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="淘心卡余额："
+                    android:textColor="@color/text666666" />
+
+                <TextView
+                    android:id="@+v3_zaixian/yue"
+                    style="@style/text18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+v3_zaixian/rt"
+                    android:text="￥0"
+                    android:textColor="@color/headcolor" />
+
+                <CheckBox
+                    android:id="@+v3_zaixian/tx_choose"
+                    style="@style/LoginCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+v3_zaixian/shangcheng"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+v3_zaixian/shangcheng_value"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="使用移动商城币"
+                    android:textColor="@color/text666666" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_arrow" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <TextView
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:paddingRight="3dip"
+                android:text="使用以下支付方式"
+                android:textColor="@color/text666666" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+v3_zaixian/checkbox2"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_zfb" />
+                    </LinearLayout>
+
+                    <!-- 农行支付 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+v3_zaixian/nh_checkbox6"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_nyyh" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <!-- 建行支付 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+v3_zaixian/jh_checkbox2"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_jsyh" />
+                    </LinearLayout>
+
+                    <!-- 中行支付 -->
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="visible" >
+
+                        <CheckBox
+                            android:id="@+v3_zaixian/zh_checkbox5"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_zgyh" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <Button
+            android:id="@+v3_zaixian/topay"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/bg_btn_tobuy"
+            android:text="付款"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

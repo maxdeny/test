@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+accsetup/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/more_accset"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+accsetup/clic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+accsetup/layout"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_frame_gray"
+        android:cacheColorHint="#00000000" >
+
+        <View
+            android:id="@+accsetup/click"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/clic_gray"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+accsetup/text"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/head_modifypassword" />
+
+        <ImageView
+            android:layout_width="8.8dip"
+            android:layout_height="11.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/more_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

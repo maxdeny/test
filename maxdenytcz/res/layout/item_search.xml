@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip" >
+
+    <RelativeLayout
+        android:id="@+item_search/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@null"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <View
+            android:id="@+item_search/title"
+            android:layout_width="53dip"
+            android:layout_height="23dip"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@drawable/head_redandorg_title" />
+
+        <Button
+            android:id="@+item_search/edit_search"
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="34.7dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+item_search/title"
+            android:background="@drawable/v3_bg_index_edit" 
+            android:gravity="center_vertical"
+            android:hint="@string/index_edit_hint"
+            android:textColorHint="@color/hinttext" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+item_search/speakbutton"
+            android:layout_width="15dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_index_speak"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+item_search/searchbut"
+            android:layout_width="49dip"
+            android:layout_height="33.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0.1dip"
+            android:background="@drawable/btn_index_search"
+            android:gravity="center"
+            android:text="@string/index_search"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+item_search/del"
+            android:layout_width="16.7dip"
+            android:layout_height="16.7dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dip"
+            android:background="@drawable/btn_index_delete"
+            android:visibility="gone" />
+
+        <com.wjwl.mobile.taocz.widget.PopubLayout
+            android:id="@+item_search/popublayout"
+            android:layout_width="55dip"
+            android:layout_height="34.7dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+item_search/title"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+item_search/color1"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+item_search/layout"
+        android:background="@drawable/bg_index2"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

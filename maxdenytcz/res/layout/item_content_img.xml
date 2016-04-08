@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dip"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_iad/image"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_l_bg"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+item_iad/click"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_button_click_default"
+        android:clickable="true" />
+
+</RelativeLayout>

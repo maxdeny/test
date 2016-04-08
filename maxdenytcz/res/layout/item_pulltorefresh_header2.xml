@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:gravity="center" >
+
+    <com.wjwl.mobile.taocz.widget.PullRefreshView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="89dp"
+        android:layout_height="28dp"
+		android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+    <View
+        android:id="@+id/pull_car_light_loading" 
+        android:visibility="invisible"
+        android:layout_width="49dp"
+        android:layout_toRightOf="@+id/pull_to_refresh_image"
+        android:background="@drawable/bg_pullsh_loading"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_height="28dp"/>
+    
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingLeft="45dp"
+        android:textColor="#ffcc00"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_updated_at"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pull_to_refresh_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:paddingLeft="45dp"
+        android:textColor="#bdbdbd"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_to_refesh_bottom" />
+
+</RelativeLayout>

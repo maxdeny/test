@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+item_dpj/item_dpj"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/gray"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+item_dpj/businessname"
+            style="@style/text16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="话费充值专营店"
+            android:textColor="@color/text272727" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+item_dpj/img"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_h_bg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_dpj/productname"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="自动充值  江苏移动话费快充100块"
+                android:textColor="@color/text272727" />
+
+            <TextView
+                android:id="@+item_dpj/count"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="共1件商品"
+                android:textColor="@color/text999999" />
+
+            <TextView
+                android:id="@+item_dpj/price"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="￥99.50"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+item_dpj/bt_dpj"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bt_com_orange"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip"
+                android:text="评价"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

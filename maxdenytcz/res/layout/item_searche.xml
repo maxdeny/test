@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44dip"
+    android:background="@drawable/head_redandorg"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <EditText
+        android:id="@+search/edit_search"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="34.7dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_index_bg"
+        android:gravity="center_vertical"
+        android:hint="@string/index_search_hint"
+        android:maxLines="1"
+        android:paddingLeft="60dip"
+        android:paddingRight="51dip"
+        android:textColorHint="@color/hinttext" />
+
+    <Button
+        android:id="@+search/searchbutton"
+        android:layout_width="49dip"
+        android:layout_height="33.3dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0.1dip"
+        android:background="@drawable/btn_index_search"
+        android:gravity="center"
+        android:text="@string/index_search"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+search/cancel"
+        android:layout_width="16.7dip"
+        android:layout_height="16.7dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="58dip"
+        android:background="@drawable/btn_index_delete"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+search/popublayout"
+        style="@style/text"
+        android:layout_width="60dp"
+        android:layout_height="34.7dip"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="1dip"
+        android:background="@drawable/spinner_frame_arr"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#494949" />
+
+</RelativeLayout>

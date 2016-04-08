@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_shoppinglist/productimg"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_h_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+item_shoppinglist/productname"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+item_shoppinglist/productprice"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/life_price" />
+
+            <TextView
+                android:id="@+item_shoppinglist/productoriginalprice"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+item_shoppinglist/productprice"
+                android:textColor="#888888" />
+
+        </RelativeLayout>
+		
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+        	<TextView
+            	android:id="@+item_shoppinglist/businessname"
+            	style="@style/text"
+            	android:layout_width="0dip"
+            	android:layout_weight="1"
+            	android:layout_height="wrap_content"
+            	android:singleLine="true"
+            	android:textColor="@color/black" />
+        	<TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buyover"
+                android:textColor="#888888" />
+        	<TextView
+                android:id="@+item_shoppinglist/buyover"
+                style="@style/text"
+                android:layout_marginRight="5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#888888" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

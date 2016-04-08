@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_item_takeoutbox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+item_item_takeoutbox/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+item_item_takeoutbox/btn_plus"
+                android:layout_width="35dip"
+                android:layout_height="37dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dishnote_add"
+                android:contentDescription="@string/app_name" />
+
+            <EditText
+                android:id="@+item_item_takeoutbox/edit_num"
+                style="@style/text"
+                android:layout_width="40dip"
+                android:layout_height="28dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+item_item_takeoutbox/btn_plus"
+                android:background="@drawable/tu"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+item_item_takeoutbox/btn_minus"
+                android:layout_width="35dip"
+                android:layout_height="37dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+item_item_takeoutbox/edit_num"
+                android:background="@drawable/dishnote_reduce"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+item_item_takeoutbox/layout1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_item_takeoutbox/productname"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:singleLine="true"
+                android:text="香甜玉米杯（小）"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+item_item_takeoutbox/productprice"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="4元/份"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_gray" />
+
+</com.wjwl.mobile.taocz.widget.Item_item_takeoutbox>

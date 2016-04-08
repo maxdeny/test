@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.Item_Search
+        android:id="@+movielist/item_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.wjwl.mobile.taocz.widget.Item_Search>
+
+    <LinearLayout
+        android:id="@+movielist/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="6dip" >
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_map_gray"
+        android:contentDescription="@string/app_name" />
+
+    <RadioGroup
+        android:id="@+movielist/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+movielist/rbt_people"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_shoppinglist"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/line_shopping_btn"
+            android:gravity="center"
+            android:text="@string/shopping_rdb_peple"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+
+        <RadioButton
+            android:id="@+movielist/rbt_price"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_shoppinglist"
+            android:button="@null"
+            android:drawableRight="@drawable/line_shopping_btn"
+            android:gravity="center"
+            android:text="@string/shopping_rdb_price"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+
+        <RadioButton
+            android:id="@+movielist/rbt_sale"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_shoppinglist"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/shopping_rdb_sale"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_map_gray"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/norows"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="-30dp" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+movielist/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+            <com.mdx.mobile.widget.PageListView
+                android:id="@+movielist/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_gray"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </com.mdx.mobile.widget.PageListView>
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <RelativeLayout
+        android:id="@+tczv3/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="商品展示"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+tczv3/back"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="@string/back"
+            android:textColor="@color/white" />
+    </RelativeLayout> -->
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+id/hl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+tczv3/freelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+tczv3/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+tczv3/radio_normalinfo"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+tczv3/radio_normalinfo"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="36.7dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="基本信息"
+                android:textColor="@drawable/checkbox_text_style" />
+            <!-- android:background="@drawable/bt_favorite_radiobtn" -->
+
+            <RadioButton
+                android:id="@+tczv3/radio_photoinfo"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="36.7dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="商品详情"
+                android:textColor="@drawable/checkbox_text_style" />
+
+            <RadioButton
+                android:id="@+tczv3/radio_comment"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="36.7dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="评价"
+                android:textColor="@drawable/checkbox_text_style" />
+        </RadioGroup>
+
+        <com.wjwl.mobile.taocz.widget.CurrView4Detail
+            android:id="@+tczv3/favorite_cv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/line_favorite_radiobtnbottom"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.mdx.mobile.widget.AMLayout
+        android:id="@+tczv3/favorite_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

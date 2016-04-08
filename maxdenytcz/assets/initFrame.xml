@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- 
+    uri="http://10.49.0.138/api/mobile"
+    uri="http://api.taocz.com/mobile" 
+    uri="http://61.132.102.138:24335/mall/api/mobile"
+    uri="http://api.taocz.com/mobile"
+     -->
+<FrameInit 
+    durl="get/" 
+    error="com.wjwl.mobile.taocz.dialog.ErrorDialog" 
+    iconurl="get/" 
+    log="true"
+    package="com.tcz.apkfactory.data"
+    loading="com.wjwl.mobile.taocz.dialog.LoadingDialog" 
+    uri="http://api.taocz.com/mobile"
+    mapkey="8907E092BFB7B8200A09B1BD279775CE30AE2F27"
+    menu="com.wjwl.mobile.taocz.menu.Menu"
+    url="/tao.php?act="
+    temppath="taocz"
+    uurl="">
+
+    <url name="INDEX" type="1" classname=".Index$Msg_Index">INDEX&amp;app=index&amp;nerr_wdj=1</url>
+	<url name="SCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">scategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+	<url name="SLIST" type="1" classname=".CitemList$Msg_CitemList">slist&amp;app=citemlist&amp;nerr_wdj=1</url>
+	<url name="SLIST_NEW" type="1" classname=".CitemList$Msg_CitemList">slist_new&amp;app=citemlist&amp;nerr_wdj=1</url>
+	<url name="FSLIST" type="1" classname=".CitemList$Msg_CitemList">fslist&amp;app=citemlist&amp;nerr_wdj=1</url>
+	
+	<url name="CAREA" type="1"  classname=".CcategoryList$Msg_CcategoryList">carea&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+	<url name="LCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">lcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+	<url name="BCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">bcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+	<url name="MCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">mcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+	<url name="LLIST" type="1" classname=".CitemList$Msg_CitemList">llist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="LOGIN" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">login&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="OPCART" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">opcart&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="IRECOMMEND" type="1" classname=".CitemList$Msg_CitemList">irecommend&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="MTCZ" type="1" classname=".mtcz$Msg_Mtcz">mtcz&amp;app=mtcz&amp;nerr_wdj=1</url>
+    <url name="MFAVORITE" type="1" classname=".CitemList$Msg_CitemList">mfavorite&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="RCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">rcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="V3_OREGIST" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_oregist&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="RLIST" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">rlist&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+    <url name="JCOINMARKET" type="1" classname=".CitemList$Msg_CitemList">jcoinmarket&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="OGPASSWORD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">ogpassword&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="OMPASSWORD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">ompassword&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="OUPDATE" type="1" classname=".Update$Msg_Update">oupdate&amp;app=oupdate&amp;nerr_wdj=1</url>
+    <url name="CCOMMENTLIST" type="1" classname=".CcommentList$Msg_CcommentList">ccommentlist&amp;app=ccommentlist&amp;nerr_wdj=1</url>
+    <url name="MYORDERLIST2" type="1" classname=".MsgMorder$Msg_Morder">myorderlist&amp;app=morderlist&amp;nerr_wdj=1</url>
+    <url name="MYORDERLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">myorderlist&amp;app=morderlist&amp;nerr_wdj=1</url>
+    <url name="OFEEDBACK" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">ofeedback&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="MADDRESSLIST" type="1" classname=".Maddresslist$Msg_Maddresslist">maddresslist&amp;app=maddresslist&amp;nerr_wdj=1</url>
+    <url name="CITEMLIST" type="1" classname=".CitemList$Msg_CitemList">citemlist&amp;app=citemlist&amp;nerr_wdj=1</url> 
+    <url name="MFAVORITEDEL" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">mfavoritedel&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="MADDRESSLISTDEL" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">maddresslistdel&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="MADDRESSLISTADD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">maddresslistadd&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="V3_PLIST" type="1" classname=".CitemList2$Msg_CitemList2">V3_PLIST&amp;app=citemlist2&amp;nerr_wdj=1</url>
+    <url name="PLIST" type="1" classname=".CitemList2$Msg_CitemList2">plist&amp;app=citemlist2&amp;nerr_wdj=1</url>
+    <url name="MMESSAGELIST" type="1" classname=".MmessageList$Msg_Mmessagelist">mmessagelist&amp;app=mmessagelist&amp;nerr_wdj=1</url>
+    <url name="ATTRIBUTE" type="1" classname=".AttributeList$Msg_AttributeList">attribute&amp;app=attributelist&amp;nerr_wdj=1</url>
+    <url name="MCOUPONSLIST" type="1" classname=".McouponsList$Msg_Mcouponslist">mcouponslist&amp;app=mcouponslist&amp;nerr_wdj=1</url>
+    <url name="MADDRESSLISTEDIT" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">maddresslistedit&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="PORDER" type="1" classname=".CitemList2$Msg_CitemList2">porder&amp;app=citemlist2&amp;nerr_wdj=1</url>
+    <url name="PDEL" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">pdel&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="PCATENUM" type="1"classname="com.mdx.mobile.base.Retn$Msg_Retn">pcatenum&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="CKEYWORDS" type="1" classname=".Ckeywords$Msg_Ckeywords">ckeywords&amp;app=ckeywords&amp;nerr_wdj=1</url>
+    <url name="BORDER" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">border&amp;app=msg_retn&amp;nerr_wdj=1</url> 
+    <url name="DLIST" type="1" classname=".CitemList$Msg_CitemList">dlist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="DCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">dcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="OFAVORITE" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">ofavorite&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="V3_PCOMMIT" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_pcommit&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="GLIST" type="1" classname=".CitemList$Msg_CitemList">glist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="PPAY" type="1" classname=".RetnPay$Msg_RetnPay">ppay&amp;app=retnpay&amp;nerr_wdj=1</url>
+    <url name="PFROMORDER" type="1" classname=".Payorder$Msg_Payorder">PFROMORDER&amp;app=payorder&amp;nerr_wdj=1</url>
+    <url name="OSENDCODE" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">osendcode&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="PPAY_S" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">ppay_s&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="OSENDMSG" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">osendmsg&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="OWMBUSINESS" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">owmbussiness&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="WMBUSINESSLIST" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">wmbusinesslist&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+   
+    <url name="SCODE" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">scode&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="FRUITCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">fruitcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+   
+    <url name="MYTXKLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">mytxklist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+    <url name="MYTXKHISLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">mytxkhilist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+     <url name="MYJFLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">myjflist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+
+    <url name="TGCATEGORY" type="1" classname=".CcommentList$Msg_CcommentList">tgcategory&amp;app=ccommentlist&amp;nerr_wdj=1</url>
+    <url name="TGAREA" type="1" classname=".CcommentList$Msg_CcommentList">tgarea&amp;app=ccommentlist&amp;nerr_wdj=1</url>
+    <url name="TGLIST" type="1" classname=".CitemList$Msg_CitemList">tglist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="FOODCATEGORY" type="1" classname=".CcommentList$Msg_CcommentList">http://life.taocz.com/life.php?app=ccommentlist&amp;act=foodcategory&amp;nerr_wdj=1</url>
+    <url name="PURPOSECATEGORY" type="1" classname=".CcommentList$Msg_CcommentList">http://life.taocz.com/life.php?app=ccommentlist&amp;act=purposecategory&amp;nerr_wdj=1</url>
+    <url name="LCONTENT" type="1" classname=".Scontent$Msg_Scontent">lcontent&amp;app=scontent&amp;nerr_wdj=1</url>
+    <url name="WMWSLIST" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">http://life.taocz.com/life.php?act=wmwslist&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+    <url name="OWMMOD" type="1" classname=".CBillList$Msg_CBillList">http://life.taocz.com/life.php?act=owmmod&amp;app=cbilllist&amp;nerr_wdj=1</url>
+    <url name="WMBILL" type="1" classname=".CBill$Msg_CBill">http://life.taocz.com/life.php?act=wmbill&amp;app=cbill&amp;nerr_wdj=1</url>
+    <url name="OWMCOMMIT" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">http://life.taocz.com/life.php?act=owmcommit&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="MCATEGORY2" type="1" classname=".CcategoryList$Msg_CcategoryList">mcategory2&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    
+    <url name="TGORDERLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">http://life.taocz.com/life.php?act=tgorderlist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+    <url name="WMWSORDERLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">http://life.taocz.com/life.php?act=wmwsorderlist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+    <url name="YYLIST" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">http://life.taocz.com/life.php?act=yylist&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+    <url name="YYCTXQ" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">http://life.taocz.com/life.php?act=yyctxq&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+    <url name="MFAVORITETG" type="1" classname=".CitemList$Msg_CitemList">mfavoritetg&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="OFAVORITETG" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">ofavoritetg&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="TGORDERDETAIL" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">http://life.taocz.com/life.php?act=tgorderdetail&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+    <url name="YYCTYDFX" type="1" classname=".CcategoryList$Msg_CcategoryList">http://life.taocz.com/life.php?act=yyctydfx&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="YYYHTCLIST" type="1" classname=".CitemList$Msg_CitemList">http://life.taocz.com/life.php?act=yyyhtclist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="YYCTYD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">http://life.taocz.com/life.php?act=yyctyd&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="MFAVORITETGDEL" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">mfavoritetgdel&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="SEARCHALL" type="1" classname=".CcategoryList$Msg_CcategoryList">searchall&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="SEARCHALLGW" type="1" classname=".CcategoryList$Msg_CcategoryList">searchallgw&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="TCOMMENTLIST" type="1" classname=".CcommentList$Msg_CcommentList">tcommentlist&amp;app=ccommentlist&amp;nerr_wdj=1</url>
+    <url name="MTGCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">http://life.taocz.com/life.php?act=mtgcategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="YYYHHD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">http://life.taocz.com/life.php?act=yyyhhd&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="YYYHYDLIST" type="1" classname=".CcategoryList$Msg_CcategoryList">http://life.taocz.com/life.php?act=yyyhydlist&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="NEARBYTGLIST" type="1" classname=".CitemList$Msg_CitemList">nearbytglist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="YYORDERLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">http://life.taocz.com/life.php?act=yyorderlist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+    <url name="YYORDERDETAIL" type="1" classname=".MorderItem$Msg_Morder_Item">http://life.taocz.com/life.php?act=yyorderdetail&amp;app=morderitem&amp;nerr_wdj=1</url>
+    <url name="TGPSERVICE" type="1" classname=".Citem$Msg_Citem">tgpservice&amp;app=citem&amp;nerr_wdj=1</url>
+    <url name="TGPPAY_S" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">http://life.taocz.com/life.php?act=tgppay_s&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="TGPFROMORDER" type="1" classname=".Payorder$Msg_Payorder">http://life.taocz.com/life.php?act=tgpfromorder&amp;app=payorder&amp;nerr_wdj=1</url>
+    <url name="JYJDLIST" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">http://life.taocz.com/life.php?act=jyjdlist&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+    <url name="JYJDFXLIST" type="1" classname=".CitemList$Msg_CitemList">http://life.taocz.com/life.php?act=jyjdfxlist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="JYJDTPLIST" type="1" classname=".CpicList$Msg_CpicList">http://life.taocz.com/life.php?act=jyjdtplist&amp;app=cpiclist&amp;nerr_wdj=1</url>
+    <url name="JYJDPLLIST" type="1" classname=".CcommentList$Msg_CcommentList">http://life.taocz.com/life.php?act=jyjdpllist&amp;app=ccommentlist&amp;nerr_wdj=1</url>
+    <url name="NJLLIST" type="1" classname=".CbusinessinfoList$Msg_CbusinessinfoList">http://life.taocz.com/life.php?act=njllist&amp;app=cbusinessinfolist&amp;nerr_wdj=1</url>
+    <url name="JYJDYD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">http://life.taocz.com/life.php?act=jyjdyd&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="JYTJORDERLIST" type="1" classname=".Msg_Morder_Business$Msg_MorderBusiness">http://life.taocz.com/life.php?act=jytjorderlist&amp;app=morderbusiness&amp;nerr_wdj=1</url>
+    <url name="JYTJORDERDETAILS" type="1" classname=".MorderItem$Msg_Morder_Item">http://life.taocz.com/life.php?act=jytjorderdetails&amp;app=morderitem&amp;nerr_wdj=1</url>
+    <url name="TGPPAY" type="1" classname=".RetnPay$Msg_RetnPay">tgppay&amp;app=retnpay&amp;nerr_wdj=1</url>
+    
+  	<url name="V3_GETCOUPONLIST" type="1" classname=".CcategoryList$Msg_CcategoryList">v3_getcouponlist&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+  	<url name="v3_commitcoupon" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_commitcoupon&amp;app=v3retn&amp;nerr_wdj=1</url>
+  	<url name="v3_index" type="1" classname=".Index$Msg_Index">v3_index&amp;app=index&amp;nerr_wdj=1</url>
+  	<url name="v3_category" type="1" classname=".CcommentList$Msg_CcommentList">v3_category&amp;app=ccommentlist&amp;nerr_wdj=1</url>
+    <url name="V3_FILTERLIST" type="1" classname=".CcategoryList$Msg_CcategoryList">v3_filterlist&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="SCONTENT" type="1" classname=".Scontent$Msg_Scontent">scontent&amp;app=scontent&amp;nerr_wdj=1</url> 
+    <url name="V3_ZTPLACESLIST" type="1" classname=".CcategoryList$Msg_CcategoryList">v3_ztplaceslist&amp;app=ccategorylist&amp;nerr_wdj=1</url> 
+    <url name="V3_ZTAREALIST" type="1" classname=".CcategoryList$Msg_CcategoryList">v3_ztarealist&amp;app=ccategorylist&amp;nerr_wdj=1</url> 
+    <url name="V3_LOGIN" type="1" classname=".Ccategory$Msg_Ccategory">v3_login&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="V3_ADLIST" type="1" classname=".Mmessage$Msg_Mmessage">v3_adlist&amp;app=mmessagelist&amp;nerr_wdj=1</url>
+    <url name="V3_SLIST" type="1" classname=".CitemList$Msg_CitemList">v3_slist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_PLORDER" type="1" classname=".CitemList2$Msg_CitemList2">v3_plorder&amp;app=citemlist2&amp;nerr_wdj=1</url>
+    <url name="V3_OYDCOIN" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_oydcoin&amp;app=v3retn&amp;nerr_wdj=1</url>
+    <url name="V3_OTCARD" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_otcard&amp;app=v3retn&amp;nerr_wdj=1</url>
+    <url name="V3_REGIST" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_regist&amp;app=v3retn&amp;nerr_wdj=1</url>
+    <url name="V3_VERIFICATION" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_verification&amp;app=msg_retn&amp;nerr_wdj=1</url>
+    <url name="ORDERINFO" type="1" classname=".CBill$Msg_CBill">orderinfo&amp;app=cbill&amp;nerr_wdj=1</url>
+    <url name="V3_LOADIMG" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">v3_loadimg&amp;app=v3retn&amp;nerr_wdj=1</url>
+    <url name="V3_STORELIST" type="1" classname=".CitemList$Msg_CitemList">v3_storelist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_XCECSLOGIN" type="1" classname=".CcategoryList$Msg_CcategoryList">V3_XCECSLOGIN&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="V3_ACTIVITYLIST" type="1" classname=".Citem$Msg_Citem">v3_activitylist&amp;app=citem&amp;nerr_wdj=1</url>
+    <url name="V3_ADDACTIVITY" type="1" classname=".Citem$Msg_Citem">v3_addactivity&amp;app=citem&amp;nerr_wdj=1</url>
+    <url name="V3_PAYACTIVITY" type="1" classname=".RetnPay$Msg_RetnPay">v3_payactivity&amp;app=retnpay&amp;nerr_wdj=1</url>
+    <url name="V3_COUPONLIST" type="1" classname=".CitemList$Msg_CitemList">v3_couponlist&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_TEJIA" type="1" classname=".CitemList$Msg_CitemList">v3_tejia&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_SLIST_WEI" type="1" classname=".CitemList$Msg_CitemList">v3_slist_wei&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_STORELIST_WEI" type="1" classname=".CitemList$Msg_CitemList">v3_storelist_wei&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_CATEGORY_WEI" type="1" classname=".CcategoryList$Msg_CcategoryList">v3_category_wei&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+    <url name="V3_GOSECKILL_NEW" type="1" classname=".Citem$Msg_Citem">V3_GOSECKILL_NEW&amp;app=citem&amp;nerr_wdj=1</url>
+     
+    
+    
+    <url name="V3_LIANGFAN" type="1" classname=".CitemList$Msg_CitemList">V3_LIANGFAN&amp;app=citemlist&amp;nerr_wdj=1</url>
+    <url name="V3_LIANGFAN_SCONTENT" type="1" classname=".Scontent$Msg_Scontent">V3_LIANGFAN_SCONTENT&amp;app=scontent&amp;nerr_wdj=1</url> 
+    <url name="MAppList" type="1" classname="com.tcz.ehour.protobuf.MApp$Msg_AppList">http://longre.cms.iappk.com/ehour/mobile?methodno=MAppList</url>
+    <url name="CANCELORDER" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">CANCELORDER&amp;app=msg_retn&amp;nerr_wdj=1</url>
+
+
+    <url name="COMTROL" type="21" cachetime="60000" classname="com.tcz.ctrl.protobuf.MModule$Msg_ModuleList">http://10.49.58.213/ctrl/mobile?methodno=MModuleList&amp;deviceid=1&amp;appid=1</url>
+    
+     <url name="INDEX_CATEGORY" type="1" classname=".IsubjectList$Msg_IsubjectList">index_category&amp;app=index&amp;nerr_wdj=1</url>
+     <url name="INDEX_PURCHASE" type="1" classname=".CpicList$Msg_CpicList">index_purchase&amp;app=index&amp;nerr_wdj=1</url>
+     <url name="INDEX_SALSE" type="1" classname=".CpicList$Msg_CpicList">INDEX_SALSE&amp;app=index&amp;nerr_wdj=1</url>
+     <url name="INDEX_SUBJECT" type="1" classname=".IsubjectList$Msg_IsubjectList">INDEX_SUBJECT&amp;app=index&amp;nerr_wdj=1</url>
+     <url name="V3_GOSECKILL_COMMIT_NEW" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">V3_GOSECKILL_COMMIT_NEW&amp;app=msg_retn&amp;nerr_wdj=1</url>
+     <url name="V3_GOODS_BOOKING" type="1" classname=".CitemList$Msg_CitemList">V3_GOODS_BOOKING&amp;app=citemlist&amp;nerr_wdj=1</url>
+     <url name="V3_SCONTENT" type="1" classname=".Scontent$Msg_Scontent">V3_SCONTENT&amp;app=scontent&amp;nerr_wdj=1</url> 
+     <url name="V3_SCONTENT_NEW" type="1" classname=".Scontent$Msg_Scontent">V3_SCONTENT_NEW&amp;app=scontent&amp;nerr_wdj=1</url> 
+     <url name="V3_PORDER" type="1" classname=".CitemList2$Msg_CitemList2">V3_PORDER&amp;app=citemlist2&amp;nerr_wdj=1</url>
+     <url name="V3_INDEX_NEW" type="1" classname=".CitemList2$Msg_CitemList2">V3_INDEX_NEW&amp;app=citemlist2&amp;nerr_wdj=1</url>
+     <url name="V3_SELECTGOODS" type="1" classname="com.mdx.mobile.base.Retn$Msg_Retn">V3_SELECTGOODS&amp;app=msg_retn&amp;nerr_wdj=1</url>
+     <url name="V3_STOREINFO" type="1" classname=".CitemList$Msg_CitemList">V3_STOREINFO&amp;app=citemlist&amp;nerr_wdj=1</url>
+     <url name="V3_AD" type="1" classname=".CitemList2$Msg_CitemList2">V3_AD&amp;app=citemlist2&amp;nerr_wdj=1</url>
+     <url name="V3_SCATEGORY" type="1" classname=".CcategoryList$Msg_CcategoryList">v3_scategory&amp;app=ccategorylist&amp;nerr_wdj=1</url>
+</FrameInit>

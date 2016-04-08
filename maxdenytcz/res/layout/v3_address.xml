@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <RadioGroup
+        android:id="@+v3_address/group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+v3_address/btn1"
+            style="@style/radioButton1"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="送货上门"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+v3_address/btn2"
+            style="@style/radioButton1"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:text="代收货（自提）"
+            android:textColor="#333333" />
+    </RadioGroup>
+
+    <com.mdx.mobile.widget.AMLayout
+        android:id="@+v3_address/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

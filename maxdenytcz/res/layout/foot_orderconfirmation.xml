@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/bg_frame_gray" >
+
+        <LinearLayout
+            android:id="@+foot_orderconfirmation/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#88eeeeee"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+foot_orderconfirmation/tx_sendtime"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/line_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+foot_orderconfirmation/layout_fapiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/bg_frame_gray" >
+
+        <LinearLayout
+            android:id="@+foot_orderconfirmation/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#88eeeeee"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+foot_orderconfirmation/tx_invoice"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:text="@string/orderconfirmation_text4"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/line_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+foot_orderconfirmation/layout2"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <EditText
+                android:id="@+foot_orderconfirmation/ed_fapiaotaitou"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:background="@drawable/edit_com"
+                android:hint="@string/orderconfirmation_text5"
+                android:textColorHint="@color/hinttext" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

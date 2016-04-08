@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_frame_gray" >
+
+        <RelativeLayout
+            android:id="@+v3_foot_orderconfirmation/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/clic_gray"
+            android:clickable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <EditText
+                android:id="@+v3_foot_orderconfirmation/ed_fapiaotaitou"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="索取发票，填写发票抬头"
+                android:inputType="text"
+                android:textColor="@color/textColor_666666" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/com_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!-- android:background="@drawable/three_bg" -->
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+id/img"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_marginLeft="8dip"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@+id/categorylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dip" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:maxLength="16"
+            android:textSize="15sp"
+            android:textColor="#333333" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_marginTop="4dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="11sp"
+            android:textColor="#666666" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00FFFFFF</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="no_title_bar" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="no_title_bar_nozoom" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimationActivity</item>
+    </style>
+
+    <style name="NoAnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/zoom_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/zoom_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/zoom_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/zoom_right_out</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimationActivity</item>
+    </style>
+
+    <style name="RDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="text14_808080">
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text16_ffffff">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text16_333333">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="radioButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobtn_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="radioButton1">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rbt_me</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="toolbar_text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LoginCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ShopCartCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_shopcart_check</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text13">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text24">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="text22">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="text20">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text11">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="sysmenu">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#8c8c8c</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">@drawable/sysmenu_item_background</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="headtext">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="bt_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="attribute_select_botton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/bg_attribute_buttom_a</item>
+        <item name="android:textColor">@drawable/bg_attribute_buttom_b</item>
+    </style>
+
+    <style name="FullWindowDialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="item_index_grid_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="item_index_grid_text2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <!-- Styles for 320*480 size -->
+    <style name="AlipayBGCanvas320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+	<item name="android:layout_marginTop">2dp</item>
+	<item name="android:layout_marginBottom">2dp</item>
+	<item name="android:layout_marginLeft">2dp</item>
+	<item name="android:layout_marginRight">2dp</item>
+        -->
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="AlipayInputCanvas320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="InputLongNameTextBeforeEdit320x480">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="InfoText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/TextColorRed</item>
+        <item name="android:textSize">16dp</item>
+	--></style>
+
+    <style name="AlipayInputLongNameText320x480">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+	<item name="android:layout_centerVertical">true</item>
+	<item name="android:singleLine">true</item>
+	<item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+
+    <style name="InputLongNameBeforeEditText320x480">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AlipayInputContentText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+	<item name="android:layout_centerVertical">true</item>
+	<item name="android:singleLine">true</item>
+	<item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+
+    <style name="AlipayDealQueryContentText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AlipayNormalText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AlipayListInfoMoneyText320x480">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">right</item>
+        <!--
+	<item name="android:layout_centerVertical">true</item>
+	<item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+
+    <style name="AlipayListInfoCenterText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <!--
+	<item name="android:layout_centerInParent">true</item>
+	<item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+
+    <style name="AlipayListInfoLineText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+	<item name="android:textStyle">bold</item>
+	<item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+
+    <style name="AlipayMoneyUnit320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">16dp</item>
+        <!-- <item name="android:layout_centerVertical">true</item> -->
+    </style>
+
+    <style name="AlipayInputEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">64</item>
+        <item name="android:textSize">16dp</item>
+        <!-- <item name="android:layout_centerVertical">true</item> -->
+    </style>
+
+    <style name="AlipayLoginPasswordInputEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:password">true</item>
+        <item name="android:textSize">16dp</item>
+        <!-- <item name="android:layout_centerVertical">true</item> -->
+    </style>
+
+    <style name="AlipayEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="AlipayMoneyInputEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">64</item>
+        <item name="android:numeric">decimal</item>
+        <item name="android:textSize">16dp</item>
+        <!-- <item name="android:layout_centerVertical">true</item> -->
+    </style>
+
+    <style name="AlipayNormalButtonStyle320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="AlipayRadioButtonStyle320x480">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/TextColorBlack</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="AlipayInfoText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+    <!-- 建行样式 -->
+    <style name="ccb_pay_titleBar">
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:background">@drawable/ccb_pay_title_background</item>
+        <item name="android:paddingLeft">@dimen/back_paddingleft</item>
+        <item name="android:paddingRight">@dimen/back_paddingleft</item>
+    </style>
+
+    <style name="ccb_pay_titleBarLoginChange">
+        <item name="android:layout_height">@dimen/titile_firstlogin_height</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="ccb_pay_titleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/ccb_pay_white</item>
+        <item name="android:textSize">@dimen/title</item>
+    </style>
+
+    <style name="ccb_pay_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/side_padding</item>
+    </style>
+
+    <style name="ccb_pay_linear2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ccb_pay_listview3">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:padding">@dimen/listpadding</item>
+    </style>
+
+    <style name="ccb_pay_contentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/title_button2</item>
+        <item name="android:paddingTop">@dimen/listpadding</item>
+        <item name="android:paddingBottom">@dimen/listpadding</item>
+    </style>
+
+    <style name="ccb_pay_contentText2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/title_button2</item>
+    </style>
+
+    <style name="ccb_pay_contentText3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listspinner</item>
+    </style>
+
+    <style name="ccb_pay_contentTextListItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listitem_name</item>
+        <item name="android:paddingLeft">@dimen/devider_height</item>
+        <item name="android:paddingTop">@dimen/devider_height3</item>
+    </style>
+
+    <style name="ccb_pay_contentTextFirtstLoginTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/title_firstlogin_button</item>
+        <item name="android:paddingLeft">@dimen/bottom_height</item>
+        <item name="android:paddingTop">@dimen/devider_height3</item>
+    </style>
+
+    <style name="ccb_pay_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/left_right_padding</item>
+        <item name="android:paddingRight">@dimen/left_right_padding</item>
+        <item name="android:paddingTop">@dimen/devider_height3</item>
+        <item name="android:paddingBottom">@dimen/devider_height3</item>
+    </style>
+
+    <style name="ccb_pay_item2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/left_right_padding</item>
+        <item name="android:paddingRight">@dimen/left_right_padding</item>
+    </style>
+
+    <style name="ccb_pay_item3">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/devider_height3</item>
+    </style>
+
+    <style name="ccb_pay_listInput1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/ccb_pay_gray</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listinput</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ccb_pay_listInput2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/titile_firstlogin_height</item>
+        <item name="android:textColorHint">@color/ccb_pay_gray</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listinput</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ccb_pay_listInputET">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listinput</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ccb_pay_list2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/listpaddingtwo</item>
+        <item name="android:background">@drawable/ccb_pay_listbg</item>
+    </style>
+
+    <style name="ccb_pay_devider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/devider</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/ccb_pay_black</item>
+    </style>
+
+    <style name="ccb_pay_listInput">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/ccb_pay_gray</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listinput</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="ccb_pay_listItemDes">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listitem_des</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="ccb_pay_listItemDes2">
+        <item name="android:layout_width">@dimen/imagewidght</item>
+        <item name="android:layout_height">@dimen/imageheight</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/ccb_pay_black</item>
+        <item name="android:textSize">@dimen/listitem_des</item>
+    </style>
+
+    <style name="LoginCheckBox1" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_login1</item>
+    </style>
+
+    <style name="bshare_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <style name="V3_CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/v3_rbt_checkbox</item>
+    </style>
+
+    <style name="lockCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/wbshare_lock_box</item>
+    </style>
+
+    <style name="MMButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/mm_btn_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
+
+    <style name="MMLineButton" parent="@style/MMButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mm_style_two_btn_text</item>
+    </style>
+
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="MMLineActionButton" parent="@style/MMLineButton">
+        <item name="android:background">@drawable/btn_style_one</item>
+        <item name="android:textColor">@color/mm_style_one_btn_text</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="MMPreferenceTextSmall">
+        <item name="android:textSize">@dimen/SmallTextSize</item>
+        <item name="android:textColor">@color/mm_pref_summary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MMFontPreferenceSmall">
+        <item name="android:textAppearance">@style/MMPreferenceTextSmall</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:shadowColor">#A0FFFFFF</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="MMFontPreferenceSummary" parent="MMFontPreferenceSmall">
+        <item name="android:textAppearance">@style/MMPreferenceTextSmall</item>
+        <item name="android:textSize">@dimen/BasicTextSize</item>
+    </style>
+
+    <style name="MMFontPreferenceLarge">
+        <item name="android:textAppearance">@style/MMPreferenceTextLarge</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MMPreferenceTextLarge">
+        <item name="android:textSize">@dimen/LargeTextSize</item>
+        <item name="android:textColor">@color/mm_pref_title</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MMCheckBox">
+        <item name="android:background">@drawable/mm_checkbox_btn</item>
+    </style>
+
+    <style name="DataSheetAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+    </style>
+
+    <style name="MyRatingBar3" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/myratingbar3</item>
+        <item name="android:minHeight">29.3dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/myratingbar</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="home_page_search_title">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="LoginCheckBox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_login2</item>
+    </style>
+
+</resources>

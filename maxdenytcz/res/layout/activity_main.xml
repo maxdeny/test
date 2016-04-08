@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+activity_main/auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onOauth"
+        android:text="微博认证OAUTH2.0" />
+
+    <Button
+        android:id="@+activity_main/sso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+activity_main/auth"
+        android:text="单点登录sso"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+activity_main/show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+activity_main/auth"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+activity_main/apiCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+activity_main/sso"
+        android:text="注销"
+        android:visibility="invisible" />
+
+</RelativeLayout>

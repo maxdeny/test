@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+tczv3/headlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@color/head_color"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+tczv3/back"
+            style="@style/text16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tczv3_icon_back"
+            android:gravity="center"
+            android:text="返回" />
+
+        <Button
+            android:id="@+tczv3/bt_search"
+            style="@style/text14"
+            android:layout_width="fill_parent"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="40dip"
+            android:layout_toRightOf="@+tczv3/back"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:paddingLeft="10dip" />
+
+        <Button
+            android:id="@+tczv3/bt_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tczv3_icon_more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+tczv3/radio_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_below="@+tczv3/headlayout"
+        android:orientation="horizontal" >
+
+        <!-- android:background="@drawable/rbt_com_list" -->
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+tczv3/rbt_sale"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v3_radio_click3"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/shopping_rdb_sale"
+                android:textColor="@color/text333333" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_shu" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+tczv3/price"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="47dip"
+                android:background="@drawable/v3_radio3"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/shopping_rdb_price"
+                android:textColor="@color/merchantsinfo_text1" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_shu" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+tczv3/rbt_pingjia"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v3_radio5"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="好评"
+                android:textColor="@color/text333333" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_shu" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+tczv3/bt_shaixuan"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v3_radio0"
+                android:text="筛选"
+                android:textColor="@color/text333333" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+tczv3/line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+tczv3/radio_layout"
+        android:background="@drawable/line_gray" />
+
+    <TextView
+        android:id="@+id/norows"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+tczv3/line"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+tczv3/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/norows"
+        android:layout_marginTop="-30dp"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line_gray"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false" >
+    </com.mdx.mobile.widget.PageListView>
+
+    <RelativeLayout
+        android:id="@+tczv3/chart"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ico_cart1" />
+
+        <TextView
+            android:id="@+tczv3/carnumber"
+            style="@style/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tczv3_gouwunumber"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+tczv3/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</RelativeLayout>

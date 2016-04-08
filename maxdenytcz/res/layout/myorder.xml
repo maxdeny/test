@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+myorder_act/headlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <Button
+            android:id="@+myorder_act/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/head_left"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+myorder_act/text"
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myorder" />
+
+        <Button
+            android:id="@+myorder_act/saixuan"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_head_left"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="筛选"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index2" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio_shop"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_shop"
+                style="@style/text"
+                android:layout_height="36.7dip"
+                android:layout_weight="1"
+                android:background="@drawable/bt_favorite_radiobtn"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/line_favorite_cutradiobtn"
+                android:gravity="center"
+                android:text="@string/myorderunfinish"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radio_life"
+                style="@style/text"
+                android:layout_height="36.7dip"
+                android:layout_weight="1"
+                android:background="@drawable/bt_favorite_radiobtn"
+                android:button="@null"
+                android:drawableRight="@drawable/line_favorite_cutradiobtn"
+                android:gravity="center"
+                android:text="@string/myorderfinish"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radio_takeout"
+                style="@style/text"
+                android:layout_height="36.7dip"
+                android:layout_weight="1"
+                android:background="@drawable/bt_favorite_radiobtn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/myordercancel"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <com.wjwl.mobile.taocz.widget.CurrView4Fav
+            android:id="@+id/favorite_cv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/line_favorite_radiobtnbottom" />
+    </FrameLayout>
+
+    <com.mdx.mobile.widget.AMLayout
+        android:id="@+id/favorite_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

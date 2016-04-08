@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<ScrollView 
+      android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@color/head_color"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+<!-- 
+        <Button
+            android:id="@+actpay_confirmation/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    -->     
+        
+    <TextView
+        android:id="@+actpay_confirmation/back"
+        style="@style/text16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/tczv3_icon_back"
+        android:gravity="center"
+        android:text="返回" />
+    
+    
+
+        <TextView
+            android:id="@+actpay_confirmation/headtitle"
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+actpay_confirmation/submit"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/headv3_right"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+actpay_confirmation/image"
+        android:layout_width="260dip"
+        android:layout_height="180dip"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_l_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <TextView
+                android:id="@+actpay_confirmation/t_text1"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="商品名称："
+                android:textColor="@color/text272727" />
+
+            <TextView
+                android:id="@+actpay_confirmation/name"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+actpay_confirmation/t_text1"
+                android:singleLine="true"
+                android:textColor="@color/text272727" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <TextView
+                android:id="@+actpay_confirmation/t_text2"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="商品价格："
+                android:textColor="@color/text272727" />
+
+            <TextView
+                android:id="@+actpay_confirmation/price"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+actpay_confirmation/t_text2"
+                android:textColor="@color/TextColorRed" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+actpay_confirmation/price"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+actpay_confirmation/btn_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dip"
+                    android:background="@drawable/cart_plus_unenable"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+actpay_confirmation/productnumvalue"
+                    style="@style/text"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tu"
+                    android:gravity="center"
+                    android:textColor="#636363" />
+
+                <Button
+                    android:id="@+actpay_confirmation/btn_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:background="@drawable/cart_minus"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+actpay_confirmation/layout_sendtime"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/clic_gray"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <TextView
+                android:id="@+actpay_confirmation/t_text3"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="送达时间："
+                android:textColor="@color/text272727" />
+
+            <TextView
+                android:id="@+actpay_confirmation/date"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+actpay_confirmation/t_text3"
+                android:singleLine="true"
+                android:text="2013-2-30 ~ 2014-3-1"
+                android:textColor="@color/text272727" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/more_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+actpay_confirmation/address_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/clic_gray"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+
+            <TextView
+                android:id="@+actpay_confirmation/t_text4"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="送货地址："
+                android:textColor="@color/text272727" />
+
+            <TextView
+                android:id="@+actpay_confirmation/address"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+actpay_confirmation/t_text4"
+                android:singleLine="true"
+                android:textColor="@color/text272727" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/more_arrow" />
+        </RelativeLayout>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_gray" />
+         <TextView
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:id="@+actpay_confirmation/t_text5"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="支付方式："
+                android:textColor="@color/text272727" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+actpay_confirmation/ico_back"
+                android:layout_width="102dip"
+                android:layout_height="36dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+actpay_confirmation/t_text5" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+actpay_confirmation/layzfb"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+actpay_confirmation/checkbox2"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_zfb" />
+                    </LinearLayout>
+                    
+                  <!-- 农行支付 -->
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+actpay_confirmation/laynh"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+actpay_confirmation/nh_checkbox6"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_nyyh" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <!-- 建行支付 -->
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+actpay_confirmation/layjh"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+actpay_confirmation/jh_checkbox2"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_jsyh" />
+                    </LinearLayout>
+                    
+                    <!-- 中行支付 -->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+actpay_confirmation/layzh"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+actpay_confirmation/zh_checkbox5"
+                            android:layout_width="137dip"
+                            android:layout_height="49dip"
+                            android:button="@drawable/chk_zgyh" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_gray" />
+
+    <Button
+        android:id="@+actpay_confirmation/bt_pay"
+        style="@style/text16"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/bt_reg"
+        android:text="立即支付"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

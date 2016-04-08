@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+<RelativeLayout 
+    android:id="@+scolleritema1/linear"
+    android:layout_width="130dip"
+    android:layout_height="180dip"
+    android:background="@color/white"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+scolleritema1/img"
+            android:layout_width="110dip"
+            android:layout_height="120dip"
+            android:background="#f2f4f6"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+scolleritema1/zhekou"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="5.0折"
+            android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_below="@+scolleritema1/img"
+        android:id="@+scolleritema1/contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="最讨厌猕猴桃"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_below="@+scolleritema1/contents"
+            android:id="@+scolleritema1/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_below="@+scolleritema1/contents"
+            android:layout_toRightOf="@+scolleritema1/tv_1"
+            android:id="@+scolleritema1/pricex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130.0"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_below="@+scolleritema1/contents"
+            android:layout_toRightOf="@+scolleritema1/pricex"
+            android:id="@+scolleritema1/pricey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:text="￥150.0"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+     </RelativeLayout>
+    <!-- 第二块 -->
+    
+   <RelativeLayout 
+    android:id="@+scolleritema2/linear"
+    android:layout_width="130dip"
+    android:layout_height="180dip"
+    android:background="@color/white"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+scolleritema2/img"
+            android:layout_width="110dip"
+            android:layout_height="120dip"
+            android:background="#f2f4f6"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+scolleritema2/zhekou"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="5.0折"
+            android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_below="@+scolleritema2/img"
+        android:id="@+scolleritema2/contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="最讨厌猕猴桃"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_below="@+scolleritema2/contents"
+            android:id="@+scolleritema2/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_below="@+scolleritema2/contents"
+            android:layout_toRightOf="@+scolleritema2/tv_1"
+            android:id="@+scolleritema2/pricex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130.0"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_below="@+scolleritema2/contents"
+            android:layout_toRightOf="@+scolleritema2/pricex"
+            android:id="@+scolleritema2/pricey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:text="￥150.0"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+     </RelativeLayout>
+</LinearLayout>

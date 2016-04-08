@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+reg/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            style="@style/headtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/head_reg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+reg/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+reg/layout1"
+        android:layout_marginLeft="6.7dip"
+        android:layout_marginRight="6.7dip"
+        android:layout_marginTop="14.7dip"
+        android:background="@drawable/bg_frame_gray" >
+
+        <LinearLayout
+            android:id="@+reg/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+reg/tv_username"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="@string/login_accname"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+reg/edit_accname"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_weight="7"
+                android:background="@drawable/edit_com"
+                android:hint="@string/hint_accname"
+                android:textColorHint="@color/hinttext" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+reg/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+reg/clic_layout1"
+            android:background="@drawable/line_gray" />
+
+        <LinearLayout
+            android:id="@+reg/clic_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+reg/line1"
+            android:gravity="center_vertical"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+reg/tv_password"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="@string/login_password"
+                android:textColor="@color/textColor" >
+            </TextView>
+
+            <EditText
+                android:id="@+reg/edit_password"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_weight="7"
+                android:background="@drawable/edit_com"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hinttext" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+reg/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+reg/clic_layout2"
+            android:background="@drawable/line_gray" />
+
+        <LinearLayout
+            android:id="@+reg/clic_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+reg/line2"
+            android:gravity="center_vertical"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+reg/tv_secpassword"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="@string/reg_secpassword"
+                android:textColor="@color/textColor" >
+            </TextView>
+
+            <EditText
+                android:id="@+reg/edit_secpassword"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_weight="7"
+                android:background="@drawable/edit_com"
+                android:hint="@string/hint_secpassword"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hinttext" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+reg/line3"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+reg/clic_layout3"
+            android:background="@drawable/line_gray" />
+
+        <LinearLayout
+            android:id="@+reg/clic_layout4"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+reg/line3"
+            android:gravity="center_vertical"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+reg/tv_phone"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="@string/reg_phone"
+                android:textColor="@color/textColor" >
+            </TextView>
+
+            <EditText
+                android:id="@+reg/edit_phone"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_weight="7"
+                android:background="@drawable/edit_com"
+                android:hint="@string/hint_phone"
+                android:inputType="number"
+                android:textColorHint="@color/hinttext" />
+
+            <Button
+                android:id="@+reg/bt_getvercode"
+                style="@style/text13"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="5"
+                android:background="@drawable/bt_com_getvercode"
+                android:gravity="center"
+                android:text="@string/com_getvercode"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+reg/line4"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+reg/clic_layout4"
+            android:background="@drawable/line_gray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+reg/clic_layout5"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+reg/lin3"
+            android:gravity="center_vertical"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+reg/tv_vercode"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="@string/com_vercode"
+                android:textColor="@color/textColor" >
+            </TextView>
+
+            <EditText
+                android:id="@+reg/edit_vercode"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_weight="7"
+                android:background="@drawable/edit_com"
+                android:hint="@string/hint_vercode"
+                android:inputType="number"
+                android:textColorHint="@color/hinttext" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+reg/line5"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+reg/clic_layout5"
+            android:background="@drawable/line_gray"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+reg/clic_layout6"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+reg/line4"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <CheckBox
+                android:id="@+reg/checkbox"
+                style="@style/LoginCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:text="@string/reg_visblepassword"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+reg/line6"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+reg/clic_layout6"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+reg/clic_layout7"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+reg/line6"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <Button
+                android:id="@+reg/bt_reg"
+                style="@style/bt_text"
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_login_login"
+                android:text="@string/reg_reg"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

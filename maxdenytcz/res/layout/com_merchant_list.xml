@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+merchant/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+merchant/head_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="20dip"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+merchant/back"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+merchant/viewline"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+merchant/layout"
+        android:background="@drawable/bg_index2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+merchant/viewline" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+merchant/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+            <ListView
+                android:id="@+merchant/merchantlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_gray" />
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+</RelativeLayout>

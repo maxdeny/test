@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dip"
+    android:layout_height="wrap_content"
+    android:background="#90333333"
+    android:paddingBottom="25.0dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5.0dip" >
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+cameradialog/contain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dp"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+dialog/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/dialog_icon" />
+
+        <TextView
+            android:id="@+dialog/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+dialog/icon"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+cameradialog/capture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+cameradialog/contain"
+        android:background="@drawable/dialog_up"
+        android:gravity="left|center"
+        android:paddingBottom="15.0dip"
+        android:paddingTop="15.0dip"
+        android:text="分享到微博"
+        android:textColor="@drawable/me_view_btn_textcolor"
+        android:textSize="20.0sp" />
+
+    <Button
+        android:id="@+cameradialog/pick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+cameradialog/capture"
+         android:background="@drawable/dialog_down"
+        android:gravity="left|center"
+        android:paddingBottom="15.0dip"
+        android:paddingTop="15.0dip"
+        android:text="分享到微信"
+        android:textColor="@drawable/me_view_btn_textcolor"
+        android:textSize="20.0sp" />
+
+</RelativeLayout>

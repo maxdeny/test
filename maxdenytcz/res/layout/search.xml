@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <View
+            android:id="@+search/title"
+            android:layout_width="53dip"
+            android:layout_height="23dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/head_redandorg_title" />
+
+        <EditText
+            android:id="@+search/edit_search"
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="34.7dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+search/title"
+            android:background="@drawable/edit_index_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/index_search_hint"
+            android:maxLines="1"
+            android:paddingLeft="60dip"
+            android:paddingRight="51dip"
+            android:textColorHint="@color/hinttext" />
+
+        <Button
+            android:id="@+search/speakbutton"
+            android:layout_width="15dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_index_speak"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+search/searchbutton"
+            android:layout_width="49dip"
+            android:layout_height="33.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0.1dip"
+            android:background="@drawable/btn_index_search"
+            android:gravity="center"
+            android:text="@string/index_search"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+search/cancel"
+            android:layout_width="16.7dip"
+            android:layout_height="16.7dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="88dip"
+            android:background="@drawable/btn_index_delete" />
+
+        <com.wjwl.mobile.taocz.widget.PopubLayout
+            android:id="@+search/popublayout"
+            android:layout_width="wrap_content"
+            android:layout_height="34.7dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+search/title" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="26dp"
+        android:paddingTop="3dp"
+        android:text="@string/shake_text"
+        android:textColor="#606060"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+search/initlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

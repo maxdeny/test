@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/myinfo_list"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="13dip"
+    android:paddingRight="13dip"
+    android:layout_height="40dip" >
+
+    <ImageView
+        android:id="@+item_info/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_marginLeft="10dip"
+        android:id="@+item_info/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@item_info/icon"
+        android:layout_centerVertical="true"
+        android:textColor="#494949"
+        style="@style/text" />
+
+    <ImageView
+        android:id="@+item_info/arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+item_info/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dip"
+        android:textColor="#e73600"
+        style="@style/text" />
+
+</RelativeLayout>

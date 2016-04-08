@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/taomyinfo"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myinfo_personbg"
+            android:padding="8dip" >
+
+            <com.mdx.mobile.widget.MImageView
+                android:id="@+id/userhead"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/myinfo_person" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" >
+
+            <TextView
+                android:id="@+id/username"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:textColor="#494949" />
+
+            <TextView
+                android:id="@+id/taocard"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:text="@string/taomoney"
+                android:textColor="#494949" />
+
+            <TextView
+                android:id="@+id/taocardmoney"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/username"
+                android:layout_toRightOf="@id/taocard"
+                android:textColor="#e23500" />
+
+            <TextView
+                android:id="@+id/t_money"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/taocardmoney"
+                android:text="@string/myinfo_money"
+                android:textColor="#494949" />
+
+            <TextView
+                android:id="@+id/money"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/taocardmoney"
+                android:layout_toRightOf="@id/taocard"
+                android:textColor="#e23500" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_xgray"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+id/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_xgray" >
+            </ListView>
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_xgray"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

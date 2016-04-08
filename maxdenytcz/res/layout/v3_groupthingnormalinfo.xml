@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.mdx.mobile.widget.MScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <!-- 拖动图片 -->
+
+            <LinearLayout
+                android:id="@+groupthingnormalinfo/img_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <com.wjwl.mobile.taocz.widget.DragChangeView
+                    android:id="@+groupthingnormalinfo/DragChangeView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginBottom="5dip" >
+                </com.wjwl.mobile.taocz.widget.DragChangeView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+groupthingnormalinfo/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+groupthingnormalinfo/img_layout"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+groupthingnormalinfo/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+groupthingnormalinfo/line1"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <TextView
+                    style="@style/headtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张凯牌蛋糕"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+groupthingnormalinfo/layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="bottom"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+groupthingnormalinfo/t_tczprice"
+                            style="@style/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="淘常州价："
+                            android:textColor="@color/textColor_666666" />
+
+                        <TextView
+                            android:id="@+groupthingnormalinfo/t_fuhao"
+                            style="@style/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="@color/sysset_red" />
+
+                        <TextView
+                            android:id="@+groupthingnormalinfo/tczprice"
+                            style="@style/headtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="68"
+                            android:textColor="@color/sysset_red" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+groupthingnormalinfo/oldprice"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dip"
+                        android:layout_toRightOf="@+groupthingnormalinfo/layout2"
+                        android:text="￥68"
+                        android:textColor="@color/textColor_666666" />
+
+                    <TextView
+                        android:id="@+groupthingnormalinfo/sellnum"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="已售：68"
+                        android:textColor="@color/textColor_666666" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+groupthingnormalinfo/line2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+groupthingnormalinfo/layout1"
+                android:background="@drawable/line_gray" />
+
+            <TextView
+                android:id="@+groupthingnormalinfo/name"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+groupthingnormalinfo/line2"
+                android:layout_margin="10dip"
+                android:text="阿明蛋糕" />
+
+            <TextView
+                android:id="@+groupthingnormalinfo/info"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+groupthingnormalinfo/name"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="" />
+        </RelativeLayout>
+    </com.mdx.mobile.widget.MScrollView>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <Button
+            android:id="@+v3_registerstpe2/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/head_reg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+v3_registerstpe2/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+v3_registerstpe2/layout_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+v3_registerstpe2/t_title"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号："
+                android:textColor="@color/textColor_666666" />
+
+            <TextView
+                android:id="@+v3_registerstpe2/title"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13776898765"
+                android:textColor="@color/textColor_666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+v3_registerstpe2/layout_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_frame_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码："
+                android:textColor="@color/textColor_666666" />
+
+            <EditText
+                android:id="@+v3_registerstpe2/ed_vertifycode"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <Button
+                android:id="@+v3_registerstpe2/bt_getvertifycode"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_weight="1"
+                android:background="@drawable/bt_com_gray"
+                android:text="重新获取验证码"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+v3_registerstpe2/bt_sumbit"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="34dip"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:background="@drawable/bt_com_orange"
+                android:text="提交验证码"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:text="@string/kfrx" />
+    </RelativeLayout>
+
+</LinearLayout>

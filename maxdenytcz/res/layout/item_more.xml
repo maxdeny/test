@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_more xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="10dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+more/img"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:background="@color/gray" />
+    <TextView
+        android:id="@+more/title"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+</com.wjwl.mobile.taocz.widget.Item_more>

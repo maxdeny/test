@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingTop="20dip" >
+
+        <TextView
+            style="@style/text16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务满意度："
+            android:textColor="@color/text666666" />
+
+        <TextView
+            android:id="@+tczv3/haoping"
+            style="@style/text20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%好评"
+            android:textColor="@color/small_red" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/line_gray" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+tczv3/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000" >
+    </com.mdx.mobile.widget.PageListView>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_ShoppingCart xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cart_bg_gray"
+    android:padding="0.1dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+item_shoppingcart/layout_businessname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="7dip" >
+        <Button
+            android:id="@+item_shoppingcart/shopcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shopcart_icon_nor"
+            />
+        
+        <TextView 
+            android:id="@+item_shoppingcart/shopchecktext"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+              />
+        
+        
+        <TextView
+            android:layout_marginLeft="50dip"
+            android:id="@+item_shoppingcart/businessname"
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fc3b00" />
+
+        <ImageView
+            android:id="@+item_shoppingcart/businesslogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/more_arrow" 
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+item_shoppingcart/cartslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+         >
+
+        <ImageView
+            android:id="@+item_shoppingcart_item/productline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray"
+            android:contentDescription="@string/app_name" />
+        
+
+        <TextView
+            
+            android:id="@+item_shopping_item_item_totalprice/totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:textColor="#fc3b00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+item_shopping_item_item_totalprice/totalprice"
+            android:gravity="center"
+            android:text="本店合计：" />
+        
+        <TextView
+            android:id="@+item_shopping_item_item_totalprice/ifsonghuo"
+            android:layout_below="@+item_shopping_item_item_totalprice/totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:lines="2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dip"/>
+        
+    </RelativeLayout>
+
+</com.wjwl.mobile.taocz.widget.Item_ShoppingCart>

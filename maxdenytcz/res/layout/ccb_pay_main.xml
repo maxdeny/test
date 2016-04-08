@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ccb_pay_page_background0"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/ccb_pay_titleBar" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/ccb_pay_titleText"
+            android:text="@string/ccb_pay_brand" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/ccb_pay_linear"
+            android:layout_marginTop="@dimen/devider_height" >
+
+            <LinearLayout
+                style="@style/ccb_pay_list2"
+                android:layout_marginTop="@dimen/devider_height" >
+
+                <LinearLayout style="@style/ccb_pay_item" >
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_merchantname" />
+
+                   <TextView
+                        android:id="@+id/merchantid"
+                        style="@style/ccb_pay_listInput1"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" />
+
+                <LinearLayout style="@style/ccb_pay_item" >
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_orderidnum" />
+
+                   <TextView
+                        android:id="@+id/orderidnum"
+                        style="@style/ccb_pay_listInput1"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" />
+
+                <LinearLayout style="@style/ccb_pay_item" >
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_payment" />
+
+                    <TextView
+                        android:id="@+id/payment"
+                        style="@style/ccb_pay_listInput1"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" />
+<!--
+
+                <LinearLayout style="@style/ccb_pay_item" >
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_branchid" />
+
+                   <TextView
+                        android:id="@+id/branchid"
+                        style="@style/ccb_pay_listInput1"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" />
+
+
+                <LinearLayout style="@style/ccb_pay_item" >
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_remark1" />
+
+                    <TextView
+                        android:id="@+id/remark1"
+                        style="@style/ccb_pay_listInput1"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" />
+ 
+                <LinearLayout style="@style/ccb_pay_item" >
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_remark2" />
+
+                    <TextView
+                        android:id="@+id/remark2"
+                        style="@style/ccb_pay_listInput1"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" android:visibility="gone" />
+ -->
+                <LinearLayout style="@style/ccb_pay_item" android:visibility="gone">
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_accountpayinfo" />
+
+                    <TextView
+                        android:id="@+id/accountpayinfo"
+                        style="@style/ccb_pay_listInput1"
+                        android:text="@string/ccb_pay_openValue"
+                         >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/ccb_pay_devider" android:visibility="gone" />
+
+                <LinearLayout style="@style/ccb_pay_item"  android:visibility="gone">
+
+                    <TextView
+                        style="@style/ccb_pay_contentText2"
+                        android:text="@string/ccb_pay_mbankpay" />
+
+                   <TextView
+                        android:id="@+id/mbankpay"
+                        style="@style/ccb_pay_listInput1"
+                         android:text="@string/ccb_pay_closeValue"
+                         >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/circularizebrand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_height"
+                android:text="@string/ccb_pay_orderpay" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

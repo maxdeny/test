@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 
+    <RelativeLayout
+        android:id="@+v3_indexlist/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="87.3dip"
+        android:background="@drawable/v3_bg_head_index"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="73.3dip"
+            android:layout_height="32.7dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/v3_logo" />
+
+        <Button
+            android:id="@+v3_indexlist/bt_txm1"
+            android:layout_width="34.3dip"
+            android:layout_height="34dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="48dip"
+            android:background="@drawable/v3_index_tiaoxinma" />
+
+        <Button
+            android:id="@+v3_indexlist/bt_mkf"
+            android:layout_width="34.3dip"
+            android:layout_height="34dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="48dip"
+            android:layout_toLeftOf="@+v3_indexlist/bt_txm"
+            android:background="@drawable/v3_index_maikefeng" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_marginTop="43dip"
+            android:layout_toLeftOf="@+v3_indexlist/bt_mkf"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <com.wjwl.mobile.taocz.widget.V3_Item_Search
+                android:id="@+v3_indexlist/search1"
+                android:layout_width="fill_parent"
+                android:layout_height="44dip" >
+            </com.wjwl.mobile.taocz.widget.V3_Item_Search>
+        </RelativeLayout>
+    </RelativeLayout>
+ -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v3_index_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="13.3dip" >
+
+        <ImageView
+            android:id="@+v3_indexlist/logoimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/v3_indx_taocz" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:paddingRight="13.3dip" >
+
+            <com.wjwl.mobile.taocz.widget.V3_Item_Search
+                android:id="@+v3_indexlist/search"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true" >
+            </com.wjwl.mobile.taocz.widget.V3_Item_Search>
+
+            <Button
+                android:id="@+v3_indexlist/bt_txm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/v3_index_tiaoma" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:background="@drawable/indext_yiny" />
+
+    <TextView
+        android:id="@+id/norows"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:visibility="invisible" />
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+v3_indexlist/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-40dp"
+        android:orientation="vertical" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+v3_indexlist/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false" >
+        </com.mdx.mobile.widget.PageListView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+</LinearLayout>

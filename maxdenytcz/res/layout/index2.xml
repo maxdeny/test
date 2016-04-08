@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo3" />
+
+        <EditText
+            android:id="@+v3_indexlist/ed_search"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/bg_frame_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/norows"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:visibility="invisible" />
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+v3_indexlist/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-40dp"
+        android:orientation="vertical" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+v3_indexlist/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false" >
+        </com.mdx.mobile.widget.PageListView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/wbshare_bt_com_ped" android:state_pressed="true"/>
+    <item android:drawable="@drawable/wbshare_bt_com_nor"/>
+
+</selector>

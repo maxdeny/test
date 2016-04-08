@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addressLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_index_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="47.33dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="44dip"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|right" >
+
+            <com.mdx.mobile.widget.MImageView
+                android:id="@+id/imageView"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_marginLeft="12dip"
+                android:background="@drawable/default_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="45dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#444444" />
+
+            <TextView
+                android:id="@+id/textViewTelphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" 
+                android:textColor="#444444"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-45dip"
+            android:background="#eee" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="44dip"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="21dip"
+                android:layout_height="22dip"
+                android:button="@drawable/checkboxstyle_02" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#eee" >
+    </LinearLayout>
+
+</LinearLayout>

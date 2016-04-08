@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+tczv3/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="15dip"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+
+</LinearLayout>

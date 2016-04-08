@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index2"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+taoxincard/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+taoxincard/mycards"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="47dip"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_com_list"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="我的淘心卡"
+            android:textColor="@drawable/checkbox_text_style" />
+
+        <RadioButton
+            android:id="@+taoxincard/usedcard"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="47dip"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_com_list"
+            android:button="@null"
+            android:gravity="center"
+            android:text="使用记录"
+            android:textColor="@drawable/checkbox_text_style" />
+    </RadioGroup>
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+taoxincard/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+taoxincard/listview1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:visibility="gone" />
+
+</LinearLayout>

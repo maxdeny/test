@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+item_restaurantdetails/clic"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:clickable="true"
+    android:padding="10dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_restaurantdetails/img"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@drawable/default_h_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginRight="90dip"
+        android:layout_toRightOf="@+item_restaurantdetails/img"
+        android:orientation="vertical"
+        android:paddingLeft="5dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_restaurantdetails/title"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+item_restaurantdetails/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+item_restaurantdetails/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+item_restaurantdetails/star1"
+                android:background="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+item_restaurantdetails/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+item_restaurantdetails/star2"
+                android:background="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+item_restaurantdetails/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+item_restaurantdetails/star3"
+                android:background="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+item_restaurantdetails/star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+item_restaurantdetails/star4"
+                android:background="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+item_restaurantdetails/icon_map"
+                android:layout_width="12.6dip"
+                android:layout_height="14.3dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+item_restaurantdetails/star5"
+                android:background="@drawable/icon_map" />
+
+            <TextView
+                android:id="@+item_restaurantdetails/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+item_restaurantdetails/icon_map"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_restaurantdetails/zhekou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_restaurantdetails/renjun"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/TextColorGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+item_restaurantdetails/arrow"
+        android:layout_width="8.8dip"
+        android:layout_height="11.3dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:background="@drawable/more_arrow" />
+
+    <LinearLayout
+        android:layout_width="100dip"
+        android:layout_height="80dip"
+        android:layout_toLeftOf="@+item_restaurantdetails/arrow"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+item_restaurantdetails/juan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/icon_hui" />
+
+            <ImageView
+                android:id="@+item_restaurantdetails/hui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+item_restaurantdetails/juan"
+                android:background="@drawable/icon_quan" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+item_restaurantdetails/bt_yuding"
+                style="@style/text"
+                android:layout_width="73.7dip"
+                android:layout_height="40.6dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/bt_restaurantdetails"
+                android:gravity="center"
+                android:text="@string/booking"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

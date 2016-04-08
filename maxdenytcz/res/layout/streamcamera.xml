@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <ImageView
+        android:id="@+stream_camera/cameradata"
+        android:layout_width="310dip"
+        android:layout_height="310dip"
+        android:layout_centerInParent="true" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_watch_bar"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+stream_camera/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preview_back2" />
+
+        <ImageButton
+            android:id="@+stream_camera/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+stream_camera/cancel"
+            android:background="@drawable/preview_next2" />
+    </RelativeLayout>
+
+</RelativeLayout>

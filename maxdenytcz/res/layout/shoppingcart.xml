@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+tczv3/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+shoppingcart/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+shoppingcart/cart_bottomlayout"
+        android:layout_below="@+tczv3/header"
+        android:orientation="vertical" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+shoppingcart/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="12dip"
+            android:fadingEdge="none"
+            android:padding="12dip"
+            android:scrollbars="none"
+            android:scrollingCache="false" >
+        </com.mdx.mobile.widget.PageListView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+    <LinearLayout
+        android:id="@+shoppingcart/cart_emptey"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="120dp"
+        android:background="#00000000"
+        android:orientation="vertical" >
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            
+            <View
+            android:layout_centerInParent="true"
+            android:layout_width="185dip"
+            android:layout_height="168dip"
+            android:background="@drawable/cart_emp2" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/cart_emp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+shoppingcart/bt_tocoll"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_collection"
+                android:text="@string/tocoll"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+shoppingcart/bt_tobuy"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_restaurantdetails"
+                android:text="@string/tobuy"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+shoppingcart/cart_bottomlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#10000000"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip" >
+
+        <Button
+            android:id="@+shoppingcart/btn_pay"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_login_red_nor"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="结算"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+shoppingcart/allitemcheck"
+            style="@style/ShopCartCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="25dip"
+            android:text="全选"
+            android:textColor="@color/textColor_666666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+shoppingcart/cart_sum"
+            style="@style/text18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:layout_toRightOf="@+shoppingcart/allitemcheck"
+            android:text="合计："
+            android:textColor="#fc3b00" />
+
+        <TextView
+            android:id="@+shoppingcart/cart_totalprice"
+            style="@style/text18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+shoppingcart/cart_sum"
+            android:textColor="#fc3b00" />
+    </RelativeLayout>
+
+</RelativeLayout>

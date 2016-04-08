@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+tczv3/cliclayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="145dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+tczv3/img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_h_bg" />
+
+        <ImageView
+            android:id="@+tczv3/ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_new" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:background="#44000000"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <com.wjwl.mobile.taocz.widget.CustomDigitalClock
+                android:id="@+tczv3/remainTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+tczv3/acttime"
+                style="@style/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+tczv3/title"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/sysset_text1" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dip" >
+
+            <TextView
+                android:id="@+tczv3/new_price"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:textColor="@color/sysset_red" />
+
+            <TextView
+                android:id="@+tczv3/sellcount"
+                style="@style/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text999999" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

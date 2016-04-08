@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+tczv3/t_name"
+            style="@style/text16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员名 ："
+            android:textColor="@color/text666666" />
+
+        <TextView
+            android:id="@+tczv3/name"
+            style="@style/text16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+tczv3/t_name"
+            android:textColor="@color/text333333" />
+
+        <RatingBar
+            android:id="@+tczv3/ratingBar"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5.0"
+            android:stepSize="0.1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+tczv3/content"
+        style="@style/text16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/text333333" />
+
+    <TextView
+        android:id="@+tczv3/date"
+        style="@style/text16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/text333333" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/line_gray" >
+    </ImageView>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+filtration/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            style="@style/headtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/head_filtration" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+filtration/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+filtration/layout1"
+        android:layout_marginLeft="6.7dip"
+        android:layout_marginRight="6.7dip"
+        android:layout_marginTop="14.7dip"
+        android:background="@drawable/bg_frame_gray" >
+
+        <RelativeLayout
+            android:id="@+filtration/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/clic_gray"
+            android:clickable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/filtration_text1"
+                android:textColor="@color/textColor" />
+
+            <CheckBox
+                android:id="@+filtration/checkbox1"
+                style="@style/LoginCheckBox"
+                android:layout_width="17.3dip"
+                android:layout_height="17.3dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:focusable="false"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+filtration/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+filtration/clic_layout1"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+filtration/clic_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+filtration/line1"
+            android:background="@drawable/clic_gray"
+            android:clickable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/filtration_text2"
+                android:textColor="@color/textColor" />
+
+            <CheckBox
+                android:id="@+filtration/checkbox2"
+                style="@style/LoginCheckBox"
+                android:layout_width="17.3dip"
+                android:layout_height="17.3dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:focusable="false"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+filtration/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+filtration/layout2"
+        android:layout_marginLeft="6.7dip"
+        android:layout_marginRight="6.7dip"
+        android:layout_marginTop="14.7dip"
+        android:background="@drawable/bg_frame_gray" >
+
+        <RelativeLayout
+            android:id="@+filtration/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+filtration/text1"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/filtration_text3"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+filtration/ed_minprice"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="30dip"
+                android:layout_toRightOf="@+filtration/text1"
+                android:background="@drawable/edit_com"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/com_price"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+filtration/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+filtration/clic_layout1"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+filtration/clic_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+filtration/line1"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+filtration/text2"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/filtration_text4"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+filtration/ed_maxprice"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="30dip"
+                android:layout_toRightOf="@+filtration/text2"
+                android:background="@drawable/edit_com"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/com_price"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+filtration/bt_submit"
+        style="@style/bt_text"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_below="@+filtration/layout3"
+        android:layout_marginLeft="6.7dip"
+        android:layout_marginRight="6.7dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_login_login"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

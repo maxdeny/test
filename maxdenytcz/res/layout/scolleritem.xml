@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+scolleritem/linear"
+    android:layout_width="130dip"
+    android:layout_height="180dip"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+scolleritem/img"
+            android:layout_width="110dip"
+            android:layout_height="120dip"
+            android:background="#f2f4f6"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+scolleritem/zhekou"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="5.0折"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+scolleritem/contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="最讨厌猕猴桃"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+scolleritem/pricex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130.0"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+scolleritem/pricey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:text="￥150.0"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

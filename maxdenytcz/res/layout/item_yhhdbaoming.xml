@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@+item_yhhdbaoming/ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ico_hui" />
+
+    <TextView
+        android:id="@+item_yhhdbaoming/title"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="80dip"
+        android:layout_toRightOf="@+item_yhhdbaoming/ico"
+        android:singleLine="true"
+        android:text="88折餐馆下午茶" />
+
+    <Button
+        android:id="@+item_yhhdbaoming/baoming"
+        style="@style/text18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bt_restaurantdetails"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/yhhdbaoming_text1"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+popublayout/popLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   	android:background="@drawable/index_xiala1"
+    android:clickable="true"
+    android:orientation="horizontal" >
+	<!--  android:background="@drawable/spinner_frame" -->
+    <TextView
+        android:id="@+popublayout/popText"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="1dip"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#494949" />
+
+</LinearLayout>

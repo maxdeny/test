@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f4f6"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+v3_huodao/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/re_01"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+v3_huodao/head"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+v3_huodao/t_counts"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="3dip"
+            android:text="合计:"
+            android:textColor="@color/text666666" />
+
+        <TextView
+            android:id="@+v3_huodao/counts"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+v3_huodao/t_counts"
+            android:text="￥0"
+            android:textColor="@color/headcolor" />
+
+        <TextView
+            android:id="@+v3_huodao/t_pay"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+v3_huodao/counts"
+            android:text="已付："
+            android:textColor="@color/text666666" />
+
+        <TextView
+            android:id="@+v3_huodao/pay"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+v3_huodao/t_pay"
+            android:text="￥0"
+            android:textColor="@color/headcolor" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还需："
+                android:textColor="@color/text666666" />
+
+            <TextView
+                android:id="@+v3_huodao/needs"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0"
+                android:textColor="@color/headcolor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/li_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re_01"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+v3_huodao/taoxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="3dip"
+            android:text="虚拟账户支付了:￥0"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+v3_huodao/ydcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="3dip"
+            android:text="移动商城币支付了:￥0"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+v3_huodao/layout_xn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/li_01"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+v3_huodao/xuxi"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的余额："
+            android:textColor="@color/text666666" />
+
+        <TextView
+            android:id="@+v3_huodao/xuni_yue"
+            style="@style/text18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+v3_huodao/xuxi"
+            android:text="￥0"
+            android:textColor="@color/headcolor" />
+
+        <CheckBox
+            android:id="@+v3_huodao/xuni_choose"
+            style="@style/LoginCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+v3_huodao/layout_xn"
+        android:background="@drawable/line_gray" />
+
+    <RelativeLayout
+        android:id="@+v3_huodao/layout_tx"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/line_01"
+        android:background="@color/white"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+v3_huodao/rt"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="淘心卡余额："
+            android:textColor="@color/text666666" />
+
+        <TextView
+            android:id="@+v3_huodao/yue"
+            style="@style/text18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+v3_huodao/rt"
+            android:text="￥0"
+            android:textColor="@color/headcolor" />
+
+        <CheckBox
+            android:id="@+v3_huodao/tx_choose"
+            style="@style/LoginCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+v3_huodao/layout_tx"
+        android:background="@drawable/line_gray" />
+
+    <LinearLayout
+        android:id="@+v3_huodao/shangcheng"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/line_02"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+v3_huodao/shangcheng_value"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="使用移动商城币"
+            android:textColor="@color/text666666" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+v3_huodao/shangcheng"
+            android:background="@drawable/line_gray" />
+
+        <Button
+            android:id="@+v3_huodao/topay"
+            style="@style/text18"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="12dip"
+            android:background="@drawable/bg_btn_tobuy"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

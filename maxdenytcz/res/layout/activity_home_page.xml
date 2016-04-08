@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v3_index_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="13.3dip" >
+
+        <ImageView
+            android:id="@+id/com_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/v3_indx_taocz" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:paddingRight="13.3dip" >
+
+            <com.wjwl.mobile.taocz.widget.V3_Item_Search
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip" >
+            </com.wjwl.mobile.taocz.widget.V3_Item_Search>
+
+            <Button
+                android:id="@+id/bt_txm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/homepage_saoyisao" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+id/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.wjwl.mobile.taocz.widget.DragChangeView
+                    android:id="@+id/activ_drag_change_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white" />
+
+                <com.wjwl.mobile.taocz.widget.MyGridView
+                    android:id="@+id/mgv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@drawable/home_page_recommend_item_selector"
+                    android:numColumns="4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white" />
+                <!-- 活动 -->
+
+                <com.wjwl.mobile.taocz.widget.MListView
+                    android:id="@+id/mlv_home_page_acts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/gray"
+                    android:dividerHeight="15dp" />
+
+                <!-- 老张推荐 -->
+
+                <com.wjwl.mobile.taocz.widget.RecommendView
+                    android:id="@+id/recommend_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+</LinearLayout>

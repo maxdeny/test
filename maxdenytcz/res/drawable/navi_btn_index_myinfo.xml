@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/navi_index_btn_myinfo_ped" android:state_pressed="true"/>
+    <item android:drawable="@drawable/navi_index_btn_myinfo_ped" android:state_checked="true"/>
+    <item android:drawable="@drawable/navi_index_btn_myinfo_nor"/>
+</selector>

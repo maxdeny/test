@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_frame_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dip" >
+
+            <com.mdx.mobile.widget.MImageView
+                android:id="@+head_takeoutbusiness/img"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/default_h_bg" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:layout_marginLeft="5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+head_takeoutbusiness/bussinessname"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="淘常州"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+head_takeoutbusiness/time"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="送餐时间：10:00-21:00"
+                    android:textColor="@color/life_price" />
+
+                <TextView
+                    android:id="@+head_takeoutbusiness/address"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:singleLine="true"
+                    android:text="地址：江苏省常州市漓江路9号"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

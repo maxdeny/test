@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+ordertype_confirmation/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:id="@+ordertype_confirmation/head_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/head_ordertypeconfirmation"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+ordertype_confirmation/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+ordertype_confirmation/layout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_frame_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#88EEEEEE"
+            android:padding="6dip" >
+
+            <TextView
+                android:id="@+ordertype_confirmation/orderno"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ordertypeconfirmation_text1"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+ordertype_confirmation/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                android:id="@+ordertype_confirmation/proinfo"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dip"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+ordertype_confirmation/arrow"
+                android:layout_width="8.8dip"
+                android:layout_height="11.3dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/more_arrow"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+ordertype_confirmation/allpay1"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+ordertype_confirmation/arrow"
+                android:singleLine="true"
+                android:textColor="@color/sysset_red" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <LinearLayout
+            android:id="@+ordertype_confirmation/clic_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <TextView
+                android:id="@+ordertype_confirmation/username"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+ordertype_confirmation/useraddress"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+ordertype_confirmation/usertel"
+                style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+ordertype_confirmation/layout1"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_frame_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#88EEEEEE"
+            android:padding="6dip" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ordertypeconfirmation_text2"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+ordertype_confirmation/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <CheckBox
+                android:id="@+ordertype_confirmation/checkbox1"
+                style="@style/LoginCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="17.3dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="100dip"
+                android:text="@string/ordertypeconfirmation_text3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+ordertype_confirmation/taoxinka"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:textColor="@color/sysset_red" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+ordertype_confirmation/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <CheckBox
+                android:id="@+ordertype_confirmation/checkbox3"
+                style="@style/LoginCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="17.3dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="100dip"
+                android:text="@string/ordertypeconfirmation_text4"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+ordertype_confirmation/xuniyue"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:textColor="@color/sysset_red" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <CheckBox
+                android:id="@+ordertype_confirmation/checkbox2"
+                style="@style/LoginCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="17.3dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/textColor" />
+
+            <ImageView
+                android:layout_width="54dip"
+                android:layout_height="20dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:background="@drawable/zhifubao" />
+        </RelativeLayout>
+        
+        <!-- 建行支付 -->
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:clickable="true"
+            android:padding="6dip" >
+
+            <CheckBox
+                android:id="@+ordertype_confirmation/jh_checkbox2"
+                style="@style/LoginCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="17.3dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/textColor" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dip"
+                android:background="@drawable/jianhang_logo" />
+        </RelativeLayout>
+        <!-- 建行支付 -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:minHeight="40dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dip" >
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+ordertype_confirmation/showmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#10000000" >
+
+        <TextView
+            android:id="@+ordertype_confirmation/tx_allpay"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/orderconfirmation_text6"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+ordertype_confirmation/allpay2"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+ordertype_confirmation/tx_allpay"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+ordertype_confirmation/bt_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bt_com_orange"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/orderconfirmation_text10"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.V3_Item_OrderConfirmation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+v3_item_orderconfirmation/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_frame_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+v3_item_orderconfirmation/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店铺：邻克果品"
+                android:textColor="@color/sysset_red" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <LinearLayout
+            android:id="@+v3_item_orderconfirmation/freelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+v3_item_orderconfirmation/freelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+v3_item_orderconfirmation/hdfk"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家直送，不支持货到付款"
+                android:textColor="@color/textColor_666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.wjwl.mobile.taocz.widget.V3_Item_OrderConfirmation>

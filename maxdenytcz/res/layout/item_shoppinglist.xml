@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <RelativeLayout
+        android:layout_width="80dip"
+        android:layout_height="100dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+item_shoppinglist/productimg"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_h_bg" />
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+item_shoppinglist/productimg1"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_h_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="85dip"
+        android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+item_shoppinglist/productname"
+            style="@style/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dip"
+            android:maxLines="2"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+item_shoppinglist/productname"
+            android:layout_marginRight="50dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+item_shoppinglist/productprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/life_price"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+item_shoppinglist/productoriginalprice"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+item_shoppinglist/productprice"
+                android:textColor="@color/textColor_999999" />
+
+            <TextView
+                android:id="@+item_shoppinglist/buyover"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dip"
+                android:textColor="@color/textColor_999999" />
+
+            <TextView
+                android:id="@+item_shoppinglist/yishou"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+item_shoppinglist/buyover"
+                android:text="@string/buyover"
+                android:textColor="@color/textColor_999999"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+item_shoppinglist/businessname"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dip"
+            android:singleLine="true"
+            android:textColor="@color/textColor_999999" />
+
+        <RelativeLayout
+            android:id="@+item_shoppinglist/addcar_layout"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="26.7dip"
+                android:layout_height="34dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_addcar" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

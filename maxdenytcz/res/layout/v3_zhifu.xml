@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f4f6"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+v3_zhifu/header"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" />
+
+    <TextView
+        android:id="@+v3_zhifu/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="16dip"
+        android:text="提示：由淘常州配送订单，才支持货到付款" />
+
+    <RadioGroup
+        android:id="@+v3_zhifu/group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="8dip"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingTop="12dip" >
+
+        <RadioButton
+            android:id="@+v3_zhifu/zaixian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:button="@drawable/checkbox_zhifu"
+            android:checked="true"
+            android:text="在线支付（推荐）" />
+
+        <RadioButton
+            android:id="@+v3_zhifu/huodao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:button="@drawable/checkbox_zhifu"
+            android:text="货到付款" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+v3_zhifu/payTypeGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:background="#ffffff"
+        android:checkedButton="@+v3_zhifu/xianjin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+v3_zhifu/xianjin"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/btn_ser_radiobtn"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="现金"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+v3_zhifu/pos"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:button="@drawable/btn_ser_radiobtn"
+            android:gravity="center_vertical"
+            android:text="刷卡"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+</LinearLayout>

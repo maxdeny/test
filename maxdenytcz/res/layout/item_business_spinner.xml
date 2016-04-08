@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@drawable/business_spi_item"
+    android:checkMark="@drawable/checkbox_business_spi"
+    android:ellipsize="marquee"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:singleLine="true"
+    style="@android:style/TextAppearance.Large.Inverse"
+    android:textColor="@color/black" />

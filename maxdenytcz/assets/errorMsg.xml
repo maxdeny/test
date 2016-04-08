@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorMsg>
+	<msg name="1" >urlm</msg>
+	<msg name="98" type="1">未找到商品的相关信息!</msg>
+	<msg name="97" type="1">您的网络不给力哦!</msg>
+	<msg name="3" >urlm</msg>
+	<msg name="4" >urlm</msg>
+	<msg name="5" >urlm</msg>
+</errorMsg>

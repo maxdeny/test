@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:descendantFocusability="blocksDescendants" >
+
+    <View
+        android:id="@+item_favorite_list/clic_view"
+        android:layout_width="fill_parent"
+        android:layout_height="114dip"
+        android:background="@drawable/clic_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+item_favorite_list/favoriteimg"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_favorite_list/name"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+item_favorite_list/business"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="#636363" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+item_favorite_list/price"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ca2f00" />
+
+                <TextView
+                    android:id="@+item_favorite_list/date"
+                    style="@style/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="55dip"
+                    android:maxLines="1"
+                    android:textColor="#bdbdbd" />
+
+                <Button
+                    android:id="@+item_favorite_list/delete"
+                    style="@style/text13"
+                    android:layout_width="50dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_login_login"
+                    android:text="@string/favorite_delete"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

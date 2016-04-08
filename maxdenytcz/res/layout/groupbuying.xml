@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+groupbuying/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg" >
+
+        <TextView
+            android:id="@+groupbuying/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="@string/head_groupbuying"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+groupbuying/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:minWidth="60dip"
+            android:paddingLeft="17dip"
+            android:paddingRight="10dip"
+            android:text="返回"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+groupbuying/fujin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dip"
+            android:background="@drawable/v3_dingwei"
+            />
+        <View 
+            android:id="@+groupbuying/fan1"
+            android:layout_toLeftOf="@+groupbuying/fujin"
+            android:layout_width="0.66dip"
+            android:layout_marginRight="12dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/fenge_line"/>
+        <Button
+            android:id="@+groupbuying/sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+groupbuying/fan1"
+            android:layout_marginRight="12dip"
+            android:background="@drawable/v3_sousuo"
+            />
+        <View 
+            android:id="@+groupbuying/fan2"
+            android:layout_toLeftOf="@+groupbuying/sousuo"
+            android:layout_width="0.66dip"
+            android:layout_marginRight="12dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/fenge_line"/>
+        <!-- v3_sousuo -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+groupbuying/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+groupbuying/rl1"
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+            android:id="@+groupbuying/btn1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/v3_group_linear">
+            <TextView 
+                android:id="@+groupbuying/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:singleLine="true"
+                android:gravity="center"/>
+            <ImageView 
+                android:layout_marginLeft="2dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/v3_group_sjxia"/>
+        </LinearLayout>
+
+        <View 
+            android:layout_width="0.66dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/v3_group_fenge"/>
+	<!-- android:background="@drawable/tuangou_click" -->
+	<LinearLayout 
+            android:id="@+groupbuying/btn2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/v3_group_linear">
+            <TextView 
+                android:id="@+groupbuying/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全城"
+                android:singleLine="true"
+                android:gravity="center"/>
+            <ImageView 
+                android:layout_marginLeft="2dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/v3_group_sjxia"/>
+        </LinearLayout>
+
+        <View 
+            android:layout_width="0.66dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/v3_group_fenge"/>
+
+        <LinearLayout 
+            android:id="@+groupbuying/btn3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/v3_group_linear">
+            <TextView 
+                android:id="@+groupbuying/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新发布"
+                android:singleLine="true"
+                android:gravity="center"/>
+            <ImageView 
+                android:layout_marginLeft="2dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/v3_group_sjxia"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_below="@+groupbuying/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:background="@drawable/indext_yiny"/>
+
+    <ImageView
+        android:id="@+groupbuying/line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+groupbuying/li1"
+        android:background="@drawable/line_map_gray"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+groupbuying/line"
+        android:orientation="vertical" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+groupbuying/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+            <com.mdx.mobile.widget.PageListView
+                android:id="@+groupbuying/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_gray"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </com.mdx.mobile.widget.PageListView>
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+    <View
+        android:id="@+groupbuying/view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#66000000"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+groupbuying/bt_shaixuan"
+            android:layout_width="48.7dip"
+            android:layout_height="48.7dip"
+            android:background="@drawable/bt_shaixuan" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sl_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ad_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+tczv3/img_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <com.wjwl.mobile.taocz.widget.DragChangeView
+                    android:id="@+tczv3/DragChangeView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginBottom="5dip" >
+                </com.wjwl.mobile.taocz.widget.DragChangeView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+tczv3/layout_qianggou"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+tczv3/qgguige"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text333333" />
+
+                <TextView
+                    android:id="@+tczv3/acttime"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+tczv3/qgguige"
+                    android:textColor="@color/text333333" />
+
+                <TextView
+                    android:id="@+tczv3/xianggou"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+tczv3/qgguige"
+                    android:textColor="@color/text999999" />
+
+                <Button
+                    android:id="@+tczv3/qianggou_price"
+                    style="@style/text16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@+tczv3/acttime"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/tczv3_kuang2"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+tczv3/qianggou_noprice"
+                    style="@style/text18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@+tczv3/acttime"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/bt_com_gray"
+                    android:text="即将开始"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+tczv3/t_tcztitle"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/text666666" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        android:id="@+tczv3/t_tczprice"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="淘常州价："
+                        android:textColor="@color/text999999" />
+
+                    <TextView
+                        android:id="@+tczv3/tczprice"
+                        style="@style/text16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+tczv3/t_tczprice"
+                        android:textColor="@color/small_red" />
+
+                    <TextView
+                        android:id="@+tczv3/marketprice"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+tczv3/tczprice"
+                        android:textColor="@color/text999999" />
+
+                    <TextView
+                        style="@style/text12"
+                        android:id="@+tczv3/scjprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+tczv3/marketprice"
+                        android:text="(市场价)"
+                        android:visibility="invisible"
+                        android:textColor="@color/text999999" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        android:id="@+tczv3/pstype"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/text999999" />
+
+                    <TextView
+                        android:id="@+tczv3/ps_price"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="40dip"
+                        android:textColor="@color/text999999"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+tczv3/ps_noprice"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/text999999"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dip" >
+
+                    <LinearLayout
+                        android:id="@+tczv3/clic_collection"
+                        android:layout_width="0dip"
+                        android:layout_height="40dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/tczv3_kuang1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+tczv3/icon_collection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tczv3_icon_btn_fav" />
+
+                        <TextView
+                            android:id="@+tczv3/t_collection"
+                            style="@style/text16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dip"
+                            android:text="收藏"
+                            android:textColor="@color/text333333" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+tczv3/bt_addcart"
+                        style="@style/text16"
+                        android:layout_width="0dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/tczv3_kuang2"
+                        android:drawableLeft="@drawable/tczv3_icon_shopcar_white"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="10dip"
+                        android:text="加入购物车"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+tczv3/layout_guige"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:clickable="true"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+tczv3/guige"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text333333" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/more_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+tczv3/layout_act"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:clickable="true"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+tczv3/act_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+tczv3/act_content"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+tczv3/act_icon"
+                    android:textColor="@color/text333333" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/more_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+tczv3/layout_shop"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+tczv3/businessname"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text333333" />
+
+                    <TextView
+                        android:id="@+tczv3/t_myd"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dip"
+                        android:text="进入店铺"
+                        android:textColor="@color/text333333" />
+
+                    <TextView
+                        android:id="@+tczv3/myd"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+tczv3/businessname"
+                        android:layout_toRightOf="@+tczv3/t_myd"
+                        android:text="4.6分 "
+                        android:textColor="@color/small_red"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/more_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip" >
+
+                    <TextView
+                        android:id="@+tczv3/businessname"
+                        style="@style/text16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热销商品"
+                        android:textColor="@color/text333333"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.wjwl.mobile.taocz.widget.MyGridView
+                    android:id="@+tczv3/gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:clickable="true"
+                    android:horizontalSpacing="10dip"
+                    android:listSelector="@null"
+                    android:numColumns="2"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+item_njllist/clic"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:clickable="true"
+    android:padding="10dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_njllist/img"
+        android:layout_width="120dip"
+        android:layout_height="80dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_h_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_toRightOf="@+item_njllist/img"
+        android:orientation="vertical"
+        android:paddingLeft="5dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_njllist/title"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dip"
+                android:ellipsize="end"
+                android:maxLines="2" />
+
+            <ImageView
+                android:id="@+item_njllist/juan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/icon_quan" 
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+item_njllist/hui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+item_njllist/juan"
+                android:background="@drawable/icon_hui" 
+                 android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_njllist/distance"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="距离3.5公里"
+                android:textColor="@color/merchantsinfo_text1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_njllist/address"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dip"
+                android:singleLine="true"
+                android:text="漓江路9号"
+                android:textColor="@color/TextColorGray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+item_njllist/arrow"
+        android:layout_width="8.8dip"
+        android:layout_height="11.3dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:background="@drawable/more_arrow" />
+
+</RelativeLayout>

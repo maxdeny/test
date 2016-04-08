@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/gray">
+    
+    <RelativeLayout
+        android:id="@+select_zb/headlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg"
+        android:paddingRight="8dip"
+        android:paddingLeft="8dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+         >
+
+          <Button
+            android:id="@+select_zb/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+             android:background="@drawable/btn_head_right"
+            />
+          
+        <TextView
+            android:id="@+select_zb/text"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查询周边广告设施"
+            />
+        
+        <Button
+            android:visibility="gone"
+            android:id="@+select_zb/saixuan"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="筛选"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+             android:background="@drawable/btn_head_left"
+             />
+    </RelativeLayout>
+    <ImageView  
+           android:layout_width="fill_parent"
+           android:layout_height="3dip"
+           android:background="@drawable/bg_index2"
+           android:contentDescription="@string/app_name"
+        />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:background="#ffffff"
+        android:gravity="center">
+        <TextView 
+            android:id="@+select_zb/myaddress"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我在太湖东路  软件园附近，常州市"
+            android:textSize="15sp"/>
+        <Button 
+            android:id="@+select_zb/dingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    
+    <GridView 
+        android:id="@+select_zb/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:horizontalSpacing="40dip"
+        android:verticalSpacing="30dip"
+        android:numColumns="2"/>
+    
+
+</LinearLayout>

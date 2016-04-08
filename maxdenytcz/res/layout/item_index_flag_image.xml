@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.mdx.mobile.widget.DragView
+        android:id="@+image_drag/drag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:scaleType="fitXY" >
+    </com.mdx.mobile.widget.DragView>
+
+    <RelativeLayout
+        android:id="@+id/flag_image_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/index_cur_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.mdx.mobile.widget.CuryView
+            android:id="@+image_drag/curr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="1dip"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dip"
+    android:background="@drawable/zhonghui"
+    android:orientation="horizontal"
+    android:padding="8dip">
+
+    <!-- android:background="@drawable/three_bg" -->
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="39dip"
+        android:gravity="center_vertical"
+        android:textColor="#2E2E2E"
+        android:background="@drawable/zhonghui"
+        android:textSize="16sp"
+        android:paddingLeft="4dip"
+        />
+    <!-- android:background="@drawable/black_text"  -->
+    <!--
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.66dip"
+        android:background="@drawable/line_gray"/>
+
+    -->
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg" >
+
+        <Button
+            android:id="@+fruitcategory/back"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="@string/back"
+            android:textColor="#ffffff" />
+
+        <TextView
+            style="@style/headtext"
+            android:id="@+fruitcategory/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/title_fruitcategory" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index2"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index3"
+        android:contentDescription="@string/app_name" />
+
+    <com.mdx.mobile.widget.PageListView
+        android:id="@+fruitcategory/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:background="@drawable/bg_scenicspotlist"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/com_divideline"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</LinearLayout>

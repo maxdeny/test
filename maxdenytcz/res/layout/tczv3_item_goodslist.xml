@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click"
+    android:layout_width="fill_parent"
+    android:layout_height="100dip"
+    android:background="@drawable/clic_gray"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:layout_width="80dip"
+        android:layout_height="80dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+tczv3/productimg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_h_bg" />
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+tczv3/productimg1"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_h_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+tczv3/productname"
+            style="@style/text14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dip"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+tczv3/layout_price"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_below="@+tczv3/productname"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="2dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+tczv3/productprice"
+                style="@style/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/life_price" />
+
+            <TextView
+                android:id="@+tczv3/productoriginalprice"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+tczv3/productprice"
+                android:textColor="@color/textColor_999999" />
+
+            <LinearLayout
+                android:id="@+tczv3/layout_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+tczv3/icon1"
+                    style="@style/text12"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+tczv3/icon2"
+                    style="@style/text12"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+tczv3/icon3"
+                    style="@style/text12"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+tczv3/icon4"
+                    style="@style/text12"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+tczv3/businessname"
+            style="@style/text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dip"
+            android:singleLine="true"
+            android:textColor="@color/textColor_999999" />
+
+        <RelativeLayout
+            android:id="@+tczv3/addcar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tczv3_icon_cart1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

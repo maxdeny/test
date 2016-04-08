@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_item_orderconfirmation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_item_orderconfirmation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dip" >
+
+        <View
+            android:id="@+item_item_orderconfirmation/clic_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/clic_gray"
+            android:clickable="true" />
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+item_item_orderconfirmation/img"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_h_bg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_margin="5dip"
+            android:layout_toRightOf="@+item_item_orderconfirmation/img"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+item_item_orderconfirmation/name"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/orderconfirmation_text7"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+item_item_orderconfirmation/price"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/sysset_red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/orderconfirmation_text8"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+item_item_orderconfirmation/num"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+item_item_orderconfirmation/arrow"
+                android:layout_width="8.8dip"
+                android:layout_height="11.3dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/more_arrow" />
+
+            <TextView
+                style="@style/text20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+item_item_orderconfirmation/arrow"
+                android:singleLine="true"
+                android:textColor="@color/sysset_red" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.wjwl.mobile.taocz.widget.Item_item_orderconfirmation>

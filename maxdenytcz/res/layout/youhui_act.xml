@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+youhui_act/headlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_redandorg"
+         >
+
+          <Button
+            android:id="@+youhui_act/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+             android:background="@drawable/head_left"
+            />
+          
+        <TextView
+            android:id="@+youhui_act/text"
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="优惠劵"
+            />
+        
+        <Button
+            android:visibility="gone"
+            android:id="@+youhui_act/saixuan"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="筛选"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+             android:background="@drawable/btn_head_left"
+             />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index2"/>
+    
+    <RadioGroup
+        android:id="@+youhui_act/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+youhui_act/notused"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/youhui_bg_1k"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/line_shopping_btn"
+            android:gravity="center"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+
+        <RadioButton
+            android:id="@+youhui_act/used"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/youhui_bg_2k"
+            android:button="@null"
+            android:drawableRight="@drawable/line_shopping_btn"
+            android:gravity="center"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+    </RadioGroup>
+    
+    <ListView 
+        android:id="@+youhui_act/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        />
+    <ListView 
+        android:id="@+youhui_act/listview1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:visibility="gone"
+        />
+    
+
+</LinearLayout>

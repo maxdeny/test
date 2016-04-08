@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/norows"
+        style="@style/text20"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:visibility="invisible" />
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+id/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-90dp"
+        android:orientation="vertical"
+        android:background="@color/gray" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:padding="5dp"
+            android:divider="@color/none"
+            android:dividerHeight="10dip" >
+        </com.mdx.mobile.widget.PageListView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+</LinearLayout>

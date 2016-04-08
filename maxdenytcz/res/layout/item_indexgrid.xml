@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="96dip"
+    android:layout_height="60dip"
+    android:orientation="vertical" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_index/img"
+        android:layout_width="96dip"
+        android:layout_height="60dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_h_bg" />
+
+</LinearLayout>

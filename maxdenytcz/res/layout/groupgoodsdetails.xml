@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+id/hl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sl_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ad_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+tczv3/img_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <com.wjwl.mobile.taocz.widget.DragChangeView
+                    android:id="@+tczv3/DragChangeView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginBottom="5dip" >
+                </com.wjwl.mobile.taocz.widget.DragChangeView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+tczv3/t_tcztitle"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/text666666" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        android:id="@+tczv3/t_tczprice"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="淘常州价："
+                        android:textColor="@color/text999999" />
+
+                    <TextView
+                        android:id="@+tczv3/tczprice"
+                        style="@style/text16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+tczv3/t_tczprice"
+                        android:textColor="@color/small_red" />
+
+                    <TextView
+                        android:id="@+tczv3/marketprice"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+tczv3/tczprice"
+                        android:textColor="@color/text999999" />
+
+                    <TextView
+                        android:id="@+tczv3/scjprice"
+                        style="@style/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+tczv3/marketprice"
+                        android:text="(市场价)"
+                        android:textColor="@color/text999999"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:id="@+tczv3/hscrollview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:padding="10dip"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+tczv3/addlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+tczv3/bt_addcart"
+                    style="@style/text16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/tczv3_kuang2"
+                    android:drawableLeft="@drawable/tczv3_icon_shopcar_white"
+                    android:drawablePadding="5dip"
+                    android:gravity="center"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:text="加入购物车"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip" >
+
+                    <TextView
+                        android:id="@+tczv3/businessname"
+                        style="@style/text16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热销商品"
+                        android:textColor="@color/text333333"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.wjwl.mobile.taocz.widget.MyGridView
+                    android:id="@+tczv3/gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:clickable="true"
+                    android:horizontalSpacing="10dip"
+                    android:listSelector="@null"
+                    android:numColumns="2"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

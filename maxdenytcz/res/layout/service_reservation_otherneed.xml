@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_update_white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:paddingTop="2dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_update_head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+serres_need/head_title"
+                style="@style/headtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/ser_reservation_otherneed" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+serres_need/ed_need"
+            android:layout_width="fill_parent"
+            android:layout_height="120dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:background="@drawable/edit_com"
+            android:gravity="left|top"
+            android:hint=""
+            android:textColorHint="@color/hinttext" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <Button
+                android:id="@+serres_need/bt_submit"
+                style="@style/bt_text"
+                android:layout_width="0dip"
+                android:layout_height="32dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_exit"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+serres_need/bt_cancel"
+                style="@style/bt_text"
+                android:layout_width="0dip"
+                android:layout_height="32dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_update"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

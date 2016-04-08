@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+menu/menu_f"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffd9d9d9"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="0.1dp" >
+
+            <Button
+                android:id="@+menu/menu_login"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_login"
+                android:text="@string/sysmenu_login" />
+
+            <Button
+                android:id="@+menu/menu_attention"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_attention"
+                android:text="@string/sysmenu_attention" />
+
+            <Button
+                android:id="@+menu/menu_favorite"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_favorite"
+                android:text="@string/sysmenu_favorite" />
+
+            <Button
+                android:id="@+menu/menu_setting"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_setting"
+                android:text="@string/sysmenu_setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+menu/menu_update"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_update"
+                android:text="@string/sysmenu_update" />
+
+            <Button
+                android:id="@+menu/menu_share"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_share"
+                android:text="@string/sysmenu_share" />
+
+            <Button
+                android:id="@+menu/menu_feedback"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_feedback"
+                android:text="@string/sysmenu_feedback" />
+
+            <Button
+                android:id="@+menu/menu_exit"
+                style="@style/sysmenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sysmenu_exit"
+                android:text="@string/sysmenu_exit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+menu/menu_lastmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/line_index_red" >
+
+        <Button
+            android:id="@+menu/navi"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navi_btn_index_navi"
+            android:button="@null" 
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+menu/index"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navi_btn_index_home"
+            android:button="@null" />
+
+        <Button
+            android:id="@+menu/per"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navi_btn_index_per"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp" />
+
+        <Button
+            android:id="@+menu/myinfo"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navi_btn_index_myinfo"
+            android:button="@null" />
+
+        <Button
+            android:id="@+menu/shopcart"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navi_btn_index_shopcart"
+            android:button="@null" />
+
+        <Button
+            android:id="@+menu/more"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navi_btn_index_more"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.V3_Item_Item_OrderConfirmation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v3_item_item_orderconfirmation"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <View
+            android:id="@+v3_item_item_orderconfirmation/clic_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/clic_gray"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+v3_item_item_orderconfirmation/title"
+                    style="@style/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:text="万家鲜，浅析樱桃1000/克" />
+
+                <TextView
+                    android:id="@+v3_item_item_orderconfirmation/price"
+                    style="@style/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+v3_item_item_orderconfirmation/title"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:text="￥12"
+                    android:textColor="@color/textColor_999999" />
+
+                <TextView
+                    android:id="@+v3_item_item_orderconfirmation/num"
+                    style="@style/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+v3_item_item_orderconfirmation/title"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@+v3_item_item_orderconfirmation/price"
+                    android:text="1件"
+                    android:textColor="@color/textColor_999999" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_gray" />
+    </RelativeLayout>
+
+</com.wjwl.mobile.taocz.widget.V3_Item_Item_OrderConfirmation>

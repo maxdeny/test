@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:id="@+com_business/headtitle"
+            style="@style/headtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+com_business/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/head_left"
+            android:gravity="center"
+            android:minWidth="60dip"
+            android:paddingLeft="17dip"
+            android:paddingRight="10dip"
+            android:text="返回"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index2"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+com_business/radiogroup"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+com_business/rbt_people"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/shopping_rdb_peple"
+                android:textColor="@color/merchantsinfo_text1" />
+
+            <RadioButton
+                android:id="@+com_business/rbt_price"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/shopping_rdb_price"
+                android:textColor="@color/merchantsinfo_text1" />
+
+            <RadioButton
+                android:id="@+com_business/rbt_sale"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/shopping_rdb_sale"
+                android:textColor="@color/merchantsinfo_text1" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+com_business/sousuo"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="47dip"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_com_list"
+            android:drawableRight="@drawable/ico_fdj"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/index_search"
+            android:textColor="@color/merchantsinfo_text1" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_map_gray"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+com_business/norows"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="-30dp" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+com_business/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+
+            <com.mdx.mobile.widget.PageListView
+                android:id="@+com_business/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_gray"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </com.mdx.mobile.widget.PageListView>
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+</LinearLayout>

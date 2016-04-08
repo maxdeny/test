@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dip"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:gravity="center_vertical"
+    >
+    <!-- 
+    <ImageView 
+        android:id="@+youhuiitem/img"
+        android:layout_width="65dip"
+        android:layout_height="65dip"/>
+         -->
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="65dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView 
+            android:id="@+youhuiitem/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+        <TextView 
+            android:id="@+youhuiitem/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d42927"
+            android:textSize="19sp"/>
+        <TextView 
+            android:id="@+youhuiitem/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/more_arrow"/>
+
+</LinearLayout>

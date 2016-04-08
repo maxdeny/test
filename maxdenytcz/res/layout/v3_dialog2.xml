@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="180dip"
+    android:background="@drawable/bg_frame_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#DFDFDF"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="筛选"
+            android:textColor="@color/textColor_666666" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="只看免预约"
+            android:textColor="@color/textColor_666666" />
+
+        <CheckBox
+            android:id="@+v3_dialog2/checkbox1"
+            style="@style/V3_CheckBox"
+            android:layout_width="78dip"
+            android:layout_height="29.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="节假日可用"
+            android:textColor="@color/textColor_666666" />
+
+        <CheckBox
+            android:id="@+v3_dialog2/checkbox2"
+            style="@style/V3_CheckBox"
+            android:layout_width="78dip"
+            android:layout_height="29.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+v3_dialog2/submit"
+        style="@style/text"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bt_com_orange"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

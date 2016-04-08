@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FFFF3C00</color>
+    <color name="none">#00000000</color>
+    <color name="smallyello">#50FC9863</color>
+    <color name="clic_gray">#F0F0F0</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#E9E9E9</color>
+    <color name="black_light_l">#F6F6F6</color>
+    <color name="gray">#F4F4F4</color>
+    <color name="textColor">#252525</color>
+    <color name="red">#FF0000</color>
+    <color name="addressinfo">#494949</color>
+    <color name="merchantsinfo_text1">#333333</color>
+    <color name="merchantsinfo_text2">#808080</color>
+    <color name="businesslist_nor">#f9f8f8</color>
+    <color name="businesslist_pre">#ECECEC</color>
+    <color name="share_text">#6a6a6a</color>
+    <color name="sysset_red">#fc3b00</color>
+    <color name="small_red">#99fc3b00</color>
+    <color name="sysset_text1">#333333</color>
+    <color name="life_info">#313031</color>
+    <color name="life_price">#fc3b00</color>
+    <color name="itemhotrec_oldprice">#bdbdbd</color>
+    <color name="attrib_gray">#898989</color>
+    <color name="attrib_gray_b">#333333</color>
+    <color name="buzhichihuodaofukuan">#999999</color>
+
+    <drawable name="bg_blue">#E5F5FF</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+
+    <!-- 建行 -->
+    <color name="ccb_pay_tabgray">#7c7c7c</color>
+    <color name="ccb_pay_gray">#a0a0a0</color>
+    <color name="ccb_pay_white">#FFFFFF</color>
+    <color name="ccb_pay_green">#33FF00</color>
+    <color name="ccb_pay_black">#000000</color>
+    <color name="ccb_pay_transparent">#503f3e3e</color>
+    <color name="ccb_pay_listviewitem">#AAAAAA</color>
+    <color name="ccb_pay_zebraline">#90D0D0D0</color>
+    <color name="ccb_pay_alert_black">#404040</color>
+    <color name="AllBg">#F6F6F6</color>
+    <color name="radiobg_press">#43859d</color>
+    <color name="radiobg_normal">#555555</color>
+    <color name="textColor_999999">#999999</color>
+    <color name="textColor_666666">#666666</color>
+    <color name="allbg">#f6f6f6</color>
+    <color name="hinttext">#cccccc</color>
+    <color name="text999999">#999999</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="textviewcolor">#ff000000</color>
+    <color name="text272727">#272727</color>
+    <color name="text131D3F">#131D3F</color>
+    <color name="textF80802">#F80802</color>
+    <color name="textFFDE00">#FFDE00</color>
+    <color name="text666666">#666666</color>
+    <color name="headcolor">#FF5539</color>
+    <color name="text333333">#333333</color>
+    <color name="head_color">#F0F0F0</color>   
+    <color name="text_gray">#4F4F4F</color> 
+</resources>

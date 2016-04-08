@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dip"
+    android:layout_height="353dip"
+    android:background="@drawable/contacts_pop_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+contactSelect/contact_search"
+            android:layout_width="fill_parent"
+            android:layout_height="33dip"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/contacts_pop_search_bg"
+            android:drawableLeft="@drawable/contacts_pop_search_ico"
+            android:hint="@string/searchcontact"
+            android:textColorHint="@color/hinttext"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+contactSelect/checkbox"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-32dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dip"
+        android:layout_marginTop="1dip"
+        android:background="#ffffffff" >
+
+        <LinearLayout
+            android:id="@+id/Loading_fill"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include layout="@layout/fill_loading" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+contactSelect/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/white"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-34dip"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+contactSelect/submit"
+                android:layout_width="95dip"
+                android:layout_height="31dip"
+                android:background="@drawable/contacts_pop_ok"
+                android:text="@string/submit"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+contactSelect/cancel"
+                android:layout_width="95dip"
+                android:layout_height="31dip"
+                android:background="@drawable/contacts_pop_cancel"
+                android:text="@string/cancel"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

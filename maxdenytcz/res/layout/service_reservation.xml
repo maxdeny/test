@@ -1,0 +1,482 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+ser_reser/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="@string/service_reservation"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+ser_reser/layout"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <RelativeLayout
+            android:id="@+ser_reser/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_frame_gray" >
+
+            <LinearLayout
+                android:id="@+ser_reser/clic_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <EditText
+                    android:id="@+ser_reser/edit_ed1"
+                    style="@style/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:background="@drawable/edit_com"
+                    android:hint="@string/ser_hint1"
+                    android:textColorHint="@color/hinttext" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout1"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+ser_reser/clic_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+ser_reser/tv_username"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ser_sex"
+                    android:textColor="@color/textColor" />
+
+                <RadioGroup
+                    android:id="@+ser_reser/sexGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:checkedButton="@+ser_reser/ataaw3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+ser_reser/man"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/btn_ser_radiobtn"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/ser_man" />
+
+                    <RadioButton
+                        android:id="@+ser_reser/woman"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:button="@drawable/btn_ser_radiobtn"
+                        android:gravity="center_vertical"
+                        android:text="@string/ser_woman" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout2"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+ser_reser/clic_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line2"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <EditText
+                    android:id="@+ser_reser/edit_ed2"
+                    style="@style/text"
+                    android:layout_width="0dip"
+                    android:layout_height="34dip"
+                    android:layout_weight="8"
+                    android:background="@drawable/edit_com"
+                    android:hint="@string/ser_hint2"
+                    android:inputType="number"
+                    android:textColorHint="@color/hinttext" />
+
+                <EditText
+                    android:id="@+ser_reser/edit_ed3"
+                    style="@style/text"
+                    android:layout_width="0dip"
+                    android:layout_height="34dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="10"
+                    android:background="@drawable/edit_com"
+                    android:hint="@string/ser_hint3"
+                    android:inputType="number"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line3"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout3"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+ser_reser/clic_layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/ser_type" />
+
+                <TextView
+                    android:id="@+ser_reser/Type"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+ser_reser/type"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line4"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout4"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+ser_reser/clic_layout5"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line4"
+                android:background="@drawable/clic_gray"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+ser_reser/tv_ser_area"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/ser_area" />
+
+                <TextView
+                    android:id="@+ser_reser/ser_area"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_toRightOf="@+ser_reser/tv_ser_area"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="8.8dip"
+                    android:layout_height="11.3dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/more_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line5"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout5"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+ser_reser/clic_layout6"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line5"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+ser_reser/edit_ed5"
+                    style="@style/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/edit_com"
+                    android:hint="@string/ser_hint5" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line6"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout6"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+ser_reser/clic_layout7"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line6"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <EditText
+                    android:id="@+ser_reser/edit_ed6"
+                    style="@style/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/edit_com"
+                    android:hint="@string/ser_hint6"
+                    android:textColorHint="@color/hinttext" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line7"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout7"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+ser_reser/clic_layout8"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line7"
+                android:background="@drawable/clic_gray"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+ser_reser/ser_date"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/ser_date" />
+
+                <TextView
+                    android:id="@+ser_reser/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_toRightOf="@+ser_reser/ser_date"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="8.8dip"
+                    android:layout_height="11.3dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/more_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line8"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout8"
+                android:background="@drawable/line_gray" />
+
+            <RelativeLayout
+                android:id="@+ser_reser/clic_layout9"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line8"
+                android:background="@drawable/clic_gray"
+                android:clickable="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+ser_reser/tv_need"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/ser_needs" />
+
+                <TextView
+                    android:id="@+ser_reser/need"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_toRightOf="@+ser_reser/tv_need"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="8.8dip"
+                    android:layout_height="11.3dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/more_arrow" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line9"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout9"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+ser_reser/clic_layout10"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line9"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:id="@+ser_reser/needs"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ser_emergency" />
+
+                <RadioGroup
+                    android:id="@+ser_reser/emergencyGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:checkedButton="@+ser_reser/ataaw3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+ser_reser/generally"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/btn_ser_radiobtn"
+                        android:checked="true"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/ser_generally" />
+
+                    <RadioButton
+                        android:id="@+ser_reser/urgency"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:button="@drawable/btn_ser_radiobtn"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/ser_urgency" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+ser_reser/line10"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+ser_reser/clic_layout10"
+                android:background="@drawable/line_gray" />
+
+            <LinearLayout
+                android:id="@+ser_reser/clic_layout11"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+ser_reser/line10"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <Button
+                    android:id="@+ser_reser/bt_submit"
+                    style="@style/bt_text"
+                    android:layout_width="0dip"
+                    android:layout_height="34dip"
+                    android:layout_weight="5"
+                    android:background="@drawable/btn_exit"
+                    android:text="@string/com_submit"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+ser_reser/bt_rewrite"
+                    style="@style/bt_text"
+                    android:layout_width="0dip"
+                    android:layout_height="34dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="5"
+                    android:background="@drawable/btn_exit"
+                    android:text="@string/ser_rewrite"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

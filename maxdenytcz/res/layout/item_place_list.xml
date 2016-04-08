@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+place/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="54dip"
+    android:background="@drawable/list_bgclick"
+    android:orientation="vertical"
+    >
+	
+    <RelativeLayout
+        android:layout_marginLeft="16dip"
+        android:id="@+place/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+place/img_right" >
+<!-- 
+        <ImageView
+            android:id="@+place/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/public_item_listview_left" />
+ -->
+        <TextView
+            android:id="@+place/title"
+            android:layout_width="155dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+place/img_left"
+            style="@style/text16_333333"
+             android:singleLine="true"  
+            android:layout_marginRight="3dip"
+            android:ellipsize="end"
+            android:text="标题" />
+
+        <TextView
+            android:id="@+place/address"
+            android:layout_width="155dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+place/title"
+            android:layout_toRightOf="@+place/img_left"
+            style="@style/text14_808080"
+            android:text="地址" 
+            android:singleLine="true"  
+            android:ellipsize="end"
+            android:layout_marginRight="3dip"
+                 />
+       
+    </RelativeLayout>
+
+    <Button
+            android:layout_centerVertical="true"
+            android:background="@drawable/jingdian_e"
+            android:drawableLeft="@drawable/btn_public_distance_gray"
+            android:id="@+place/distance"
+            style="@style/text14_808080"
+            android:layout_width="115dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+place/title"
+            android:text="距离3.532km" />
+    
+
+</RelativeLayout>

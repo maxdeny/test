@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+ydyyorder/headlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg"
+        android:paddingRight="8dip"
+        android:paddingLeft="8dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+         >
+
+          <Button
+            android:id="@+ydyyorder/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+             android:background="@drawable/head_left"
+            />
+          
+        <TextView
+            android:id="@+ydyyorder/text"
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预定预约订单"
+            />
+        
+        <Button
+            android:visibility="gone"
+            android:id="@+ydyyorder/saixuan"
+            android:layout_width="55dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="筛选"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+             android:background="@drawable/btn_head_left"
+             />
+        
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/bg_index2"/>
+    
+    <ListView 
+        android:id="@+ydyyorder/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:padding="8dip"
+        android:scrollbars="none"/>
+    
+
+</LinearLayout>

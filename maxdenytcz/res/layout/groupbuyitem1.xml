@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+groupbuyitem/linear"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/allbg" >
+
+    <RelativeLayout
+        android:id="@+groupbuyitem/layout1"
+        android:layout_width="120dip"
+        android:layout_height="80dip"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+groupbuyitem/img"
+            android:layout_width="120dip"
+            android:layout_height="80dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/default_h_bg" />
+
+        <ImageView
+            android:id="@+groupbuyitem/mianyuyue"
+            android:layout_width="41.7dip"
+            android:layout_height="42.7dip"
+            android:background="@drawable/icon_mianyuyue" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dip"
+        android:layout_toRightOf="@+groupbuyitem/layout1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="fill_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+groupbuyitem/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+groupbuyitem/contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+groupbuyitem/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:textColor="@color/sysset_red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+groupbuyitem/yprice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#808080"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+groupbuyitem/yishou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#808080"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+groupbuyitem/number"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/icon_map"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+groupbuyitem/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+groupbuyitem/newproduct"
+            android:layout_width="15.3dip"
+            android:layout_height="18dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/icon_new" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/more_arrow"
+        android:visibility="gone" />
+
+</RelativeLayout>

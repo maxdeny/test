@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_groupgoodsdetails xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dip" >
+
+    <RelativeLayout
+        android:layout_width="80dip"
+        android:layout_height="wrap_content" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+id/img"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text10"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/text333333" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/text10"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/small_red" />
+
+</com.wjwl.mobile.taocz.widget.Item_groupgoodsdetails>

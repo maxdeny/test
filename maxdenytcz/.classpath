@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="libs/android_sdk_v1.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/baidumapapi.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/googlezxing.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/libammsdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mobilepay.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Msc.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/pinyin4j-2.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/protobuf-java-2.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/httpmime-4.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/alipay.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/taocz_proto_3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/umeng-analytics-v5.2.3.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/apk_mFrame.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BOCPAY.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/CcbPay_Release.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ctrl.probuf.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jpush-sdk-release1.5.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/open_sdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/pig.probuf.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_orderconfirmation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+item_order_confirmation/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_frame_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:background="#44EEEEEE"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+item_order_confirmation/bussinessname"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+item_order_confirmation/huodaofukuan"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:text="@string/orderconfirmation_text3" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_gray" />
+
+        <LinearLayout
+            android:id="@+item_order_confirmation/addlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+item_order_confirmation/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+item_order_confirmation/peisongxinxi"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="10dip"
+                android:textColor="@color/merchantsinfo_text1" />
+
+            <ImageView
+                android:layout_width="8.8dip"
+                android:layout_height="11.3dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/more_arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+item_order_confirmation/line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/line_gray" />
+
+        <RelativeLayout
+            android:id="@+item_order_confirmation/clic_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+item_order_confirmation/allpronum"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+item_order_confirmation/allpropay"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+item_order_confirmation/xiaoji"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+item_order_confirmation/allpropay"
+                android:text="@string/orderconfirmation_text9"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.wjwl.mobile.taocz.widget.Item_orderconfirmation>

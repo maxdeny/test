@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/click"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:padding="5dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_life/productimg"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_h_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+item_life/productname"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+item_life/newprice"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#fc3b00" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+item_life/textviewbuyover"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/buyover"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+item_life/buyover"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+item_life/textviewbuyover"
+                android:textColor="#808080" />
+
+            <TextView
+                android:drawableLeft="@drawable/cart_home"
+                android:singleLine="true"
+                android:layout_marginLeft="100dip"
+                android:id="@+item_life/businessname"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

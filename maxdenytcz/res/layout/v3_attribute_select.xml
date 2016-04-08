@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+v3_attribute_s/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="90dip"
+        android:orientation="vertical" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+v3_attribute_s/list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="vertical"
+                android:paddingBottom="40dp" >
+            </LinearLayout>
+        </ScrollView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+    <TextView
+        android:id="@+v3_attribute_s/msg"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-130dp"
+        android:gravity="left"
+        android:paddingRight="5dp"
+        android:textColor="@color/orange"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-20dp" >
+
+        <TextView
+            android:id="@+v3_attribute_s/store"
+            style="@style/text18"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/share_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+v3_attribute_s/price"
+            style="@style/text18"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:textColor="@color/black"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘常州价：" />
+
+        <TextView
+            android:textColor="@color/sysset_red"
+            android:id="@+v3_attribute_s/allprice"
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥69" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#eeeeee"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <Button
+            android:id="@+v3_attribute_s/add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="加入购物车" />
+
+        <Button
+            android:id="@+v3_attribute_s/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+v3_attribute_s/add_cart"
+            android:text="收藏" />
+
+        <Button
+            android:id="@+v3_attribute_s/bt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+v3_attribute_s/collection"
+            android:text="分享" />
+
+        <Button
+            android:id="@+v3_attribute_s/bt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="购物车" />
+
+        <TextView
+            style="@style/text10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/red"
+            android:gravity="center"
+            android:minHeight="25dip"
+            android:minWidth="25dip"
+            android:padding="5dip"
+            android:text="9"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

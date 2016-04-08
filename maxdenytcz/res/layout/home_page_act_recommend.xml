@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/act_02_item"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView 
+	   	android:padding="10dp"
+	    android:id="@+id/act_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="2dp"
+        android:textSize="16sp"
+		android:text="老张推荐"
+        />
+    <FrameLayout
+        android:id="@+id/fl_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <LinearLayout 
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            />
+		<!-- <com.wjwl.mobile.taocz.weight.MyGridView
+			android:background="@color/gray"
+		    android:id="@+id/gv_recommend"
+		    android:verticalSpacing="2dp"
+		    android:horizontalSpacing="2dp"
+		    android:listSelector="@null"
+			android:stretchMode = "columnWidth"    
+		    android:numColumns="2"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		 /> -->
+	</FrameLayout>
+</LinearLayout>

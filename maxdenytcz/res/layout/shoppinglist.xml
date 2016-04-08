@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+shoppinglist/headlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/headv3_bg"
+        android:paddingBottom="3dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <Button
+            android:id="@+shoppinglist/back"
+            android:layout_width="58dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+shoppinglist/text"
+            style="@style/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="20dip"
+            android:text="网上购物" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+shoppinglist/business_shaixuan"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/headv3_right"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="店铺"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+shoppinglist/saixuan"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/headv3_right"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="类目"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+shoppinglist/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+shoppinglist/headlayout"
+        android:paddingBottom="6dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="6dip"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+shoppinglist/btn_category"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_search_white"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:text="@string/shopping_btn_category"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+shoppinglist/btn_business"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/bt_search_white"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:text="@string/shopping_btn_business"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+shoppinglist/btn_select"
+            style="@style/text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/bt_search_white"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:text="@string/shopping_btn_select"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+shoppinglist/radio_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+shoppinglist/layout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="47dip" >
+
+            <RadioGroup
+                android:id="@+shoppinglist/radiogroup"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+shoppinglist/rbt_people"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/v3_radio_click1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="默认"
+                    android:textColor="@color/merchantsinfo_text1" />
+                <!-- android:background="@drawable/rbt_com_list" -->
+
+                <View
+                    android:layout_width="0.66dip"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/v3_group_fenge" />
+
+                <RadioButton
+                    android:id="@+shoppinglist/rbt_sale"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/v3_radio_click3"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/shopping_rdb_sale"
+                    android:textColor="@color/merchantsinfo_text1" />
+
+                <View
+                    android:layout_width="0.66dip"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/v3_group_fenge" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+shoppinglist/price"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dip"
+                    android:background="@drawable/v3_radio3"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/shopping_rdb_price"
+                    android:textColor="@color/merchantsinfo_text1" />
+
+                <View
+                    android:layout_width="0.66dip"
+                    android:layout_height="47dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/v3_group_fenge" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+shopinglist/sousuo"
+            style="@style/text"
+            android:layout_width="47dip"
+            android:layout_height="47dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/v3_radio1"
+            android:drawableRight="@drawable/ico_fdj"
+            android:paddingLeft="10dip"
+            android:paddingRight="15dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/norows"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+shoppinglist/radio_layout"
+        android:gravity="center_vertical"
+        android:text="@string/norows"
+        android:textColor="#474747"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <com.mdx.mobile.widget.PullReloadView
+        android:id="@+shoppinglist/pullReloadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/norows"
+        android:layout_marginTop="-30dp"
+        android:orientation="vertical" >
+
+        <com.wjwl.mobile.taocz.widget.PullDownView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wjwl.mobile.taocz.widget.PullDownView>
+
+        <com.mdx.mobile.widget.PageListView
+            android:id="@+shoppinglist/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/line_gray"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false" >
+        </com.mdx.mobile.widget.PageListView>
+    </com.mdx.mobile.widget.PullReloadView>
+
+    <RelativeLayout
+        android:id="@+shoppinglist/chart"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip" >
+
+        <ImageView
+            android:layout_width="67dip"
+            android:layout_height="67dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ico_cart1" />
+
+        <TextView
+            android:id="@+shoppinglist/carnumber"
+            style="@style/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tczv3_gouwunumber"
+            android:gravity="center"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:text="9"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+shoppinglist/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+shoppinglist/headlayout"
+        android:background="@drawable/indext_yiny" />
+
+</RelativeLayout>

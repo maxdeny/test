@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+  	    <com.wjwl.mobile.taocz.widget.DragChangeView
+		        android:id="@+tczv3/DragChangeView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@color/black"/>
+   	    
+    <RelativeLayout
+        android:layout_below="@+tczv3/DragChangeView"
+        android:id="@+six/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/head_color" >
+
+        <RelativeLayout
+            android:id="@+six/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="54dip"
+            android:background="@color/head_color"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" >
+
+            <View
+                android:id="@+six/title"
+                android:layout_width="53dip"
+                android:layout_height="23dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/head_redandorg_title" />
+
+            <EditText
+                android:id="@+six/edit_search"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="34.7dip"
+                android:layout_centerVertical="true"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="45dip"
+                android:layout_toRightOf="@+six/title"
+                android:background="@drawable/my_coupon_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/index_edit_hint"
+                android:textColorHint="@color/hinttext"
+                android:paddingLeft="58dip"/>
+
+            
+             <Button
+                      android:id="@+six/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_saoyisao" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+six/btn_del"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/btn_search_delete"
+              />
+
+              <Button
+                android:id="@+six/btn_search"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+six/title"
+                android:layout_marginLeft="12dip"
+                android:background="@drawable/icon_search"
+                android:textColor="#FFFFFF" />
+              
+            <com.wjwl.mobile.taocz.widget.PopubLayout
+                android:visibility="gone"
+                android:id="@+six/popublayout"
+                android:layout_width="55dip"
+                android:layout_height="34.7dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+six/title"
+                 android:layout_marginLeft="8dip"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+six/color1"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_below="@+six/layout"
+            android:visibility="gone"
+            android:background="@drawable/bg_index2"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_below="@+six/color1"
+            android:background="@drawable/bg_index3"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+six/listfind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+six/search" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+six/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+six/search" >
+
+        <RadioGroup
+            android:id="@+six/group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+six/radiobtn2"
+                android:layout_width="0dip"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:text="@string/six_text2"
+                android:textColor="#000000" />
+            
+            <RadioButton
+                android:id="@+six/radiobtn1"
+                android:layout_width="0dip"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/six_text1"
+                android:textColor="#000000" />
+
+            
+        </RadioGroup>
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line_gray"
+           />
+
+        <LinearLayout
+        android:id="@+six/listview"
+        android:layout_marginTop="47dip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:orientation="vertical"
+            > 
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="26dp"
+        android:paddingTop="3dp"
+        android:text="@string/shake_text"
+        android:textColor="#606060"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:id="@+six/initlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+        </LinearLayout>
+       <!--  
+        <ListView
+            android:id="@+six/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+six/group"
+            android:layout_marginBottom="100dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/listview_line" />
+        --> 
+        
+        <ListView
+            android:id="@+six/listview1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+six/group"
+            android:layout_marginBottom="100dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/listview_line"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+six/clean_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sousuo5"
+                android:gravity="center"
+                android:text="清空浏览记录"
+                android:textColor="#0066cc"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+six/tiaoma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sousuo_tiaoma"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+six/yuyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/sousuo_yuyin"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

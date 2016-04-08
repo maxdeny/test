@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dadada" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+myfocuse/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="49dip"
+            android:background="@drawable/wbshare_bg_head" >
+
+            <Button
+                android:id="@+shareandsend/back"
+                style="@style/text"
+                android:layout_width="46.7dip"
+                android:layout_height="27.3dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/wbshare_bt_back"
+                android:paddingLeft="8dip"
+                android:text="@string/back"
+                android:textColor="@color/text999999" />
+
+            <TextView
+                android:id="@+shareandsend/head_text"
+                style="@style/headtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/head_shareandsend"
+                android:textColor="@color/textColor_666666" />
+
+            <Button
+                android:id="@+shareandsend/bt_save"
+                style="@style/text"
+                android:layout_width="46.7dip"
+                android:layout_height="27.3dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/wbshare_bt_com"
+                android:gravity="center"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="@string/send"
+                android:textColor="@color/textColor_999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dip"
+            android:layout_margin="10dip"
+            android:background="@drawable/wbshare_bg_frame_gray" >
+
+            <EditText
+                android:id="@+shareandsend/ed_content"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="发表您的描述"
+                android:paddingBottom="40dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" 
+                android:textColor="#333333"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_alignParentBottom="true"
+                android:padding="5dip" >
+                <TextView
+                    android:id="@+shareandsend/textlength"
+                    style="@style/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="140"
+                    android:textColor="@color/textColor_666666" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+shareandsend/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="添加话题"
+                android:textColor="@color/textColor_666666" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="(最多添加4个)"
+                android:textColor="@color/text999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+shareandsend/layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+shareandsend/lable_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+shareandsend/bt_icon1"
+                        style="@style/text13"
+                        android:layout_width="70dip"
+                        android:layout_height="24dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/wbshare_bt_share_com"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor_666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+shareandsend/bt_icon2"
+                        style="@style/text13"
+                        android:layout_width="70dip"
+                        android:layout_height="24dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/wbshare_bt_share_com"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor_666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+shareandsend/bt_icon3"
+                        style="@style/text13"
+                        android:layout_width="70dip"
+                        android:layout_height="24dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/wbshare_bt_share_com"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor_666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+shareandsend/bt_icon4"
+                        style="@style/text13"
+                        android:layout_width="70dip"
+                        android:layout_height="24dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/wbshare_bt_share_com"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor_666666" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+shareandsend/bt_addlable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/wbshare_bg_frame_gray"
+                android:clickable="true"
+                android:drawableRight="@drawable/wbshare_more_arrow"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="添加标签"
+                android:textColor="@color/text999999" >
+            </Button>
+
+            <TextView
+                android:id="@+shareandsend/text"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="添加到城事"
+                android:textColor="@color/textColor_666666"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+shareandsend/clic_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/wbshare_bg_frame_gray"
+                android:clickable="true"
+                android:drawableRight="@drawable/wbshare_more_arrow"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="加入你的城事"
+                android:textColor="@color/text999999"
+                android:visibility="gone" >
+            </Button>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+shareandsend/t_fabudao"
+                    style="@style/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布到："
+                    android:textColor="@color/textColor_666666" />
+
+                <CheckBox
+                    android:id="@+shareandsend/bt_xinlang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18.7dip"
+                    android:button="@drawable/wbshare_bt_share_xinlang" 
+                    android:text="新浪"
+                    android:textColor="#333333"/>
+
+                <CheckBox
+                    android:id="@+shareandsend/bt_tengxun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18.7dip"                    
+                    android:button="@drawable/wbshare_bt_share_tengxun" 
+                    android:text="腾讯"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:checked="false"
+                    style="@style/lockCheckbox"
+                    android:id="@+shareandsend/bt_lock"
+                    android:layout_width="12.7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

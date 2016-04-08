@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.TczV3_HeadLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+		android:background="@color/gray"
+         >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="我的优惠券"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/headv3_left"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:text="@string/back"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radiobtn1"
+                android:layout_width="0dip"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="未使用"
+                android:textColor="@drawable/checkbox_text_style"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/di_my_02" />
+
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="0dip"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已使用"
+                android:textColor="@drawable/checkbox_text_style" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/di_my_02" />
+
+            <RadioButton
+                android:id="@+id/radiobtn3"
+                android:layout_width="0dip"
+                android:layout_height="47dip"
+                android:layout_weight="1"
+                android:background="@drawable/rbt_com_list"
+                android:button="@null"
+                android:gravity="center"
+                android:text="激活"
+                android:textColor="@drawable/checkbox_text_style" />
+        </RadioGroup>
+
+        <com.mdx.mobile.widget.AMLayout
+            android:id="@+id/mycoupon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/group"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+</LinearLayout>

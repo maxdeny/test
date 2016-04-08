@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+b_shoppinglist/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/head_redandorg" >
+
+        <TextView
+            android:id="@+b_shoppinglist/head_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_map_gray"
+        android:contentDescription="@string/app_name" />
+
+    <RadioGroup
+        android:id="@+b_shoppinglist/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+b_shoppinglist/rbt_people"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_shoppinglist"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/line_shopping_btn"
+            android:gravity="center"
+            android:text="@string/shopping_rdb_peple"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+
+        <RadioButton
+            android:id="@+b_shoppinglist/rbt_price"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_shoppinglist"
+            android:button="@null"
+            android:drawableRight="@drawable/line_shopping_btn"
+            android:gravity="center"
+            android:text="@string/shopping_rdb_price"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+
+        <RadioButton
+            android:id="@+b_shoppinglist/rbt_sale"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbt_shoppinglist"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/shopping_rdb_sale"
+            android:textColor="@drawable/shoppinglist_btncolor_change" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_map_gray"
+        android:contentDescription="@string/app_name" />
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" >
+
+        <com.mdx.mobile.widget.PullReloadView
+            android:id="@+b_shoppinglist/pullReloadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.wjwl.mobile.taocz.widget.PullDownView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.wjwl.mobile.taocz.widget.PullDownView>
+            
+            <com.mdx.mobile.widget.PageListView
+                android:id="@+b_shoppinglist/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/line_gray"
+                android:background="@null"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:scrollingCache="false" >
+            </com.mdx.mobile.widget.PageListView>
+        </com.mdx.mobile.widget.PullReloadView>
+    </LinearLayout>
+
+
+</LinearLayout>

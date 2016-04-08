@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+item_preferentialactivies/clic"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:clickable="true"
+    android:padding="10dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_preferentialactivies/img"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_h_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginRight="20dip"
+        android:layout_toRightOf="@+item_preferentialactivies/img"
+        android:orientation="vertical"
+        android:paddingLeft="5dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_preferentialactivies/newprice"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="￥34.00"
+                android:textColor="@color/sysset_red" />
+
+            <TextView
+                android:id="@+item_preferentialactivies/oldprice"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+item_preferentialactivies/newprice"
+                android:text="￥123.00"
+                android:textColor="@color/textColor_999999" />
+
+            <TextView
+                android:id="@+item_preferentialactivies/t_zhekou"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="折"
+                android:textColor="@color/textColor_999999" />
+
+            <TextView
+                android:id="@+item_preferentialactivies/zhekou"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+item_preferentialactivies/t_zhekou"
+                android:text="7.5"
+                android:textColor="#F27A17" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+item_preferentialactivies/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="汇源果汁仅售69元，原价100远是地方  是发达"
+                android:textColor="@color/merchantsinfo_text1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_preferentialactivies/t_buynums1"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="已经有"
+                android:textColor="@color/textColor_999999" />
+
+            <TextView
+                android:id="@+item_preferentialactivies/buynums"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+item_preferentialactivies/t_buynums1"
+                android:text="15"
+                android:textColor="#0154AD" />
+
+            <TextView
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+item_preferentialactivies/buynums"
+                android:text="购买"
+                android:textColor="@color/textColor_999999" />
+
+            <TextView
+                android:id="@+item_preferentialactivies/area"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dip"
+                android:text="奔牛镇"
+                android:textColor="@color/textColor_999999" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+item_preferentialactivies/area"
+                android:background="@drawable/icon_map" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="8.8dip"
+        android:layout_height="11.3dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:background="@drawable/more_arrow" />
+
+</RelativeLayout>

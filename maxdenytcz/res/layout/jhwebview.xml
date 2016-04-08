@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+	
+    
+    
+    <com.wjwl.mobile.taocz.widget.HeadLayout
+        android:id="@+id/v3_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    
+    <WebView
+        android:layout_marginTop="44dip"
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        />
+
+</RelativeLayout>

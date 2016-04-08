@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.wjwl.mobile.taocz.widget.HeadLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:orientation="vertical"
+        android:padding="12dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.mdx.mobile.widget.MImageView
+                android:id="@+serviceconfirm/img"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/default_h_bg" />
+
+            <TextView
+                android:id="@+serviceconfirm/name"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_marginLeft="8dip"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:background="@drawable/yuankuang_2" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip">
+                <TextView 
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="单价："/>
+                <TextView 
+                    android:id="@+serviceconfirm/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥45"/>
+            </LinearLayout>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="0.66dip"
+                android:background="@drawable/line2"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip">
+                <TextView 
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="数量："/>
+                 <LinearLayout
+                     android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         >
+        <Button
+            android:id="@+serviceconfirm/plus"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:background="@drawable/cart_plus" />
+
+        <EditText
+            android:id="@+serviceconfirm/ed_num"
+            android:layout_width="60dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/tu"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+serviceconfirm/minus"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/cart_minus" />
+    </LinearLayout>
+            </LinearLayout>
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="0.66dip"
+                android:background="@drawable/line2"/>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip">
+                <TextView 
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="总价："/>
+                <TextView 
+                    android:id="@+serviceconfirm/zongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:text="￥45"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="用于接收消费者短信"
+        android:layout_marginTop="8dip"/>
+        
+        <EditText
+            android:layout_marginTop="8dip"
+                android:id="@+serviceconfirm/edit_phone"
+                style="@style/text"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:background="@drawable/edit_com"
+                android:focusable="true"
+                android:hint="@string/hint_phone"
+                android:inputType="number"
+                android:textColorHint="@color/hinttext" />
+    
+    <LinearLayout 
+        android:visibility="gone"
+        android:background="@drawable/yuankuang_3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号:"/>
+        <TextView 
+            android:id="@+serviceconfirm/phone"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="18061871789"
+            android:textColor="#999999"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_arrow"/>
+    </LinearLayout>
+        
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="用于接收消费者短信"
+        android:layout_marginTop="8dip"
+        android:visibility="gone"/>
+    
+    <LinearLayout 
+        android:id="@+serviceconfirm/youhui_l"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/yuankuang_3"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip">
+        
+        <TextView 
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="使用优惠劵"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_arrow"/>
+    </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合计："/>
+    <TextView 
+        android:id="@+serviceconfirm/heji"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="16sp"/>
+    <Button 
+        android:id="@+serviceconfirm/bt_pay"
+        android:layout_width="120dip"
+        android:layout_height="38dip"
+        android:text="结算"
+        android:background="@drawable/bt_com_orange"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="7dip" >
+
+    <com.mdx.mobile.widget.MImageView
+        android:id="@+item_myorder_list/favoriteimg"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+item_myorder_list/name"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+item_myorder_list/business"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="#636363" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+item_myorder_list/price"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#ca2f00" />
+
+            <TextView
+                android:id="@+item_myorder_list/date"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+item_myorder_list/see"
+                android:layout_marginRight="3dip"
+                android:maxLines="1"
+                android:textColor="#bdbdbd" />
+
+            <Button
+                android:id="@+item_myorder_list/see"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_login_login"
+                android:text="@string/myorder_see"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

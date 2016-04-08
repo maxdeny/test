@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wjwl.mobile.taocz.widget.Item_Index_More xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="107dip"
+    android:layout_height="110dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="107dip"
+        android:layout_height="110dip" >
+
+        <com.mdx.mobile.widget.MImageView
+            android:id="@+v3_index_head/item_index_img"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_marginTop="10dip"
+            android:id="@+v3_index_head/zsth_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+v3_index_head/item_index_img"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:text="￥123" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dip"
+            android:background="@drawable/line2" />
+    </RelativeLayout>
+
+</com.wjwl.mobile.taocz.widget.Item_Index_More>

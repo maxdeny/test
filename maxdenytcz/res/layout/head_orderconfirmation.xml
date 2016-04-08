@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="false"
+    android:paddingTop="6dip"
+    android:paddingBottom="6dip"
+    android:orientation="vertical" >
+      <LinearLayout
+                android:id="@+head_orderconfirmation/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_frame_gray"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#88EEEEEE"
+                    android:orientation="vertical"
+                    android:paddingTop="6dip" >
+
+                    <TextView
+                        android:id="@+head_orderconfirmation/tx_address"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginRight="6dip"
+                        android:text="@string/orderconfirmation_text1"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dip"
+                        android:background="@drawable/line_gray" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+head_orderconfirmation/clic_layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clic_gray"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+head_orderconfirmation/username"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="20dip"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+head_orderconfirmation/useraddress"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_toRightOf="@+head_orderconfirmation/username"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+head_orderconfirmation/tel"
+                        style="@style/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+head_orderconfirmation/useraddress"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="8.8dip"
+                        android:layout_height="11.3dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/more_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+</LinearLayout>

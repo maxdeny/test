@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clic_gray"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+item_sysset/text1"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_cleancache"
+                android:textColor="@color/sysset_text1" />
+
+            <TextView
+                android:id="@+item_sysset/text2"
+                style="@style/text13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sysset_include1"
+                android:textColor="@color/merchantsinfo_text2" />
+        </LinearLayout>
+
+        <CheckBox
+            android:focusable="false"
+            android:id="@+item_sysset/checkbox"
+            style="@style/LoginCheckBox"
+            android:layout_width="17.3dip"
+            android:layout_height="17.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor" />
+    </RelativeLayout>
+
+</RelativeLayout>

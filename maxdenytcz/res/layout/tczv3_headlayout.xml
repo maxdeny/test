@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dip"
+    android:background="@color/head_color"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+tczv3/back"
+        style="@style/text16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/tczv3_icon_back"
+        android:gravity="center"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+tczv3/headtitle"
+        style="@style/text20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dip"
+        android:layout_marginRight="80dip"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+tczv3/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/none"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+tczv3/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:layout_toLeftOf="@+tczv3/bt_1"
+        android:background="@color/none"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+tczv3/bt_3"
+        style="@style/text16"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/none"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/text333333"
+        android:visibility="gone" />
+
+</RelativeLayout>
