@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/style_dialog"
+	android:id="@+id/ll"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip">
+        <TextView 
+            android:id="@+id/tv_currenttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dip"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="20dip"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <SeekBar  
+        android:id="@+id/seekbar"  
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content"   
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dip"
+        android:max="100"
+        android:progress="0" />  
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center">
+        <TextView 
+            android:id="@+id/tv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/play_yes"/>
+        <TextView 
+            android:id="@+id/tv_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/stop_no"/>
+        <TextView 
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/back_no"/>
+        <TextView 
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/speed_no"
+            android:layout_marginRight="20dip"/>
+    </LinearLayout>
+    
+	
+    
+</LinearLayout>
