@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- uri="http://10.49.188.109" -->
+<!-- uri="http://wangcunzhou.vicp.net:33382/" -->
+
+<FrameInit
+        durl="get/"
+        error=""
+        iconurl=""
+        loading="com.my.spyware.dialog.MyProgressDialog"
+        log="true"
+        mapkey="8907E092BFB7B83000A09B1BD279775CE30AE2F27"
+        menu=""
+        package="com.xcecs.data.dw"
+        temppath="spyware"
+        uri="http://192.168.1.100:8080"
+        url="/dw/mobile?methodno="
+        uurl="http://app.iappk.com/version"
+        sotimeout="5000"
+    	connectiontimeout="5000"
+        >
+    
+  
+    
+    <url name="MBUserRegister" type="2" classname=".DW_User$MsgUserInfo">MBUserRegister</url>
+
+    <url name="MBUserSetBlack" type="2" classname=".DW_User$MsgUserInfo">MBUserSetBlack</url>
+    <url name="MBUserList" type="20" cachetime="1000" classname=".DW_User$MsgUserList">MBUserList</url>
+    <url name="MBUserScope" type="2" >MBUserScope</url>
+    <url name="MBUserForgetPwd" type="21" >MBUserForgetPwd</url>
+    <url name="MBUserAddress" type="2" >MBUserAddress</url>
+    <url name="MBFindPassByEmail" type="2" >MBFindPassByEmail</url>
+    <url name="MBUserLogin" type="2"  classname=".DW_User$MsgUserInfo">MBUserLogin</url>
+</FrameInit>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FFFF3C00</color>
+    <color name="none">#00000000</color>
+    <color name="smallyello">#50FC9863</color>
+    <color name="clic_gray">#F0F0F0</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#E9E9E9</color>
+    <color name="black_light_l">#F6F6F6</color>
+    <color name="gray">#F4F4F4</color>
+    <color name="textColor">#252525</color>
+    <color name="red">#FF0000</color>
+    <color name="addressinfo">#494949</color>
+    <color name="merchantsinfo_text1">#333333</color>
+    <color name="merchantsinfo_text2">#808080</color>
+    <color name="businesslist_nor">#f9f8f8</color>
+    <color name="businesslist_pre">#ECECEC</color>
+    <color name="share_text">#6a6a6a</color>
+    <color name="sysset_red">#fc3b00</color>
+    <color name="small_red">#99fc3b00</color>
+    <color name="sysset_text1">#333333</color>
+    <color name="life_info">#313031</color>
+    <color name="life_price">#fc3b00</color>
+    <color name="itemhotrec_oldprice">#bdbdbd</color>
+    <color name="attrib_gray">#898989</color>
+    <color name="attrib_gray_b">#333333</color>
+    <color name="buzhichihuodaofukuan">#999999</color>
+    <color name="writing_a">#333333</color>
+    <color name="friend_white">#00e1ca</color>
+    <color name="friend_black">#646464</color>
+    <color name="setting_text_color">#808080</color>
+
+    <drawable name="bg_blue">#E5F5FF</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="transparent_background">#dfdfdf</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="menu_text_color_n">#3d3d3d</color>
+    <color name="menu_text_color_s">#f97a27</color>
+    <color name="default_img_background_color">#f6f6f6</color>
+    <color name="project_filter_text_color_s">#333333</color>
+    <color name="project_filter_text_color_n">#8b8b8b</color>
+    <color name="di_sort_gray">#efefef</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+</resources>

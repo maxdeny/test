@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setting_relayout_push"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_w_frame_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="推送功能"
+            android:textColor="@color/setting_text_color"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/setting_checkbox_push"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_checkbox_click"
+            android:button="@null"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_relayout_sound"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_w_frame_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="开启声音提示"
+            android:textColor="@color/setting_text_color"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/setting_checkbox_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_checkbox_click"
+            android:button="@null"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_relayout_vibrate"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_w_frame_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="开启振动提示"
+            android:textColor="@color/setting_text_color"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/setting_checkbox_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_checkbox_click"
+            android:button="@null"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_modify_scope"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_w_frame_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="修改报警范围"
+            android:textColor="@color/setting_text_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_modify_password"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_w_frame_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="修改用户密码"
+            android:textColor="@color/setting_text_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_w_frame_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="注销登录"
+            android:textColor="@color/setting_text_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorMsg>
+	<msg name="98" type="2" >连接错误,请检查网络!</msg>
+	<msg name="91" >未知错误</msg>
+	<msg name="90" >授权错误!</msg>
+	<msg name="96" >Json解析错误</msg>
+	<msg name="97" >代码编写错误</msg>
+	<msg name="3" type="0">登录超时</msg>
+	<msg name="1000">登录信息失效，请重新登陆</msg>
+	<msg name="121">商品下架</msg>
+	<msg name="131">活动已取消</msg>
+	<msg name="141">订单已失效，请重新下单</msg>
+    <msg name="100" type="3">用户已经被注册</msg>
+</errorMsg>
