@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/antiquewhite"
+        android:gravity="center">
+        
+        <TextView 
+            android:id="@+id/imgbtn_optimize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/imgbtn_optimize"
+            android:text="立即优化"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/whitesmoke"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        
+            <TextView 
+                android:id="@+id/speedup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清理加速"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/lightgray" />
+
+            <TextView 
+                android:id="@+id/phonecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="话费流量"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:gravity="center"/>
+            
+    	</LinearLayout>
+    	
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/lightgray" />
+    
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        
+            <TextView 
+                android:id="@+id/intercept"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="骚扰拦截"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:gravity="center"/>
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/lightgray" />
+            <TextView 
+                android:id="@+id/addressbook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="通讯录"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:gravity="center"/>
+            
+    	</LinearLayout>
+    	
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="@color/lightgray" />
+    	
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        
+            <TextView 
+                android:id="@+id/payguard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="支付保镖"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:gravity="center"/>
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/lightgray" />
+            <TextView 
+                android:id="@+id/killvirus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="手机杀毒"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:gravity="center"/>
+            
+    	</LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

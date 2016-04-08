@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/orange" >
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"/>
+        <TextView 
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清理加速"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/speed_button_normal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"/>
+        
+    </RelativeLayout>
+    
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        
+        <LinearLayout 
+        android:id="@+id/liner_cleaninfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+            
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dip"
+                >
+                <TextView 
+                android:id="@+id/tv_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0MB"
+                android:textSize="54sp"
+                />
+                <TextView 
+                android:id="@+id/tv_advice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建议清理"
+                android:textSize="12sp"
+                />
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:id="@+id/liner_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dip"
+                android:gravity="center"
+                >
+                
+                <TextView 
+                android:id="@+id/tv_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可清理0MB    "
+                android:textSize="16sp"/>
+                <TextView 
+                android:id="@+id/tv_canicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_down"/>
+            </LinearLayout>
+            
+            
+    	</LinearLayout>
+    	
+        
+        <TextView 
+            android:id="@+id/tv_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_clean"
+            android:layout_marginTop="30dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="一键清理"
+            android:textSize="25sp"
+            android:textColor="@color/whitesmoke"/>
+        
+        <ListView 
+            android:id="@+id/rublistview"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:background="@color/olivedrab"
+            />
+        
+        
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>

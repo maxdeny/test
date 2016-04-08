@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+	
+  	
+    
+  	<LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight="1"
+  	    android:orientation="horizontal"
+  	    android:gravity="center_vertical"
+  	    android:layout_marginLeft="15dp"
+  	    >
+  	    <TextView 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="按默认排序"
+  	    android:textSize="12sp"
+  	    android:textColor="@color/black"
+  	    />
+  	    <TextView 
+  	    
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+  	    />
+  	    <TextView 
+  	    android:id="@+id/sort1"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:background="@drawable/appmgr_onekey_item_status_good"
+  	    android:layout_marginRight="15dp"
+  	    android:visibility="gone"
+  	    />
+  	    
+  	</LinearLayout>
+  	<View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="1dp"
+  	    android:background="@color/whitesmoke"/>
+  	<LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight="1"
+  	    android:orientation="horizontal"
+  	    android:gravity="center_vertical"
+  	    android:layout_marginLeft="15dp"
+  	    >
+  	    <TextView 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="按大小排序"
+  	    android:textSize="12sp"
+  	    android:textColor="@color/black"
+  	    />
+  	    <TextView 
+  	    
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+  	    />
+  	    <TextView 
+  	    android:id="@+id/sort2"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:background="@drawable/appmgr_onekey_item_status_good"
+  	    android:layout_marginRight="15dp"
+  	    android:visibility="gone"
+  	    />
+  	    
+  	</LinearLayout>
+  	<View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="1dp"
+  	    android:background="@color/whitesmoke"/>
+  	
+  	
+  	<View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="1dp"
+  	    android:background="@color/whitesmoke"/>
+  	
+  	
+  	<LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight="1"
+  	    android:orientation="horizontal"
+  	    android:gravity="center_vertical"
+  	    android:layout_marginLeft="15dp"
+  	    >
+  	    <TextView 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="按名称排序"
+  	    android:textSize="12sp"
+  	    android:textColor="@color/black"
+  	    />
+  	    <TextView 
+  	    
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+  	    />
+  	    <TextView 
+  	    android:id="@+id/sort4"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:background="@drawable/appmgr_onekey_item_status_good"
+  	    android:layout_marginRight="15dp"
+  	    android:visibility="gone"
+  	    />
+  	    
+  	</LinearLayout>
+  	<View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="1dp"
+  	    android:background="@color/whitesmoke"/>
+  	
+  	<LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight="1"
+  	    android:orientation="horizontal"
+  	    android:gravity="center_vertical"
+  	    android:layout_marginLeft="15dp"
+  	    >
+  	    <TextView 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="按时间排序"
+  	    android:textSize="12sp"
+  	    android:textColor="@color/black"
+  	    />
+  	    <TextView 
+  	    
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+  	    />
+  	    <TextView 
+  	    android:id="@+id/sort5"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:background="@drawable/appmgr_onekey_item_status_good"
+  	    android:layout_marginRight="15dp"
+  	    android:visibility="gone"
+  	    />
+  	    
+  	</LinearLayout>
+  	<View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="1dp"
+  	    android:background="@color/whitesmoke"/>
+  	
+  <LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_weight="1"
+  	    android:orientation="horizontal"
+  	    android:gravity="center_vertical"
+  	    android:layout_marginLeft="15dp"
+  	    >
+  	    <TextView 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:text="按状态排序"
+  	    android:textSize="12sp"
+  	    android:textColor="@color/black"
+  	    />
+  	    <TextView 
+  	    
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+  	    />
+  	    <TextView 
+  	    android:id="@+id/sort5"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+		android:background="@drawable/appmgr_onekey_item_status_good"
+  	    android:layout_marginRight="15dp"
+  	    android:visibility="gone"
+  	    />
+  	    
+  	</LinearLayout>
+  	
+  	
+  	
+  	
+</LinearLayout>

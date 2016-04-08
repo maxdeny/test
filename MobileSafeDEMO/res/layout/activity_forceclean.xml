@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/tomato">
+    
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"/>
+        <TextView 
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强力清理"
+            android:textSize="15sp"
+            android:textColor="@color/snow"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/speed_button_normal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"/>
+        
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="200dip"
+		    android:background="@color/orangered" 
+		    android:text="自定义图片动态显示存储"
+		    android:gravity="center"/>
+	    
+	</LinearLayout>
+	
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scrollbars="vertical"
+	    android:background="@color/white">
+        
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical">
+
+	        <LinearLayout 
+            android:id="@+id/forcespeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dip">
+            
+            <TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/forcespeed"/>
+	   		<LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:layout_weight="1">
+
+		        <TextView
+		            android:id="@+id/app_advicesize"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="强劲加速"
+		            android:textSize="15sp"/>
+		        
+		        <TextView
+		            android:id="@+id/custom_speed"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="发现5款自启动软件"
+		            android:textSize="10sp"
+		            android:layout_marginTop="5dp"/>
+
+    		</LinearLayout>
+    		
+    		<TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/cs"/>
+            
+        </LinearLayout>
+	    
+	    
+	    <LinearLayout 
+            android:id="@+id/unstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dip">
+            
+            <TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/appmgr_icon_uninstall"/>
+	   		<LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:layout_weight="1">
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="卸载预装"
+		            android:textSize="15sp"/>
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="卸载系统不常用软件"
+		            android:textSize="10sp"
+		            android:layout_marginTop="5dp"/>
+
+    		</LinearLayout>
+    		
+    		<TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/cs"/>
+            
+        </LinearLayout>
+        
+	    <LinearLayout 
+            android:id="@+id/privacy_clean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dip">
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/sysclear_privacy_clear_icon"/>
+	   		<LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:layout_weight="1">
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="隐私清理"
+		            android:textSize="15sp"/>
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="防止隐私泄露，轻松清理不留痕迹"
+		            android:textSize="10sp"
+		            android:layout_marginTop="5dp"/>
+
+    		</LinearLayout>
+    		
+    		<TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/cs"/>
+            
+            </LinearLayout>
+	        
+	     <LinearLayout 
+            android:id="@+id/save_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dip">
+            
+            <TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/sysclear_item_save_space_icon"/>
+	   		<LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:layout_weight="1">
+
+		        <TextView
+		            android:id="@+id/app_advicesize"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="照片省空间"
+		            android:textSize="15sp"/>
+		        
+		        <TextView
+		            android:id="@+id/app_allsize"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="优化照片大小，节省80%存储空间"
+		            android:textSize="10sp"
+		            android:layout_marginTop="5dp"/>
+
+    		</LinearLayout>
+    		
+    		<TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/cs"/>
+            
+        </LinearLayout>
+	      
+	      <LinearLayout 
+            android:id="@+id/soft_move"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dip">
+            
+            <TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/appmgr_icon_move"/>
+	   		<LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="center_vertical"
+		        android:layout_weight="1">
+
+		        <TextView
+		            android:id="@+id/app_advicesize"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="软件搬家"
+		            android:textSize="15sp"/>
+		        
+		        <TextView
+		            android:id="@+id/app_allsize"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="软件搬家，节省更多系统空间"
+		            android:textSize="10sp"
+		            android:layout_marginTop="5dp"/>
+
+    		</LinearLayout>
+    		
+    		<TextView
+		        android:id="@+id/app_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical" 
+		        android:background="@drawable/cs"/>
+            
+        </LinearLayout>
+	        
+	        
+	        
+	</LinearLayout>
+	    
+   </ScrollView>
+    
+</LinearLayout>

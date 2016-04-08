@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@android:id/tabhost"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+        >
+        
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+                  
+        <FrameLayout android:id="@android:id/tabcontent"
+                     android:layout_width="fill_parent"
+                     android:layout_height="0.0dip"
+                     android:layout_weight="1.0"/>
+        
+        <TabWidget android:id="@android:id/tabs"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.0"
+                   android:visibility="gone"/>
+        
+        <RadioGroup android:id="@+id/main_tab"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="bottom">
+                    
+            <RadioButton android:id="@+id/radio_speed"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:drawableTop="@drawable/tab_menu"
+                         android:button="@null"
+                         android:checked="true"
+                         android:text="常用功能"
+                         android:gravity="center"/>
+             
+            <RadioButton android:id="@+id/radio_health"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:button="@null"
+                         android:drawableTop="@drawable/tab_index"
+                         android:text="软件管理"
+                         android:gravity="center"/>
+            
+            <RadioButton android:id="@+id/radio_safe"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:button="@null"
+                         android:drawableTop="@drawable/tab_info"
+                         android:text="安全防护"
+                         android:gravity="center"/>
+            
+            <RadioButton android:id="@+id/radio_soft"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:button="@null"
+                         android:drawableTop="@drawable/tab_adver"
+                         android:text="隐私保护"
+                         android:gravity="center"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/greenyellow">
+        
+        <TextView 
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"/>
+        <TextView 
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强力清理"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/speed_button_normal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"/>
+        
+    </RelativeLayout>
+    
+    <ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scrollbars="vertical"
+	    android:background="@color/lightgray">
+        
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical">
+	
+			
+			<LinearLayout 
+			    android:id="@+id/forbid_noinfluence"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="10dp"
+			    android:paddingTop="20dp"
+			    android:paddingBottom="20dp"
+			    android:orientation="horizontal"
+			    android:background="@color/white">
+			    <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/ic_down"/>
+
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text=" 禁止下列软件自启，提升运行速度"
+			        android:textColor="@color/grey"
+			        android:textSize="15sp"
+			        android:layout_marginTop="5dp" />
+
+			</LinearLayout>
+			
+			<View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dip"
+			    android:background="@color/lightslategray"/>
+			
+			<LinearLayout 
+			    android:id="@+id/forbid_influence"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="10dp"
+			    android:paddingTop="20dp"
+			    android:paddingBottom="20dp"
+			    android:orientation="horizontal"
+			    android:background="@color/white">
+			    <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/ic_down"/>
+
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text=" 禁止下列软件自启，会影响正常使用"
+			        android:textColor="@color/grey"
+			        android:textSize="15sp"
+			        android:layout_marginTop="5dp" />
+
+			</LinearLayout>
+	        
+	        <View 
+			    android:layout_width="match_parent"
+			    android:layout_height="1dip"
+			    android:background="@color/lightslategray"/>
+			
+			<LinearLayout 
+			    android:id="@+id/forbid_influence"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="10dp"
+			    android:paddingTop="10dp"
+			    android:paddingRight="15dp"
+			    android:paddingBottom="10dp"
+			    android:orientation="horizontal"
+			    android:background="@color/white">
+			    <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/system_coresoft"/>
+
+			    <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical"
+			        android:layout_gravity="center_vertical"
+			        android:layout_marginLeft="10dp"
+			        android:layout_weight="1">
+			        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="系统核心软件"
+			        android:textColor="@color/grey"
+			        android:textSize="15sp"
+			        android:layout_marginTop="5dp" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="禁止后可能导致功能异常"
+			        android:textColor="@color/grey"
+			        android:textSize="10sp"
+			        android:layout_marginTop="5dp" />
+			        
+			    </LinearLayout>
+			    
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/ic_right"
+			        android:layout_gravity="center_vertical"/>
+			    
+			</LinearLayout>
+	        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:text="package name:"/>
+		</LinearLayout>
+	    
+     </ScrollView>
+	
+</LinearLayout>

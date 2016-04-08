@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/lightgray"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="15dp"
+	    android:paddingBottom="15dp"
+	    android:paddingRight="10dip"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="已安装软件:"
+	        android:textSize="12sp"
+	        android:textColor="@color/black"/>
+	    <TextView 
+	        android:id="@+id/soft_installed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="@color/greenyellow"/>
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="手机空间剩余:"
+	        android:textSize="12sp"
+	        android:textColor="@color/black"/>
+	    <TextView 
+	        android:id="@+id/mobile_freespace"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="@color/greenyellow"/>
+	    
+	</LinearLayout>
+	
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    >
+	    <ListView 
+	        android:id="@+id/usersoft_listview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"/>
+	    
+	</LinearLayout>
+    
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/lightgrey"
+	    android:gravity="center_vertical"
+	    >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_weight="1">
+	        <TextView 
+		        android:id="@+id/usersoft_backup"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="12sp"
+		        android:textColor="@color/black"
+		        android:text="备份"
+		        android:gravity="center"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:background="@drawable/white_cornersolid"
+		        android:layout_weight="1"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginLeft="10dp"
+		        />
+	        <TextView 
+		        android:id="@+id/usersoft_uninstall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="12sp"
+		        android:textColor="@color/white"
+		        android:text="卸载"
+		        android:gravity="center"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:background="@drawable/red_cornersolid"
+		        android:layout_weight="1"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginLeft="5dp"/>
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:id="@+id/chb_usersoft"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:background="@drawable/common_checkbox1_unchecked"/>
+	    	
+	</LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/white"
+    android:paddingTop="5dip"
+    android:paddingBottom="10dip">
+    
+    <ImageView 
+        android:id="@+id/iv_usericon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dip">
+        
+        <TextView 
+            android:id="@+id/tv_usersoftname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="softname"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <TextView 
+            android:id="@+id/tv_usersoftversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本：00000.00"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="5dip"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="10dip">
+        
+        <TextView 
+            android:id="@+id/tv_usersafeversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正版"
+            android:textSize="12sp"
+            android:textColor="@color/green"/>
+        <TextView 
+            android:id="@+id/tv_usersafesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0M"
+            android:textSize="12sp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="5dip"/>
+    </LinearLayout>
+    
+    <ToggleButton 
+        android:id="@+id/tg_usersoft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_gravity="center_vertical"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/common_checkbox1_unchecked"/>
+
+</LinearLayout>
