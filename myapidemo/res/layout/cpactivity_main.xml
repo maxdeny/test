@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto3d="http://schemas.android.com/apk/res/com.example.myapidemo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- <com.example.myapidemo.CustomerView1 -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content"/> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="fdsfsdf" -->
+    <!-- android:textSize="24sp" -->
+    <!-- android:textColor="@android:color/black"/> -->
+
+
+    <!-- <com.example.myapidemo.CustomerView2 -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- test:textColor="#f00" -->
+    <!-- test:textSize="20sp"/> -->
+
+
+    <!-- <com.example.myapidemo.CustomerView3 -->
+    <!-- android:id="@+id/custom3" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content"/> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="fdsfsdf" -->
+    <!-- android:textColor="@android:color/black" -->
+    <!-- android:textSize="24sp" /> -->
+
+    <com.example.myapidemo.VerticalAutoScrollTextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#EEE"
+        android:ellipsize="end"
+        android:inputType="text"
+        android:singleLine="true"
+        android:text="我是一只小小鸟快乐小小鸟"
+        android:textColor="#000"
+        android:textSize="20sp" >
+    </com.example.myapidemo.VerticalAutoScrollTextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="next" />
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="prev" />
+    </RelativeLayout>
+
+    <com.example.myapidemo.AutoTextView
+        android:id="@+id/switcher02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        auto3d:textSize="30sp" />
+
+</LinearLayout>

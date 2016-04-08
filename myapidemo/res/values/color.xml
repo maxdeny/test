@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="none">#00000000</color>
+
+    <!-- 通用 -->
+    <color name="menu_text_color">#00E1CA</color>
+    <color name="theme_blue">#00E1CA</color>
+
+    <!-- 占位卡 -->
+
+    <color name="place_card_text_color_big">#2d2d2d</color>
+    <color name="place_card_text_color_small">#8b8b8b</color>
+    <color name="place_card_backgroud_color">#ececec</color>
+    <color name="place_card_button_submit_color">#00E1CA</color>
+    <color name="place_card_line_color">#EFEFEF</color>
+    <color name="place_card_edit_hint_color">#cdcdcd</color>
+    
+    <!-- 任务大厅 -->
+    <color name="job_hall_title">#61D674</color>
+    <color name="job_hall_item_line_blue">#2CC2F9</color>
+    <color name="job_hall_item_line_grey">#D9D9D9</color>
+    <color name="job_hall_item_line_yellow">#FF8822</color>
+
+</resources>
